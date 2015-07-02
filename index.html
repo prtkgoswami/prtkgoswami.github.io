@@ -19,11 +19,11 @@
 
 			if(dd<10) {
 			    dd='0'+dd
-			} 
+			}
 
 			if(mm<10) {
 			    mm='0'+mm
-			} 
+			}
 
 			today = mm+'/'+dd+'/'+yyyy;
 		}
@@ -35,7 +35,7 @@
 
 		    years = (otherDate.getFullYear() - birthDate.getFullYear());
 
-		    if (otherDate.getMonth() < birthDate.getMonth() || 
+		    if (otherDate.getMonth() < birthDate.getMonth() ||
 		        otherDate.getMonth() == birthDate.getMonth() && otherDate.getDate() < birthDate.getDate()) {
 		        years--;
 		    }
@@ -236,7 +236,7 @@
 					<p><strong style="color:#2FAECE;">Description:</strong> *Content*</p>
 				</center>
 			</div><br/><br/><hr/><br/>
-			<div id="e2">
+			<!--<div id="e2">
 				<center>
 					<img src="images/experience/TCS.jpg" width="45%"><br/><br/>
 					<p><strong style="color:#2FAECE;"><u>Summer Internship at TCS Kolkata</u></strong></p>
@@ -245,7 +245,7 @@
 					<p><strong style="color:#2FAECE;">Project:</strong> Corporate Research Application Development</p>
 					<p><strong style="color:#2FAECE;">Description:</strong> Creation of a <strong>WorkFlow Research Tool</strong> using <strong>TCS MasterCraft Tool</strong>.</p>
 				</center>
-			</div>
+			</div>-->
 		</div>
 
 
@@ -268,7 +268,7 @@
 					</p>
 				</div><br/><br/>
 			</div>
-			<div class="col-md-12 blocks">	
+			<div class="col-md-12 blocks">
 				<div class="col-md-2"></div>
 				<div id="sports" class="col-md-9">
 					<div class="pull-right col-md-2">
@@ -422,16 +422,16 @@
 
 		var hashTagActive = "";
 	    $(".scroll").click(function (event) {
-	        if(hashTagActive != this.hash) { 
+	        if(hashTagActive != this.hash) {
 	            event.preventDefault();
-	            
+
 	            var dest = 0;
 	            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
 	                dest = $(document).height() - $(window).height();
 	            } else {
 	                dest = $(this.hash).offset().top;
 	            }
-	            
+
 	            $('html,body').animate({
 	                scrollTop: dest
 	            }, 2000, 'swing');
