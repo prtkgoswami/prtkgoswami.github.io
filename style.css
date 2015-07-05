@@ -1,33 +1,43 @@
 body{
 	background:#4f4f4f;
 }
-.block{
-	height:85vh;
-	/*border:1px solid black;*/
-	-moz-filter:blur(2px);
-	-webkit-filter:blur(2px);
+#tictactoe,
+#pnd{
+	height:86vh;
+	border:1px solid black;
 	filter:blur(2px);
 }
-.block:hover{
-	-moz-filter:none;
-	-webkit-filter:none;
-	filter:none;
-	box-shadow: 2px 2px 5px black;
+.block_inner{
+	height:43vh;
+	border:1px solid black;
+	filter:blur(2px);
 }
-#cv{
-	background-image: url('/images/cv.PNG');
+.block_inner:hover{
+	filter:none;
+}
+#tictactoe:hover,
+#pnd:hover{
+	filter:none;
+}
+#cv1{
+	background-image: url('images/cv.png');
 	background-size: cover;
-	background-repeat: :none;
+	background-repeat :none;
+}
+#cv2{
+	background-image: url('images/cv2.PNG');
+	background-size: cover;
+	background-repeat :none;
 }
 #tictactoe{
-	background-image: url('/images/tictactoe.PNG');
+	background-image: url('images/tictactoe.png');
 	background-size: cover;
-	background-repeat: :none;
+	background-repeat :none;
 }
 #pnd{
-	background-image: url('/images/puffndrag.PNG');
+	background-image: url('images/puffndrag.png');
 	background-size: cover;
-	background-repeat: :none;
+	background-repeat :none;
 }
 
 .buffer{

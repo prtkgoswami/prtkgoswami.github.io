@@ -1,0 +1,209 @@
+@font-face {
+    font-family: bebas;
+    src: url(fonts/BEBAS.ttf);
+}
+
+/*General*/
+	body{
+		background:#2f2f2f;
+	}
+	body > div{
+		margin:0 0;
+		padding:0 0;
+		width:100%;
+	}
+	section{
+		min-height:100vh;
+		border-top:1px solid black;
+		padding:5% 0 2% 0;
+	}
+	#content{
+		/*background:#eeeeee;*/
+		background:#ffefcb;
+	}
+	.data{
+		font-size:20px;
+	}
+
+/*Navbar*/
+	nav{
+		height:800vh;
+		/*width:10vw;*/
+		background:#2f2f2f;
+		box-shadow: 5px 2px 7px black inset;
+		position:fixed;
+		top:0;
+
+	}
+
+/*Header*/
+	#top{
+		padding-top:8vh;
+	}
+	#top .row:first-child div div{
+		border-radius:100%;
+		box-shadow: 2px 2px 5px black;
+	}
+
+/*About Me*/
+	#about .data > .row{
+		margin-top:1%;
+	}
+	#about > .row:nth-child(2),
+	#about > .row:nth-child(3){
+		margin-top:7%;
+	}
+	#profile .data .row:first-child{
+		margin-top: 3%;
+	}
+	#school .data .row:nth-child(2),
+	#school .data .row:nth-child(3),
+	#school .data .row:nth-child(5){
+		margin-top:0;
+	}
+	#school .data .row:nth-child(1){
+		margin-top:5%;
+	}
+	#college .data .row:first-child{
+		margin-top:20%;
+	}
+	#college{
+		margin-bottom:5%;
+	}
+
+/*Skill Set*/
+	.skill_cont{
+		/*width:800px;*/
+		height:44px;
+		background-color: #ddcda9;/*#ffefcb;*/
+		margin-left:auto;
+		margin-right: auto;
+		padding:4px 2px 4px 5px;
+		box-shadow: 2px 2px 5px black inset;
+	}
+	.cont_inner{
+		height:36px;
+		padding:2px 0 2px 20px;
+		background-color:  #337AB7;
+		box-shadow: 2px 2px 5px black;
+		/*margin:0 auto;*/
+	}
+	.cont_inner p{
+		color:black;
+		font-size: 24px;
+	}
+	.titlebar{
+		background-color: #1f1f1f;/*#28F943;*/
+	}
+	.titlebar p{
+		color:#337AB7;
+	}
+	#webd .cont_inner{width:90%;}
+	#html .cont_inner{width:97%;}
+	#css .cont_inner{width:95%;}
+	#js .cont_inner{width:75%;}
+	#jquery .cont_inner{width:60%;}
+	#php .cont_inner{width:55%;}
+	#sql .cont_inner{width:78%;}
+	#prog .cont_inner{width:75%;}
+	#c .cont_inner{width:80%;}
+	#java .cont_inner{width:75%;}
+	#python .cont_inner{width:90%;}
+	#csharp .cont_inner{width:55%;}
+	#cplus .cont_inner{width:60%;}
+	#design .cont_inner{width:70%;}
+	#photoshop .cont_inner{width:60%;}
+	#crypto .cont_inner{width:55%;}
+
+/*Experience*/
+	.exp_data{
+		font-size: 20px;
+		margin-left:0;
+	}
+	.exp_img{
+		box-shadow: 2px 2px 5px black;
+	}
+	.exp_data:first-child{
+		text-align: center;
+		font-size: 25px;
+		margin-top:5%;
+		font-family: bebas;
+	}
+	.exp_data:nth-child(2),
+	.exp_data:nth-child(3),
+	.exp_data:nth-child(4),
+	.exp_data:nth-child(5){
+		margin-left:6%;
+	}
+	#exp .container{
+		box-shadow: 2px 2px 5px black inset;
+		padding:3% 3.5% 2% 1.5%;
+		background-color: #ddcda9;
+	}
+	#exp{
+		padding-top:2%;
+	}
+	#e1,#e2{
+		margin:5% 0;
+	}
+
+/*Showcase*/
+	#showcase img{
+		margin-top:3%;
+	}
+	#showcase .container{
+		box-shadow: 2px 2px 5px black inset;
+		padding:3% 3.5% 2% 1.5%;
+		background-color: #ddcda9;
+	}
+	#windows_app > div{
+		
+	}
+	#showcase{
+		padding-top:2%;
+	}
+	#kwiznet,
+	#hackerearth,
+	#windows_app{
+		margin:5% 0 5% 0;
+	}
+	.title{
+		font-family: bebas;
+		font-size: 44px;
+		text-shadow:2px 2px 2px black;
+		color:#337AB7;
+	}
+
+/*Achievements*/
+
+
+/*Extracurriculars*/
+
+
+/*Contact Me*/
+	#contact .data p{
+		font-size: 23px;
+	}
+	#contact .row:nth-child(2){
+		margin-top:5%;
+	}
+	#contact .row:nth-child(3){
+		margin-top:2%;
+	}
+	#contact .row:nth-child(6) .container{
+		margin-top:2%;
+		background-color: #ddcda9;/*#ffefcb;*/
+		box-shadow: 2px 2px 5px black inset;
+		padding:0 2%;
+	}
+	#contact .row:nth-child(6) img{
+		/*max-width:20vw;*/
+		opacity:0.4;
+		margin:10% 0 10% 0;
+	}
+	#contact .row:nth-child(6) img:hover{
+		/*max-width:20vw;*/
+		opacity:1.0;
+		box-shadow: 2px 2px 5px black;
+	}
+	#contact .row:nth-child(7){margin-top:2%;}
