@@ -34,7 +34,7 @@
 		function writeData(){
 			var a=document.getElementById('age');
 			var b=document.createTextNode(years);
-			console.log(b);
+			//console.log(b);
 			a.appendChild(b);
 		}
 
@@ -50,7 +50,40 @@
 		        years--;
 		    }
 		    writeData();
+
 		};
+		$(window).resize(function() { 
+			// Reordering Divs
+ 			if($(this).width() <992){
+				$("#school>div:nth-child(1)").removeClass("pull-right");
+				$("#school>div:nth-child(2)").removeClass("pull-left");
+
+				$("#art>div:nth-child(1)").removeClass("pull-right");
+				$("#art>div:nth-child(2)").removeClass("pull-left");
+
+				$("#robotics>div:nth-child(1)").removeClass("pull-right");
+				$("#robotics>div:nth-child(2)").removeClass("pull-left");
+			}
+			else{
+				$("#school>div:nth-child(1)").addClass("pull-right");
+				$("#school>div:nth-child(2)").addClass("pull-left");
+
+				$("#art>div:nth-child(1)").addClass("pull-right");
+				$("#art>div:nth-child(2)").addClass("pull-left");
+
+				$("#robotics>div:nth-child(1)").addClass("pull-right");
+				$("#robotics>div:nth-child(2)").addClass("pull-left");
+			}
+		});
+		$(document).ready(function() {
+			// Dynamically set height of nav panel to content panel
+		  	$('#navigation').css('height', $('#content').height());
+		  	$(window).on(resize, function() {
+		      	$('#navigation').css('height', $('#content').height());       
+		  	});
+		  	// Welcome Modals
+		  	$('#openModal').modal('show');
+		});
 	</script>
 </head>
 <body>
@@ -75,6 +108,7 @@
 				</section>
 
 				<!-- ABOUT ME -->
+				<section class="buffer"></section>
 				<section id="about">
 					<div id="profile" class="row">
 						<div class="col-md-3 col-sm-6 col-md-offset-2 col-sm-offset-3">
@@ -106,7 +140,11 @@
 						</div>
 					</div>
 					<div id="school" class="row">
-						<div class="col-md-6 col-sm-8 col-md-offset-1 col-sm-offset-2 data">
+						<div class="col-md-3 col-sm-6 pull-right">
+							<img src="images/about/school_black.png" width="100%">
+						</div>
+  						<div class="clearfix visible-sm-block"></div>
+						<div class="col-md-6 col-sm-8 col-md-offset-1 col-sm-offset-2 data pull-left">
 							<div class="row">
 								<p>
 									<strong style="color:#2FAECE;">Institution</strong>:&nbsp;<strong>D</strong>on <strong>B</strong>osco <strong>H</strong>igh <strong>S</strong>chool, <strong>M</strong>atunga (Primary - 7th)(SSC)
@@ -133,9 +171,6 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-md-3 col-sm-6 col-md-offset-1 col-sm-offset-3">
-							<img src="images/about/school_black.png" width="100%">
-						</div>
 					</div>
 					<div id="college" class="row">
 						<div class="col-md-3 col-sm-6 col-md-offset-2 col-sm-offset-3">
@@ -157,6 +192,7 @@
 				</section>
 
 				<!-- SKILL SET -->
+				<section class="buffer"></section>
 				<section id="skill">
 					<div class="row">
 						<div class="col-md-11 col-sm-12 col-md-offset-1">
@@ -235,6 +271,7 @@
 				</section>
 
 				<!-- EXPERIENCE -->
+				<section class="buffer"></section>
 				<section id="exp">
 					<div id="e1" class="row">
 						<div class="col-md-10 col-md-offset-1 container">
@@ -315,6 +352,7 @@
 				</section>
 
 				<!-- SHOWCASE -->
+				<section class="buffer"></section>
 				<section id="showcase">
 					<div id="kwiznet" class="row">
 						<div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 container">
@@ -407,6 +445,7 @@
 				</section>
 
 				<!-- ACHIEVEMENTS -->
+				<section class="buffer"></section>
 				<section id="achievements">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 container">
@@ -429,6 +468,7 @@
 				</section>
 
 				<!-- EXTRACURRICULARS -->
+				<section class="buffer"></section>
 				<section id="extra">
 					<div id="title" class="row">
 						<div class="col-md-12 col-sm-12">
@@ -452,7 +492,10 @@
 						</div>
 					</div>
 					<div id="art" class="row">
-						<div class="col-md-3 col-sm-8 col-md-offset-4 col-sm-offset-5 data">
+						<div class="col-md-3 col-sm-5 col-md-offset-1 col-sm-offset-4 pull-right">
+							<img src="images/extra/art_black.png" width="80%">
+						</div>
+						<div class="col-md-3 col-sm-8 col-md-offset-4 col-sm-offset-5 data pull-left">
 							<div class="row">
 								<p>
 									<strong>D</strong>rawing<br/>
@@ -460,9 +503,6 @@
 										<strong>P</strong>ainting<br/>
 								</p>
 							</div>
-						</div>
-						<div class="col-md-3 col-sm-5 col-md-offset-1 col-sm-offset-4">
-							<img src="images/extra/art_black.png" width="80%">
 						</div>
 					</div>
 					<div id="sports" class="row">
@@ -478,16 +518,15 @@
 						</div>
 					</div>
 					<div id="robotics" class="row">
-						<div class="col-md-3 col-sm-4 col-md-offset-4 col-sm-offset-6 data">
+						<div class="col-md-3 col-sm-6 col-md-offset-1 col-sm-offset-4 pull-right">
+							<img src="images/extra/robot_black.png" width="80%">
+						</div>
+						<div class="col-md-3 col-sm-4 col-md-offset-4 col-sm-offset-6 data pull-left">
 							<div class="row">
 								<p>
 									<strong>R</strong>obotics
 								</p>
 							</div>
-							
-						</div>
-						<div class="col-md-3 col-sm-6 col-md-offset-1 col-sm-offset-4">
-							<img src="images/extra/robot_black.png" width="80%">
 						</div>
 					</div>
 					<div id="driving" class="row">
@@ -505,6 +544,7 @@
 				</section>
 
 				<!-- CONTACT ME -->
+				<section class="buffer"></section>
 				<section id="contact">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3">
@@ -595,14 +635,25 @@
 						</div>
 					</div>
 				</section>
-
 			</div>
 
 			<!-- NAVBAR -->
 			<div id="navigation" class="col-lg-1 col-md-1 col-sm-1">
-				
+				<nav class="">
+						<p>NAV</p>
+					</div>
+				</nav>
 			</div>
 		</div>
-	</div>
+
+		<!-- WELCOME MODAL -->
+		<<!-- div id="openModal" class="modal fade col-md-12" tabindex="-1" role="dialog" aria-labelledby="ImageModal">
+			<div class="modal-dialog modal-lg">
+				<div id="modal_cont" class="modal-content">
+					<p>WELCOME</p>
+				</div>
+			</div>
+		</div> -->
+	</div>	
 </body>
 </html>

@@ -14,7 +14,6 @@
 	}
 	section{
 		min-height:100vh;
-		border-top:1px solid black;
 		padding:5% 0 2% 0;
 	}
 	#content{
@@ -25,15 +24,37 @@
 		font-size:20px;
 	}
 
+/*Design*/
+	
+
+/*Buffer*/
+	.buffer{
+		background-image: url('images/buffer_new/taj.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		height:100vh;
+	}
+
 /*Navbar*/
 	#navigation{
-		height:1457vh;
+		height:auto;
 		/*width:10vw;*/
 		background:#2f2f2f;
 		box-shadow: 5px 2px 7px black inset;
 		/*position:fixed;*/
 		top:0;
-
+	}
+	nav{
+		height:80vh;
+		margin-top:10vh;
+		border:1px solid white;
+		position: fixed;
+		width:6%;
+		text-align: center;
+		font-size: 20px;
+		color:white;
+		font-family: bebas;
 	}
 
 /*Header*/
