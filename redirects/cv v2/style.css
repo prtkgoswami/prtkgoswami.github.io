@@ -26,12 +26,12 @@
 	}
 
 /*Navbar*/
-	nav{
-		height:800vh;
+	#navigation{
+		height:1457vh;
 		/*width:10vw;*/
 		background:#2f2f2f;
 		box-shadow: 5px 2px 7px black inset;
-		position:fixed;
+		/*position:fixed;*/
 		top:0;
 
 	}
@@ -175,10 +175,22 @@
 	}
 
 /*Achievements*/
-
+	#achievements ul li{
+		font-size: 20px;
+	}
 
 /*Extracurriculars*/
+	#extra .data{
+		font-size: 20px;
+		margin-top:10%;
+	}
+	#extra > .row{
+		margin:2% 0 2% 0;
+	}
+	#extra #title p{
+		font-size: 35px;
 
+	}
 
 /*Contact Me*/
 	#contact .data p{
