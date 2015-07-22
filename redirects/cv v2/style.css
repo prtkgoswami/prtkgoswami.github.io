@@ -15,10 +15,12 @@
 	section{
 		min-height:100vh;
 		padding:5% 0 2% 0;
+		background:#ffefcb;
 	}
 	#content{
 		/*background:#eeeeee;*/
-		background:#ffefcb;
+		background: #ddcda9;
+		box-shadow: 2px 2px 5px black;
 	}
 	.data{
 		font-size:20px;
@@ -47,8 +49,8 @@
 	}
 	nav{
 		height:80vh;
-		margin-top:10vh;
-		border:1px solid white;
+		margin-top:5vh;
+		/*border:1px solid white;*/
 		position: fixed;
 		width:6%;
 		text-align: center;
@@ -58,8 +60,13 @@
 	}
 	@media screen and (max-width:992px){
 		nav{
-			width:13%;
+			width:10%;
+			margin-top:15vh;
 		}
+	}
+	nav div a img{
+		margin-top:5vh;
+
 	}
 
 /*Header*/
@@ -68,6 +75,7 @@
 	}
 	#top .row:first-child div div{
 		border-radius:100%;
+		border:10px solid #0f0f0f;
 		box-shadow: 2px 2px 5px black;
 	}
 
@@ -131,6 +139,7 @@
 	#jquery .cont_inner{width:60%;}
 	#php .cont_inner{width:55%;}
 	#sql .cont_inner{width:78%;}
+	#bootstrap .cont_inner{width:58%;}
 	#prog .cont_inner{width:75%;}
 	#c .cont_inner{width:80%;}
 	#java .cont_inner{width:75%;}
@@ -199,6 +208,9 @@
 		text-shadow:2px 2px 2px black;
 		color:#337AB7;
 	}
+	/*.windows_app .row:nth-child(2) img{
+		width:60%;
+	}*/
 
 /*Achievements*/
 	#achievements ul li{
@@ -238,6 +250,7 @@
 		/*max-width:20vw;*/
 		opacity:0.4;
 		margin:10% 0 10% 0;
+		border-radius: 10%;
 	}
 	#contact .row:nth-child(6) img:hover{
 		/*max-width:20vw;*/

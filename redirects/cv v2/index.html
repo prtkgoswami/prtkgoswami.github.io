@@ -63,6 +63,8 @@
 
 				$("#robotics>div:nth-child(1)").removeClass("pull-right");
 				$("#robotics>div:nth-child(2)").removeClass("pull-left");
+
+				//$(".windows_app>.container>.row:nth-child(2)>div:first-child>img").attr("width","100%");
 			}
 			else{
 				$("#school>div:nth-child(1)").addClass("pull-right");
@@ -73,6 +75,8 @@
 
 				$("#robotics>div:nth-child(1)").addClass("pull-right");
 				$("#robotics>div:nth-child(2)").addClass("pull-left");
+
+				//$(".windows_app>.container>.row:nth-child(2)>div:first-child>img").attr("width","120%");
 			}
 		});
 		$(document).ready(function() {
@@ -85,12 +89,13 @@
 		  	$('#openModal').modal('show');
 		});
 	</script>
+	<!-- <script type="text/javascript" src="scroll.js"></script>-->
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
 			<!-- CONTENT -->
-			<div id="content" class="col-lg-11 col-md-11 col-sm-11">
+			<div id="content" class="col-lg-11 col-md-11 col-sm-10">
 				<!-- TOP -->
 				<section id="top">
 					<div class="row">
@@ -140,7 +145,7 @@
 						</div>
 					</div>
 					<div id="school" class="row">
-						<div class="col-md-3 col-sm-6 pull-right">
+						<div class="col-md-3 col-sm-6 col-sm-offset-1 pull-right">
 							<img src="images/about/school_black.png" width="100%">
 						</div>
   						<div class="clearfix visible-sm-block"></div>
@@ -228,6 +233,10 @@
 					<div class="col-md-2 col-sm-2 col-xs-1"></div>
 					<div id="sql" class="skill_cont col-md-8 col-sm-8 col-xs-10">
 						<div class="cont_inner"><p>SQL</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="bootstrap" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>Bootstrap</p></div>
 					</div><br/><br/><br/><br/>
 
 					<div class="col-md-1 col-sm-1"></div>
@@ -414,19 +423,19 @@
 								</center>
 							</div>
 							<div class="row">
-									<div class="col-md-2 col-sm-8">
+									<div class="col-md-2 col-sm-10">
 										<img src="images/screenshots/wp1.png" width="120%">
 									</div>
-									<div class="col-md-2 col-sm-8">
+									<div class="col-md-2 col-sm-10">
 										<img src="images/screenshots/wp2.png" width="120%">
 									</div>
-									<div class="col-md-2 col-sm-8">
+									<div class="col-md-2 col-sm-10">
 										<img src="images/screenshots/wp3.png" width="120%">
 									</div>
-									<div class="col-md-2 col-sm-8">
+									<div class="col-md-2 col-sm-10">
 										<img src="images/screenshots/wp4.png" width="120%">
 									</div>
-									<div class="col-md-2 col-sm-8">
+									<div class="col-md-2 col-sm-10">
 										<img src="images/screenshots/wp5.png" width="120%">
 									</div>
 									<div class="col-md-2 col-sm-8">
@@ -452,7 +461,7 @@
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1">
 									<ul>
-										<li>Qualified for regional finals in <strong>All India National CTF</strong>, going to be held in Kerala</li>
+										<li>Placed <strong>3rd</strong> in the finals of <strong>All India National CTF</strong>, held by Amritapuri University, Amritapuri.</li>
 										<li>Member of <strong>CUrBrain</strong> (Technical Club of Techno India, Salt Lake)</li>
 										<li>Published App in <strong>Windows App Store</strong> for Phone (<a href="http://www.windowsphone.com/en-in/store/app/quick-icu-ref/b8a2deed-6641-4821-886f-b2e58acffb27" target="_blank">App Here</a>)</li>
 										<li>Part of the <strong>MSP</strong>(Microsoft Student Partner) Program</li>
@@ -582,7 +591,7 @@
 						<div class="col-md-6 col-md-offset-3 data">
 							<center>
 								<p>
-									<strong style="color:#337AB7;">Skype</strong>:&nbsp;<a href="skype:prtkgoswami1?call" style="color:#05CADD;">prtkgoswami1</a>
+									<!-- <strong style="color:#337AB7;">Skype</strong>:&nbsp;<a href="skype:prtkgoswami1?call" style="color:#05CADD;">prtkgoswami1</a> -->
 								</p>
 							</center>
 						</div>
@@ -607,8 +616,8 @@
 									</a>
 								</div>
 								<div class="col-md-2 col-sm-4">
-									<a href="ttps://plus.google.com/+PratikGoswami1994" target="_blank">
-										<img title="Google+" src="images/social/google+.png" width="100% ">
+									<a href="skype:prtkgoswami1?call">
+										<img title="Google+" src="images/social/skype.png" width="100% ">
 									</a>
 								</div>
 								<div class="col-md-2 col-sm-4">
@@ -638,10 +647,26 @@
 			</div>
 
 			<!-- NAVBAR -->
-			<div id="navigation" class="col-lg-1 col-md-1 col-sm-1">
+			<div id="navigation" class="col-lg-1 col-md-1 col-sm-2">
 				<nav class="">
 						<p>NAV</p>
-					</div>
+						<div>
+							<a class="scroll" href="#top"><img src="images/nav/top_white.png" width="40%"></a>
+							<br/>
+							<a class="scroll" href="#about"><img src="images/nav/profile_white.png" width="40%"></a>
+							<br/>
+							<a class="scroll" href="#skill"><img src="images/nav/skillset_white.png" width="40%"></a>
+							<br/>
+							<a class="scroll" href="#exp"><img src="images/nav/exp_white.png" width="40%"></a>
+							<br/>
+							<a class="scroll" href="#showcase"><img src="images/nav/show_white.png" width="40%"></a>
+							<br/>
+							<a class="scroll" href="#achievements"><img src="images/nav/ach_white.png" width="40%"></a>
+							<br/>
+							<a class="scroll" href="#extra"><img src="images/nav/extra.png" width="40%"></a>
+							<br/>
+							<a class="scroll" href="#contact"><img src="images/nav/contact_white.png" width="40%"></a>
+						</div>
 				</nav>
 			</div>
 		</div>
@@ -655,5 +680,29 @@
 			</div>
 		</div> -->
 	</div>	
+
+	<!-- NAVIGATION SCRIPT -->
+	<script type="text/javascript">
+		var hashTagActive = "";
+	    $(".scroll").click(function (event) {
+	        if(hashTagActive != this.hash) {
+	            event.preventDefault();
+
+	            var dest = 0;
+	            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+	                dest = $(document).height() - $(window).height();
+	            } else {
+	                dest = $(this.hash).offset().top;
+	            }
+
+	            $('html,body').animate({
+	                scrollTop: dest
+	            }, 2000, 'swing');
+	            hashTagActive = this.hash;
+
+	        }
+	    });
+
+	</script>
 </body>
 </html>
