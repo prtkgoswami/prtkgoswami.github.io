@@ -20,7 +20,7 @@ body{
 	filter:none;
 }
 #cv1{
-	background-image: url('images/cv.png');
+	background-image: url('images/cv.PNG');
 	background-size: cover;
 	background-repeat :none;
 }
@@ -30,12 +30,12 @@ body{
 	background-repeat :none;
 }
 #tictactoe{
-	background-image: url('images/tictactoe.png');
+	background-image: url('images/tictactoe.PNG');
 	background-size: cover;
 	background-repeat :none;
 }
 #pnd{
-	background-image: url('images/puffndrag.png');
+	background-image: url('images/puffndrag.PNG');
 	background-size: cover;
 	background-repeat :none;
 }
