@@ -60,6 +60,9 @@
 		color:white;
 		font-family: bebas;
 	}
+	nav p{
+		width:140%;
+	}
 	@media screen and (max-width:992px){
 		nav{
 			width:10%;
@@ -80,6 +83,7 @@
 	.active{
 		background:#3f3f3f;
 		box-shadow: 2px 2px 3px black;
+		transition: background 0.1s ease-in-out;
 	}
 
 /*Header*/
@@ -90,6 +94,14 @@
 		border-radius:100%;
 		border:10px solid #0f0f0f;
 		box-shadow: 2px 2px 5px black;
+	}
+	@media screen and (max-width:992px){
+		#top .row:first-child{
+			margin-top: 10vh;
+		}
+		#top .row:nth-child(2){
+			margin-top:5vh;
+		}
 	}
 
 /*About Me*/
@@ -267,6 +279,51 @@
 	#contact .row:nth-child(6) img:hover{
 		/*max-width:20vw;*/
 		opacity:1.0;
+		transition:opacity 0.3s ease-in-out;
 		box-shadow: 2px 2px 5px black;
 	}
 	#contact .row:nth-child(7){margin-top:2%;}
+	#contact>.row:nth-child(7) a{text-decoration: none;}
+	#contact>.row:nth-child(7) a div{
+		font-size: 24px;
+		text-decoration: none;
+		color: #337AB7;
+		border:2px solid #337AB7;
+		border-radius: 8%;
+		width:60%;
+		transition:all 0.5s ease-in-out;
+	}
+	#contact>.row:nth-child(7) a div:hover{
+		background-color:#337AB7;
+		color:white;
+		font-size: 26px;
+		width:80%;
+		box-shadow: 2px 2px 5px black;
+		transition:all 0.5s ease-in-out;
+	}
+
+	@media screen and (max-width:992px){
+		#contact>.row:nth-child(1){
+			margin-top:10vh;
+		}
+		#contact>.row:nth-child(2){
+			margin-top:10vh;
+		}
+		#contact>.row:nth-child(3){
+			margin-top:1vh;
+		}
+		#contact>.row:nth-child(6){
+			margin-top:8vh;
+		}
+		#contact>.row:nth-child(7){
+			margin-top:5vh;
+		}
+		#contact>.row:nth-child(7) a div{
+			font-size: 36px;
+			width:100%;
+			background-color:#337AB7;
+			color:white;
+			box-shadow: 2px 2px 5px black;
+			border-radius:0;
+		}
+	}

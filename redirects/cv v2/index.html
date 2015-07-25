@@ -612,12 +612,12 @@
 								</div>
 								<div class="col-md-2 col-sm-4">
 									<a href="ttps://plus.google.com/+PratikGoswami1994" target="_blank">
-										<img title="Facebook" src="images/social/google+.png" width="100%">
+										<img title="Google+" src="images/social/google+.png" width="100%">
 									</a>
 								</div>
 								<div class="col-md-2 col-sm-4">
 									<a href="skype:prtkgoswami1?call">
-										<img title="Google+" src="images/social/skype.png" width="100% ">
+										<img title="Skype" src="images/social/skype.png" width="100% ">
 									</a>
 								</div>
 								<div class="col-md-2 col-sm-4">
@@ -637,9 +637,22 @@
 					<div class="row">
 						<div class="col-md-4 col-sm-8 col-md-offset-4 col-sm-offset-2">
 							<center>
-								<p style="font-size:20px;">
-									*If Needed, CV Hardcopy: <a href="Pratik Goswami-CV.pdf" target="_blank">Click Here!</a>
-								</p>
+								<!-- <p >
+									*If Needed, CV Hardcopy: Click Below
+								</p> -->
+								<a href="Pratik Goswami-CV.pdf" target="_blank"><div>Curriculam Vitae</div></a>
+								<!--<script type="text/javascript">
+									$('#contact>.row:nth-child(7) a div').mouseenter(function(){
+										setTimeout(function(){
+											$('#contact>.row:nth-child(7) a div').addClass('highlight');
+										},200);
+									});
+									$('#contact>.row:nth-child(7) a div').mouseleave(function(){
+										setTimeout(function(){
+											$('#contact>.row:nth-child(7) a div').removeClass('highlight');
+										},200);
+									});
+								</script>-->
 							</center>
 						</div>
 					</div>
@@ -651,14 +664,46 @@
 				<nav class="">
 						<p>NAV</p>
 						<div>
-							<div class="active"><a class="scroll" href="#top"><img src="images/nav/top_white.png" width="30%"></a></div>
-							<div><a class="scroll" href="#about"><img src="images/nav/profile_white.png" width="30%"></a></div>
-							<div><a class="scroll" href="#skill"><img src="images/nav/skillset_white.png" width="30%"></a></div>
-							<div><a class="scroll" href="#exp"><img src="images/nav/exp_white.png" width="30%"></a></div>
-							<div><a class="scroll" href="#showcase"><img src="images/nav/show_white.png" width="30%"></a></div>
-							<div><a class="scroll" href="#achievements"><img src="images/nav/ach_white.png" width="30%"></a></div>
-							<div><a class="scroll" href="#extra"><img src="images/nav/extra.png" width="30%"></a></div>
-							<div><a class="scroll" href="#contact"><img src="images/nav/contact_white.png" width="30%"></a></div>
+							<div class="active" title="Top">
+								<a class="scroll" href="#top">
+									<img src="images/nav/top_white.png" width="30%">
+								</a>
+							</div>
+							<div title="About Me">
+								<a class="scroll" href="#about">
+									<img src="images/nav/profile_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Skill Set">
+								<a class="scroll" href="#skill">
+									<img src="images/nav/skillset_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Experience">
+								<a class="scroll" href="#exp">
+									<img src="images/nav/exp_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Showcase">
+								<a class="scroll" href="#showcase">
+									<img src="images/nav/show_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Achievements">
+								<a class="scroll" href="#achievements">
+									<img src="images/nav/ach_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Extra-Curriculars">
+								<a class="scroll" href="#extra">
+									<img src="images/nav/extra.png" width="30%">
+								</a>
+							</div>
+							<div title="Contact Me">
+								<a class="scroll" href="#contact">
+									<img src="images/nav/contact_white.png" width="30%">
+								</a>
+							</div>
 						</div>
 				</nav>
 			</div>
@@ -698,43 +743,59 @@
 	    });
 	    $(window).scroll(function() { 
 	    	if($('#top').visible(true)){
-	    		$('nav div div:nth-child(1)').addClass('active');
-	    		$('nav div div:nth-child(2)').removeClass('active');
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(1)').addClass('active');
+	    			$('nav div div:nth-child(2)').removeClass('active');
+	    		},500);
 	    	}
 	    	else if($('#about').visible(true)){
-	    		$('nav div div:nth-child(2)').addClass('active');
-	    		$('nav div div:nth-child(1)').removeClass('active');
-	    		$('nav div div:nth-child(3)').removeClass('active');
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(2)').addClass('active');
+	    			$('nav div div:nth-child(1)').removeClass('active');
+	    			$('nav div div:nth-child(3)').removeClass('active');
+	    		},500);
 	    	}
 	    	else if($('#skill').visible(true)){
-	    		$('nav div div:nth-child(3)').addClass('active');
-	    		$('nav div div:nth-child(2)').removeClass('active');
-	    		$('nav div div:nth-child(4)').removeClass('active');
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(3)').addClass('active');
+	    			$('nav div div:nth-child(2)').removeClass('active');
+	    			$('nav div div:nth-child(4)').removeClass('active');
+	    		},500);
 	    	}
 	    	else if($('#exp').visible(true)){
-	    		$('nav div div:nth-child(4)').addClass('active');
-	    		$('nav div div:nth-child(3)').removeClass('active');
-	    		$('nav div div:nth-child(5)').removeClass('active');
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(4)').addClass('active');
+	    			$('nav div div:nth-child(3)').removeClass('active');
+	    			$('nav div div:nth-child(5)').removeClass('active');
+	    		},500);
 	    	}
 	    	else if($('#showcase').visible(true)){
-	    		$('nav div div:nth-child(5)').addClass('active');
-	    		$('nav div div:nth-child(4)').removeClass('active');
-	    		$('nav div div:nth-child(6)').removeClass('active');
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(5)').addClass('active');
+	    			$('nav div div:nth-child(4)').removeClass('active');
+	    			$('nav div div:nth-child(6)').removeClass('active');
+	    		},500);
 	    	}
 	    	else if($('#achievements').visible(true)){
-	    		$('nav div div:nth-child(6)').addClass('active');
-	    		$('nav div div:nth-child(5)').removeClass('active');
-	    		$('nav div div:nth-child(7)').removeClass('active');
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(6)').addClass('active');
+	    			$('nav div div:nth-child(5)').removeClass('active');
+	    			$('nav div div:nth-child(7)').removeClass('active');
+	    		},500);
 	    	}
 	    	else if($('#extra').visible(true)){
-	    		$('nav div div:nth-child(7)').addClass('active');
-	    		$('nav div div:nth-child(6)').removeClass('active');
-	    		$('nav div div:nth-child(8)').removeClass('active');
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(7)').addClass('active');
+	    			$('nav div div:nth-child(6)').removeClass('active');
+	    			$('nav div div:nth-child(8)').removeClass('active');
+	    		},500);
 	    	}
 	    	else if($('#contact').visible(true)){
-	    		$('nav div div:nth-child(8)').addClass('active');
-	    		$('nav div div:nth-child(7)').removeClass('active');
-	    	}
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(8)').addClass('active');
+	    			$('nav div div:nth-child(7)').removeClass('active');
+	    		},500);
+	  	  	}
 
 	    });
 	</script>
