@@ -438,7 +438,7 @@
 									<div class="col-md-2 col-sm-10">
 										<img src="images/screenshots/wp5.png" width="120%">
 									</div>
-									<div class="col-md-2 col-sm-8">
+									<div class="col-md-2 col-sm-10">
 										<img src="images/screenshots/wp6.png" width="120%">
 									</div>
 							</div><br/><br/>
@@ -651,21 +651,14 @@
 				<nav class="">
 						<p>NAV</p>
 						<div>
-							<a class="scroll" href="#top"><img src="images/nav/top_white.png" width="40%"></a>
-							<br/>
-							<a class="scroll" href="#about"><img src="images/nav/profile_white.png" width="40%"></a>
-							<br/>
-							<a class="scroll" href="#skill"><img src="images/nav/skillset_white.png" width="40%"></a>
-							<br/>
-							<a class="scroll" href="#exp"><img src="images/nav/exp_white.png" width="40%"></a>
-							<br/>
-							<a class="scroll" href="#showcase"><img src="images/nav/show_white.png" width="40%"></a>
-							<br/>
-							<a class="scroll" href="#achievements"><img src="images/nav/ach_white.png" width="40%"></a>
-							<br/>
-							<a class="scroll" href="#extra"><img src="images/nav/extra.png" width="40%"></a>
-							<br/>
-							<a class="scroll" href="#contact"><img src="images/nav/contact_white.png" width="40%"></a>
+							<div class="active"><a class="scroll" href="#top"><img src="images/nav/top_white.png" width="30%"></a></div>
+							<div><a class="scroll" href="#about"><img src="images/nav/profile_white.png" width="30%"></a></div>
+							<div><a class="scroll" href="#skill"><img src="images/nav/skillset_white.png" width="30%"></a></div>
+							<div><a class="scroll" href="#exp"><img src="images/nav/exp_white.png" width="30%"></a></div>
+							<div><a class="scroll" href="#showcase"><img src="images/nav/show_white.png" width="30%"></a></div>
+							<div><a class="scroll" href="#achievements"><img src="images/nav/ach_white.png" width="30%"></a></div>
+							<div><a class="scroll" href="#extra"><img src="images/nav/extra.png" width="30%"></a></div>
+							<div><a class="scroll" href="#contact"><img src="images/nav/contact_white.png" width="30%"></a></div>
 						</div>
 				</nav>
 			</div>
@@ -682,6 +675,7 @@
 	</div>	
 
 	<!-- NAVIGATION SCRIPT -->
+	<script type="text/javascript" src="visible.js"></script>
 	<script type="text/javascript">
 		var hashTagActive = "";
 	    $(".scroll").click(function (event) {
@@ -702,7 +696,47 @@
 
 	        }
 	    });
+	    $(window).scroll(function() { 
+	    	if($('#top').visible(true)){
+	    		$('nav div div:nth-child(1)').addClass('active');
+	    		$('nav div div:nth-child(2)').removeClass('active');
+	    	}
+	    	else if($('#about').visible(true)){
+	    		$('nav div div:nth-child(2)').addClass('active');
+	    		$('nav div div:nth-child(1)').removeClass('active');
+	    		$('nav div div:nth-child(3)').removeClass('active');
+	    	}
+	    	else if($('#skill').visible(true)){
+	    		$('nav div div:nth-child(3)').addClass('active');
+	    		$('nav div div:nth-child(2)').removeClass('active');
+	    		$('nav div div:nth-child(4)').removeClass('active');
+	    	}
+	    	else if($('#exp').visible(true)){
+	    		$('nav div div:nth-child(4)').addClass('active');
+	    		$('nav div div:nth-child(3)').removeClass('active');
+	    		$('nav div div:nth-child(5)').removeClass('active');
+	    	}
+	    	else if($('#showcase').visible(true)){
+	    		$('nav div div:nth-child(5)').addClass('active');
+	    		$('nav div div:nth-child(4)').removeClass('active');
+	    		$('nav div div:nth-child(6)').removeClass('active');
+	    	}
+	    	else if($('#achievements').visible(true)){
+	    		$('nav div div:nth-child(6)').addClass('active');
+	    		$('nav div div:nth-child(5)').removeClass('active');
+	    		$('nav div div:nth-child(7)').removeClass('active');
+	    	}
+	    	else if($('#extra').visible(true)){
+	    		$('nav div div:nth-child(7)').addClass('active');
+	    		$('nav div div:nth-child(6)').removeClass('active');
+	    		$('nav div div:nth-child(8)').removeClass('active');
+	    	}
+	    	else if($('#contact').visible(true)){
+	    		$('nav div div:nth-child(8)').addClass('active');
+	    		$('nav div div:nth-child(7)').removeClass('active');
+	    	}
 
+	    });
 	</script>
 </body>
 </html>
