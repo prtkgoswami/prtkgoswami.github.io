@@ -28,6 +28,36 @@
 
 /*Design*/
 	
+/*Welcome Modal*/
+	#modal_cont{
+		padding:5vh 2vh 5vh 2vh;
+		background:#ffefcb;
+		border:4px solid #bbab87;
+	}
+	#close_btn{
+		font-size: 24px;
+		width:50%;
+		cursor: pointer;
+	}
+	#close_btn{
+		border:2px solid #337AB7;
+		color:#337AB7;
+		transition:all 0.3s ease-in-out;
+	}
+	#close_btn:hover{
+		background:#337AB7;
+		color:white;
+		box-shadow: 2px 2px 5px black;
+		transition:all 0.3s ease-in-out;
+	}
+	@media screen and (max-width:992px){
+		#close_btn{
+			background:#337AB7;
+			color:white;
+			box-shadow: 2px 2px 5px black;
+			transition:all 0.3s ease-in-out;
+		}
+	}
 
 /*Buffer*/
 	.buffer{
@@ -254,7 +284,7 @@
 		font-size: 35px;
 	}
 
-/*Contact Me*/
+/*Contact Me - DEPCRICATED*/
 	#contact .data p{
 		font-size: 23px;
 	}
@@ -327,3 +357,118 @@
 			border-radius:0;
 		}
 	}
+
+
+/*Contact Me*/
+	#contact{
+		padding-top: 2%;
+	}
+	#contact .data p{
+		font-size: 23px;
+	}
+	#contact .row:nth-child(1) p{
+		font-size: 35px;
+		margin-top:2vh;
+	}
+	#contact .row:nth-child(3),
+	#contact .row:nth-child(5),
+	#contact .row:nth-child(7),
+	#contact .row:nth-child(9){
+		margin-top: 3vh;
+	}
+	#contact .row:nth-child(2),
+	#contact .row:nth-child(4),
+	#contact .row:nth-child(6),
+	#contact .row:nth-child(8){
+		margin-top:2vh;
+	}
+	#contact .row:nth-child(9) .container{
+		background-color: #ddcda9;/*#ffefcb;*/
+		box-shadow: 2px 2px 5px black inset;
+		padding:0 2%;
+	}
+	#contact .row:nth-child(9) img{
+		/*max-width:20vw;*/
+		opacity:0.4;
+		margin:10% 0 10% 0;
+		border-radius: 10%;
+	}
+	#contact .row:nth-child(9) img:hover{
+		/*max-width:20vw;*/
+		opacity:1.0;
+		transition:opacity 0.3s ease-in-out;
+		box-shadow: 2px 2px 5px black;
+	}
+	#contact .row:nth-child(10){margin-top:2%;}
+	#contact>.row:nth-child(10) a{text-decoration: none;}
+	#contact>.row:nth-child(10) a div{
+		font-size: 24px;
+		text-decoration: none;
+		color: #337AB7;
+		border:2px solid #337AB7;
+		border-radius: 8%;
+		width:60%;
+		transition:all 0.5s ease-in-out;
+	}
+	#contact>.row:nth-child(10) a div:hover{
+		background-color:#337AB7;
+		color:white;
+		font-size: 26px;
+		width:80%;
+		box-shadow: 2px 2px 5px black;
+		transition:all 0.5s ease-in-out;
+	}
+	.obscure{
+		display:none;
+	}
+	.contact_btn{
+		font-size: 24px;
+		color: #337AB7;
+		border:2px solid #337AB7;
+		border-radius: 8%;
+		transition:all 0.3s ease-in-out;
+		text-align: center;
+		cursor: pointer;
+	}
+	.contact_btn:hover{
+		background-color:#337AB7;
+		color:white;
+		font-size: 26px;
+		box-shadow: 2px 2px 5px black;
+		transition:all 0.3s ease-in-out;
+	}
+
+	@media screen and (max-width:992px){
+		#contact>.row:nth-child(1) p{
+			font-size: 48px;
+		}
+		#contact>.row:nth-child(2),
+		#contact>.row:nth-child(3),
+		#contact>.row:nth-child(4),
+		#contact>.row:nth-child(5),
+		#contact>.row:nth-child(6),
+		#contact>.row:nth-child(7),
+		#contact>.row:nth-child(8){
+			margin-top:3vh;
+		}
+		#contact>.row:nth-child(1){
+			margin-top:5vh;
+		}
+		#contact>.row:nth-child(10) a div{
+			margin-top: 5vh;
+			font-size: 36px;
+			width:100%;
+			background-color:#337AB7;
+			color:white;
+			box-shadow: 2px 2px 5px black;
+			border-radius:0;
+		}
+		.contact_btn{
+			font-size: 36px;
+			background-color:#337AB7;
+			color:white;
+			box-shadow: 2px 2px 5px black;
+		}
+	}
+
+	

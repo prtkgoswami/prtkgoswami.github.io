@@ -51,6 +51,19 @@
 		    }
 		    writeData();
 
+
+		  	// Welcome Modals
+		  	$('#openModal').modal('show');
+		  	$(document).scrollTop(0);
+		  	$('nav div div:first-child').addClass('active');
+		  	$('nav div div:nth-child(2)').attr("class","");
+		  	$('nav div div:nth-child(3)').attr("class","");
+		  	$('nav div div:nth-child(4)').attr("class","");
+		  	$('nav div div:nth-child(5)').attr("class","");
+		  	$('nav div div:nth-child(6)').attr("class","");
+		  	$('nav div div:nth-child(7)').attr("class","");
+		  	$('nav div div:nth-child(8)').attr("class","");
+		  	
 		};
 		$(window).resize(function() { 
 			// Reordering Divs
@@ -85,13 +98,42 @@
 		  	$(window).on(resize, function() {
 		      	$('#navigation').css('height', $('#content').height());       
 		  	});
-		  	// Welcome Modals
-		  	$('#openModal').modal('show');
 		});
 	</script>
 	<!-- <script type="text/javascript" src="scroll.js"></script>-->
 </head>
 <body>
+	<!-- WELCOME MODAL -->
+	<div id="openModal" class="modal fade col-md-12" tabindex="-1" role="dialog" aria-labelledby="ImageModal">
+		<div class="modal-dialog modal-lg">
+			<div id="modal_cont" class="modal-content container-fluid">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<img src="images/contact/logo4.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<p>
+							Welcome.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<center>
+						<div id="close_btn">Continue >> </div>
+						<script type="text/javascript">
+							$('#close_btn').click(function(){
+								// console.log("click");
+								$('#openModal').modal('hide');
+							});
+						</script>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="container-fluid">
 		<div class="row">
 			<!-- CONTENT -->
@@ -554,7 +596,7 @@
 
 				<!-- CONTACT ME -->
 				<section class="buffer"></section>
-				<section id="contact">
+				<!-- <section id="contact">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3">
 							<img src="images/contact/logo4.png" width="100%">
@@ -583,15 +625,6 @@
 							<center>
 								<p>
 									<strong style="color:#337AB7;">Email</strong>:&nbsp;prtkgoswami8@gmail.com
-								</p>
-							</center>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 data">
-							<center>
-								<p>
-									<!-- <strong style="color:#337AB7;">Skype</strong>:&nbsp;<a href="skype:prtkgoswami1?call" style="color:#05CADD;">prtkgoswami1</a> -->
 								</p>
 							</center>
 						</div>
@@ -637,34 +670,128 @@
 					<div class="row">
 						<div class="col-md-4 col-sm-8 col-md-offset-4 col-sm-offset-2">
 							<center>
-								<!-- <p >
-									*If Needed, CV Hardcopy: Click Below
-								</p> -->
 								<a href="Pratik Goswami-CV.pdf" target="_blank"><div>Curriculam Vitae</div></a>
-								<!--<script type="text/javascript">
-									$('#contact>.row:nth-child(7) a div').mouseenter(function(){
-										setTimeout(function(){
-											$('#contact>.row:nth-child(7) a div').addClass('highlight');
-										},200);
-									});
-									$('#contact>.row:nth-child(7) a div').mouseleave(function(){
-										setTimeout(function(){
-											$('#contact>.row:nth-child(7) a div').removeClass('highlight');
-										},200);
-									});
-								</script>-->
 							</center>
 						</div>
 					</div>
+				</section> -->
+				<section id="contact">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<center>
+								<p>Want to Get in Touch???</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3 contact_btn" onclick="toggle(3)">
+							Address
+						</div>
+					</div>
+					<div class="row obscure">
+						<div class="col-md-8 col-md-offset-2 data">
+							<center>
+								<p>
+									T-3/F-10/A-1, Eastern High Housing Complex, Block AG-1, M.A. Road, Newtown, Kolkata- 700156.
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3 contact_btn" onclick="toggle(5)">
+							Phone Number
+						</div>
+					</div>
+					<div class="row obscure">
+						<div class="col-md-6 col-md-offset-3 data">
+							<center>
+								<p>
+									<strong style="color:#337AB7;">Phone</strong>:&nbsp;+91 8582857903
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3 contact_btn" onclick="toggle(7)">
+							Email
+						</div>
+					</div>
+					<div class="row obscure">
+						<div class="col-md-6 col-md-offset-3 data">
+							<center>
+								<p>
+									<strong style="color:#337AB7;">Email</strong>:&nbsp;prtkgoswami8@gmail.com
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3 contact_btn" onclick="toggle(9)">
+							Social Icons
+						</div>
+					</div>
+					<div class="row obscure">
+						<div class="container col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
+							<center>
+							<div class="row">
+								<div class="col-md-2 col-sm-4">
+									<a href="https://www.facebook.com/prtkgoswami" target="_blank">
+										<img title="Facebook" src="images/social/facebook.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://in.linkedin.com/pub/pratik-goswami/94/123/37b" target="_blank">
+										<img title="LinkedIn" src="images/social/linkedin.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="ttps://plus.google.com/+PratikGoswami1994" target="_blank">
+										<img title="Google+" src="images/social/google+.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="skype:prtkgoswami1?call">
+										<img title="Skype" src="images/social/skype.png" width="100% ">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://github.com/prtkgoswami" target="_blank">
+										<img title="GitHub" src="images/social/github.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://www.hackerearth.com/users/pratik25/" target="_blank">
+										<img title="HackerEarth" src="images/social/hackerearth.png" width="100%">
+									</a>
+								</div>
+							</div>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-8 col-md-offset-4 col-sm-offset-2">
+							<center>
+								<a href="Pratik Goswami-CV.pdf" target="_blank"><div>Curriculam Vitae</div></a>
+							</center>
+						</div>
+					</div>
+					<script type="text/javascript">
+						function toggle(index){
+							if($('#contact .row:nth-child('+index+')').hasClass('obscure'))
+								$('#contact .row:nth-child('+index+')').removeClass('obscure');
+							else
+								$('#contact .row:nth-child('+index+')').addClass('obscure');
+						}
+					</script>
 				</section>
 			</div>
 
 			<!-- NAVBAR -->
 			<div id="navigation" class="col-lg-1 col-md-1 col-sm-2">
-				<nav class="">
+				<nav>
 						<p>NAV</p>
 						<div>
-							<div class="active" title="Top">
+							<div title="Top">
 								<a class="scroll" href="#top">
 									<img src="images/nav/top_white.png" width="30%">
 								</a>
@@ -709,14 +836,7 @@
 			</div>
 		</div>
 
-		<!-- WELCOME MODAL -->
-		<<!-- div id="openModal" class="modal fade col-md-12" tabindex="-1" role="dialog" aria-labelledby="ImageModal">
-			<div class="modal-dialog modal-lg">
-				<div id="modal_cont" class="modal-content">
-					<p>WELCOME</p>
-				</div>
-			</div>
-		</div> -->
+		
 	</div>	
 
 	<!-- NAVIGATION SCRIPT -->
