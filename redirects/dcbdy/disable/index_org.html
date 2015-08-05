@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Happy Birthday Tweety!</title>
+
+	<!-- JQuery -->
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<!-- BootStrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Skrollr -->
+	<script type="text/javascript" src="js/skrollr.js"></script>
+
+	<!-- Custom -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript">
+		window.onload=function(){
+			// INITIATING SKROLLR
+			var s=skrollr.init();
+
+			// WELCOME MODAL
+			$('#welcome').modal('show');
+		};
+	</script>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="welcome" class="modal fade col-md-12" tabindex="-1" role="dialog" aria-labelledby="ImageModal">
+		<div class="modal-dialog modal-lg">
+			<div id="modal_cont" class="modal-content container-fluid">
+				<div class="col-md-10 col-md-offset-1">
+					<img src="images/dc_tattoo.png" width="100%">
+				</div>
+				<div class="col-md-12">
+					<p>Ready for the Surprise I Promised You?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="card_cont" class="container-fluid">
+		<div class="row col-md-12">
+			<p class="col-md-12"
+				data-start="opacity:0;"
+				data-1000="opacity:1;"
+			>
+				Happy Birthday!!!
+			</p>
+			<p class="col-md-12"
+				data-start="opacity:0;"
+				data-1000="opacity:0;"
+				data-2000="opacity:1;"
+			>
+				Dipika Chettri
+			</p>
+		</div>
+
+		<!-- CARD -->
+		<div class="row col-md-12">
+			<div id="card" class="col-md-7 container-fluid"
+				data-7000="-moz-transform:scale(1,1);-webkit-transform:scale(1,1);margin-top:0;z-index:1;"
+				data-9000="-moz-transform:scale(1.4,1.4);-webkit-transform:scale(1.4,1.4);margin-top:-50px;z-index:2;"
+			>
+				<div><p>Please Keep Scrolling...</p></div>
+				<div id="layer2" class="col-md-12"
+					data-start="opacity:0;"
+					data-5000="opacity:0;"
+					data-6000="opacity:1;"
+				>
+					<div class="front">
+						<div class="col-md-4">
+							<img src="images/DC.png" width="95%">
+						</div>
+						<div class="col-md-8">
+							<p id="content_title">
+								Dearest Dipika,
+							</p>
+							<p id="content">
+								A Very Happy Birthday to You!<br/>I know we've had our fair share of ups and downs and yet you are my only best friend.<br/>
+								Lots of Love and Miss You Loads...<br/><br/>
+								P.S. Sorry for the picture...photoshop sketching is pretty new to me.<br/><br/>
+								P.P.S. Keep Scrolling
+							</p>
+						</div>
+					</div>
+				</div>
+				<div id="layer1" class="col-md-12"
+					data-start="opacity:0;"
+					data-4000="opacity:0;"
+					data-5000="opacity:1;"
+					data-7000="-moz-transform:rotateX(0deg);-webkit-transform:rotateX(0deg);"
+					data-9000="-moz-transform:rotateX(180deg);-webkit-transform:rotateX(180deg);"
+				>
+					<div class="front"></div>
+				</div>
+				<div id="layer3" class="col-md-12"
+					data-start="opacity:0;"
+					data-11000="opacity:0;"
+					data-12000="opacity:1;"
+				>
+					<div class="col-md-8">
+						<div class="col-md-7 col-md-offset-3">
+							<img src="images/prof.png" width="100%" style="margin-top:20px;">
+						</div>
+						<p>
+							And just when you think its over...><a href="">Click Here</a><
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img src="images/design.png" width="105%" style="margin-top:60px;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row col-md-12"
+			data-start="opacity:0;"
+			data-2000="opacity:0;"
+			data-3000="opacity:1;"
+			data-7000="margin-top:0;"
+			data-9000="margin-top:50px;"
+		>
+			<p>Sorry I couldn't be there but for now this is my gift to you</p>
+		</div>
+	</div>
+	<div id="helper">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

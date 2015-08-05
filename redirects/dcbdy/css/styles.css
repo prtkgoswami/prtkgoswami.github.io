@@ -1,0 +1,142 @@
+html,body{
+	margin:0 0;
+	padding: 0 0;
+}
+#card_cont{
+	position: fixed;
+	height:100vh;
+	width:100%;
+	padding:0 0;
+	background-image:url('../images/back2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#card_cont>.row:first-child p,
+#card_cont>.row:nth-child(3) p{
+	font-family: 'Lobster';
+	color:#ff4081;
+	font-size: 52px;
+	opacity: 1;
+}
+#card_cont>.row:first-child p:nth-child(2){
+	float: right;
+}
+#card_cont>.row:nth-child(1) p,
+#card_cont>.row:nth-child(3) p{
+	text-align: center;
+}
+#card_cont>.row:nth-child(3) p{
+	margin-bottom: 0;
+	color:white;
+}
+#card_cont>.row:nth-child(1) p:nth-child(2){
+	font-size: 48px;
+}
+
+/*Welcome Modal*/
+	#welcome>div{
+		margin-top:15px;
+	}
+	#modal_cont{
+		padding:5% 0;
+	}
+	#modal_cont p{
+		text-align: center;
+		font-family: 'Indie Flower';
+		font-size: 32px;
+	}
+
+/*Card*/
+	#card{
+		position: relative;
+		/*border:1px solid white;*/
+		height:410px;
+		margin-left: 20.835%;
+		margin-right:auto;
+		padding:0 0;
+	}
+	#card>div:first-child{
+		position: absolute; 
+		width:100%;
+		padding-top: 179px;
+	}
+	#card>div:first-child p{
+		font-size: 52px;
+		font-family: 'Lobster Two';
+		color:white;
+		text-align: center;
+	}
+	#layer1,#layer2,#layer3{
+		position: absolute;
+		height:100%;
+		padding: 0 0;
+		box-shadow: 3px 3px 5px black;
+		opacity: 1;
+	}
+	#layer1{
+		transform-origin:top;
+		-moz-transform-origin:top;
+		-webkit-transform-origin:top;
+		transform:rotateX(0deg);
+		-webkit-transform:rotateX(0deg);
+		-moz-transform:rotateX(0deg);
+		z-index: 2;
+	}
+	#layer3{
+		background:#eee9e9;
+		/*background-image:url('../images/lasttemp.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;*/
+		z-index: 1;
+	}
+	#layer3 p{
+		font-family: 'Indie Flower';
+		font-size: 22px;
+		margin-left:50px;
+		margin-top:300px;
+	}
+	.front,.back{
+		position: absolute;
+		height:100%;
+		width:100%;
+		backface-visibility:hidden;
+		-moz-backface-visibility:hidden;
+		-webkit-backface-visibility:hidden;
+		transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+	}
+	.front{
+		background:white;
+		/*z-index: 2;*/
+	}
+	.back{
+		background:red;
+		/*z-index: 1;*/
+		transform:rotateY(180deg);
+		-moz-transform:rotateY(180deg);
+		-webkit-transform:rotateY(180deg);
+	}
+	#layer2 .front{
+		background-color: #eee9e9;
+		z-index: 1;
+	}
+	#layer1 .front{
+		background-image:url('../images/collage2.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	#content_title,#content{
+		font-family: 'Indie Flower';
+		font-size: 22px;
+	}
+	#content_title{margin-top:15px;}
+	#content{
+		text-indent: 5em;
+		padding:0 5px 5px 5px;
+	}
+
+#helper{
+	position: relative;
+	height: 12000px;
+}

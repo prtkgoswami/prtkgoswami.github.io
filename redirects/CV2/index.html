@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pratik Goswami</title>
+	<!-- JQuery -->
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- Custom -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		var today;
+		var birthDate="05/22/1994";
+		var years;
+
+		function date(){
+			today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1; //January is 0!
+			var yyyy = today.getFullYear();
+
+			if(dd<10) {
+			    dd='0'+dd
+			}
+
+			if(mm<10) {
+			    mm='0'+mm
+			}
+
+			today = mm+'/'+dd+'/'+yyyy;
+		}	
+
+		function writeData(){
+			var a=document.getElementById('age');
+			var b=document.createTextNode(years);
+			//console.log(b);
+			a.appendChild(b);
+		}
+
+		window.onload=function(){
+			date();
+		    birthDate = new Date(birthDate);
+		    otherDate = new Date(today);
+
+		    years = (otherDate.getFullYear() - birthDate.getFullYear());
+
+		    if (otherDate.getMonth() < birthDate.getMonth() ||
+		        otherDate.getMonth() == birthDate.getMonth() && otherDate.getDate() < birthDate.getDate()) {
+		        years--;
+		    }
+		    writeData();
+
+
+		  	// Welcome Modals
+		  	$('#openModal').modal('show');
+		  	$(document).scrollTop(0);
+		  	$('nav div div:first-child').addClass('active');
+		  	$('nav div div:nth-child(2)').attr("class","");
+		  	$('nav div div:nth-child(3)').attr("class","");
+		  	$('nav div div:nth-child(4)').attr("class","");
+		  	$('nav div div:nth-child(5)').attr("class","");
+		  	$('nav div div:nth-child(6)').attr("class","");
+		  	$('nav div div:nth-child(7)').attr("class","");
+		  	$('nav div div:nth-child(8)').attr("class","");
+		  	
+		};
+		$(window).resize(function() { 
+			// Reordering Divs
+ 			if($(this).width() <992){
+				$("#school>div:nth-child(1)").removeClass("pull-right");
+				$("#school>div:nth-child(2)").removeClass("pull-left");
+
+				$("#art>div:nth-child(1)").removeClass("pull-right");
+				$("#art>div:nth-child(2)").removeClass("pull-left");
+
+				$("#robotics>div:nth-child(1)").removeClass("pull-right");
+				$("#robotics>div:nth-child(2)").removeClass("pull-left");
+
+				//$(".windows_app>.container>.row:nth-child(2)>div:first-child>img").attr("width","100%");
+			}
+			else{
+				$("#school>div:nth-child(1)").addClass("pull-right");
+				$("#school>div:nth-child(2)").addClass("pull-left");
+
+				$("#art>div:nth-child(1)").addClass("pull-right");
+				$("#art>div:nth-child(2)").addClass("pull-left");
+
+				$("#robotics>div:nth-child(1)").addClass("pull-right");
+				$("#robotics>div:nth-child(2)").addClass("pull-left");
+
+				//$(".windows_app>.container>.row:nth-child(2)>div:first-child>img").attr("width","120%");
+			}
+		});
+		$(document).ready(function() {
+			// Dynamically set height of nav panel to content panel
+		  	$('#navigation').css('height', $('#content').height());
+		  	$(window).on(resize, function() {
+		      	$('#navigation').css('height', $('#content').height());       
+		  	});
+		});
+	</script>
+	<!-- <script type="text/javascript" src="scroll.js"></script>-->
+</head>
+<body>
+	<!-- WELCOME MODAL -->
+	<div id="openModal" class="modal fade col-md-12" tabindex="-1" role="dialog" aria-labelledby="ImageModal">
+		<div class="modal-dialog modal-lg">
+			<div id="modal_cont" class="modal-content container-fluid">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<img src="images/contact/logo4.png" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<p>
+							Welcome.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<center>
+						<div id="close_btn">Continue >> </div>
+						<script type="text/javascript">
+							$('#close_btn').click(function(){
+								// console.log("click");
+								$('#openModal').modal('hide');
+							});
+						</script>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- CONTENT -->
+			<div id="content" class="col-lg-11 col-md-11 col-sm-10">
+				<!-- TOP -->
+				<section id="top">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div>
+								<img src="images/header/prof.png" alt="profile pic" width="100%">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<img src="images/header/name.png" alt="name" width="100%">
+						</div>
+					</div>
+				</section>
+
+				<!-- ABOUT ME -->
+				<section class="buffer"></section>
+				<section id="about">
+					<div id="profile" class="row">
+						<div class="col-md-3 col-sm-6 col-md-offset-2 col-sm-offset-3">
+							<img src="images/about/prof_black.png" width="80%">
+						</div>
+  						<div class="clearfix visible-sm-block"></div>
+						<div class="col-md-6 col-sm-8 col-md-offset-1 col-sm-offset-2 data">
+							<div class="row">
+								<p><strong style="color:#2FAECE;">Name</strong>: <strong>P</strong>ratik <strong>G</strong>oswami</p>
+							</div>
+							<div class="row">
+								<p><strong style="color:#2FAECE;">Age: </strong><strong id="age"></strong> Yrs</p>
+							</div>
+							<div class="row">
+								<p><strong style="color:#2FAECE;">Sex</strong>: <strong>M</strong>ale</p>
+							</div>
+							<div class="row">
+								<p><strong style="color:#2FAECE;">D.O.B</strong>: 22nd May, 1994</p>
+							</div>
+							<div class="row">
+								<p><strong style="color:#2FAECE;">Nationality</strong>: <strong>I</strong>ndian</p>
+							</div>
+							<div class="row">
+								<p><strong style="color:#2FAECE;">Father</strong>: <strong>A</strong>nanda <strong>G</strong>opal <strong>G</strong>oswami (Business)</p>
+							</div>
+							<div class="row">
+								<p><strong style="color:#2FAECE;">Mother</strong>: <strong>J</strong>yotsna <strong>G</strong>oswami (Doctor)</p>
+							</div>
+						</div>
+					</div>
+					<div id="school" class="row">
+						<div class="col-md-3 col-sm-6 col-sm-offset-1 pull-right">
+							<img src="images/about/school_black.png" width="100%">
+						</div>
+  						<div class="clearfix visible-sm-block"></div>
+						<div class="col-md-6 col-sm-8 col-md-offset-1 col-sm-offset-2 data pull-left">
+							<div class="row">
+								<p>
+									<strong style="color:#2FAECE;">Institution</strong>:&nbsp;<strong>D</strong>on <strong>B</strong>osco <strong>H</strong>igh <strong>S</strong>chool, <strong>M</strong>atunga (Primary - 7th)(SSC)
+								</p>
+							</div>
+							<div class="row">
+								<p>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>G</strong>.<strong>D</strong>. <strong>S</strong>omani <strong>M</strong>emorial <strong>S</strong>chool, <strong>C</strong>uffe <strong>P</strong>arade (8th - 10th)(ICSE)
+								</p>
+							</div>
+							<div class="row">
+								<p>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>B</strong>havani <strong>S</strong>hankar <strong>C</strong>ollege, <strong>D</strong>adar (11th & 12th)(HSC)
+								</p>
+							</div>
+							<div class="row">
+								<p>
+									<strong style="color:#2FAECE;">Results</strong>:&nbsp;ICSE >> 81.2%
+								</p>
+							</div>
+							<div class="row">
+								<p>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HSC >> 74.67%
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="college" class="row">
+						<div class="col-md-3 col-sm-6 col-md-offset-2 col-sm-offset-3">
+							<img src="images/about/uni_black.png" width="100%">
+						</div>
+						<div class="col-md-6 col-sm-8 col-md-offset-1 col-sm-offset-3 data">
+							<div class="row">
+								<p>
+									<strong style="color:#2FAECE;">College</strong>:&nbsp;<strong>T</strong>echno <strong>I</strong>ndia, <strong>S</strong>alt <strong>L</strong>ake (UG)
+								</p>
+							</div>
+							<div class="row">
+								<p>
+									<strong style="color:#2FAECE;">Results</strong>:&nbsp;CGPA >> 7.73/10 (till 5th Sem)
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SKILL SET -->
+				<section class="buffer"></section>
+				<section id="skill">
+					<div class="row">
+						<div class="col-md-11 col-sm-12 col-md-offset-1">
+							<h2>
+								I have a Very Special Set of Skills that Make Me Apt for this Job...
+							</h2>
+						</div>
+					</div><br/><br/>
+					<div class="col-md-1 col-sm-1"></div>
+					<div id="webd" class="skill_cont col-md-10 col-sm-10 col-xs-12">
+						<div class="cont_inner titlebar"><p>Web Designing</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="html" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>HTML</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="css" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>CSS</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="js" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>JavaScript</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="jquery" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>JQuery</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="php" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>PHP</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="sql" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>SQL</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="bootstrap" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>Bootstrap</p></div>
+					</div><br/><br/><br/><br/>
+
+					<div class="col-md-1 col-sm-1"></div>
+					<div id="prog" class="skill_cont col-md-10 col-sm-10 col-xs-12">
+						<div class="cont_inner titlebar"><p>Programming</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="c" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>C</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="java" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>Java</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="python" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>Python</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="csharp" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>C#</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="cplus" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>C++</p></div>
+					</div><br/><br/><br/><br/>
+
+					<div class="col-md-1 col-sm-1"></div>
+					<div id="design" class="skill_cont col-md-10 col-sm-10 col-xs-12">
+						<div class="cont_inner titlebar"><p>Designing</p></div>
+					</div><br/><br/><br/>
+					<div class="col-md-2 col-sm-2 col-xs-1"></div>
+					<div id="photoshop" class="skill_cont col-md-8 col-sm-8 col-xs-10">
+						<div class="cont_inner"><p>PhotoShop</p></div>
+					</div><br/><br/><br/><br/>
+
+					<div class="col-md-1 col-sm-1"></div>
+					<div id="crypto" class="skill_cont col-md-10 col-sm-10 col-xs-12">
+						<div class="cont_inner titlebar"><p>Cryptography</p></div>
+					</div><br/><br/><br/>
+				</section>
+
+				<!-- EXPERIENCE -->
+				<section class="buffer"></section>
+				<section id="exp">
+					<div id="e1" class="row">
+						<div class="col-md-10 col-md-offset-1 container">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+									<div class="exp_img"><img src="images/experience/wa.png" width="100%"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-8 col-sm-offset-2">
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;"><u>Summer Training</u></strong>
+										</p>
+									</div>
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;">Institute:</strong> Webel-Acharya Academy of Competency Enhancement
+										</p>
+									</div>
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;">Duration:</strong> 2 days
+										</p>
+									</div>
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;">Training:</strong> Web Development Programming on PHP & MySQL.
+										</p>
+									</div>
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;">Description:</strong> *Content*
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="e2" class="row">
+						<div class="col-md-10 col-md-offset-1 container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<div class="exp_img"><img src="images/experience/TCS.jpg" width="100%"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-8 col-sm-offset-2">
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;"><u>Summer Internship at TCS Kolkata</u></strong>
+										</p>
+									</div>
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;">Institute:</strong> Tata Consultancy Services, Kolkata.
+										</p>
+									</div>
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;">Duration:</strong> 30 days
+										</p>
+									</div>
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;">Project:</strong> Corporate Research Application Development
+										</p>
+									</div>
+									<div class="row exp_data">
+										<p>
+											<strong style="color:#2FAECE;">Description:</strong> Creation of a <strong>WorkFlow Research Tool</strong> using <strong>TCS MasterCraft Tool</strong>.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SHOWCASE -->
+				<section class="buffer"></section>
+				<section id="showcase">
+					<div id="kwiznet" class="row">
+						<div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 container">
+							<div class="row">
+								<center>
+									<p class="title">
+										kwiznet
+									</p>
+								</center>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-12">
+									<img src="images/screenshots/kn1.png" width="106%">
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<img src="images/screenshots/kn2.png" width="106%">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-12">
+									<img src="images/screenshots/kn3.png" width="106%">
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<img src="images/screenshots/kn4.png" width="106%">
+								</div>
+							</div><br/><br/>
+							<div class="row">
+								<center>
+									<p style="font-size:20px">
+										Site:<a href="http://ftquiz.edg.co.in/" target="_blank"> KwizNet</a>
+									</p>
+								</center>
+							</div>
+						</div>
+					</div>
+					<div id="hackerearth" class="row">
+						<div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 container">
+							<div class="row">
+								<center>
+									<p class="title">
+										hackerearth
+									</p>
+								</center>
+							</div>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<img src="images/screenshots/hack.png" width="106%">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="windows_app" class="row">
+						<div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 container">
+							<div class="row">
+								<center>
+									<p class="title">
+										windows&nbsp;&nbsp;&nbsp;phone&nbsp;&nbsp;&nbsp;application
+									</p>
+								</center>
+							</div>
+							<div class="row">
+									<div class="col-md-2 col-sm-10">
+										<img src="images/screenshots/wp1.png" width="120%">
+									</div>
+									<div class="col-md-2 col-sm-10">
+										<img src="images/screenshots/wp2.png" width="120%">
+									</div>
+									<div class="col-md-2 col-sm-10">
+										<img src="images/screenshots/wp3.png" width="120%">
+									</div>
+									<div class="col-md-2 col-sm-10">
+										<img src="images/screenshots/wp4.png" width="120%">
+									</div>
+									<div class="col-md-2 col-sm-10">
+										<img src="images/screenshots/wp5.png" width="120%">
+									</div>
+									<div class="col-md-2 col-sm-10">
+										<img src="images/screenshots/wp6.png" width="120%">
+									</div>
+							</div><br/><br/>
+							<div class="row">
+								<center>
+									<p style="font-size:20px">
+										App:<a href="http://www.windowsphone.com/en-in/store/app/quick-icu-ref/b8a2deed-6641-4821-886f-b2e58acffb27" target="_blank"> Quick ICU Ref</a>
+									</p>
+								</center>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ACHIEVEMENTS -->
+				<section class="buffer"></section>
+				<section id="achievements">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 container">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1">
+									<ul>
+										<li>Placed <strong>3rd</strong> in the finals of <strong>All India National CTF</strong>, held by Amritapuri University, Amritapuri.</li>
+										<li>Member of <strong>CUrBrain</strong> (Technical Club of Techno India, Salt Lake)</li>
+										<li>Published App in <strong>Windows App Store</strong> for Phone (<a href="http://www.windowsphone.com/en-in/store/app/quick-icu-ref/b8a2deed-6641-4821-886f-b2e58acffb27" target="_blank">App Here</a>)</li>
+										<li>Part of the <strong>MSP</strong>(Microsoft Student Partner) Program</li>
+										<li>Attended the <strong>MSP Summit</strong> in Bhopal, 2014.</li>
+										<li>Secured 2nd position in Web Designing in EDGE 2014.</li>
+										<li>Completed both <strong>Elementary</strong> and <strong>Intermediate</strong> Drawing Examinations in Art held by the Government of Maharashtra.</li>
+										<li><strong>Lead Vocalist</strong> in a Department Music Band.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- EXTRACURRICULARS -->
+				<section class="buffer"></section>
+				<section id="extra">
+					<div id="title" class="row">
+						<div class="col-md-12 col-sm-12">
+							<center>
+								<p>All Work and No Play Makes Pratik a Dull Boy...</p>
+							</center>
+						</div>
+					</div>
+					<div id="music" class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-2 col-sm-offset-3">
+							<img src="images/extra/music_black.png" width="80%">
+						</div>
+  						<div class="clearfix visible-sm-block"></div>
+						<div class="col-md-5 col-sm-8 col-md-offset-1 col-sm-offset-3 data">
+							<div class="row">
+								<p><strong style="color:#2FAECE;">Vocal</strong>: <strong>W</strong>estern & <strong>I</strong>ndian</p>
+							</div>
+							<div class="row">
+								<p><strong style="color:#2FAECE;">Instrumental</strong>: <strong>G</strong>uitar & <strong>P</strong>iano</p>
+							</div>
+						</div>
+					</div>
+					<div id="art" class="row">
+						<div class="col-md-3 col-sm-5 col-md-offset-1 col-sm-offset-4 pull-right">
+							<img src="images/extra/art_black.png" width="80%">
+						</div>
+						<div class="col-md-3 col-sm-8 col-md-offset-4 col-sm-offset-5 data pull-left">
+							<div class="row">
+								<p>
+									<strong>D</strong>rawing<br/>
+										<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&</strong><br/>
+										<strong>P</strong>ainting<br/>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="sports" class="row">
+						<div class="col-md-3 col-sm-5 col-md-offset-2 col-sm-offset-4">
+							<img src="images/extra/sports_black.png" width="100%">
+						</div>
+						<div class="col-md-6 col-sm-8 col-md-offset-1 col-sm-offset-3 data">
+							<div class="row">
+								<p>
+									<strong>L</strong>awn <strong>T</strong>ennis, <strong>T</strong>able <strong>T</strong>ennis, <strong>S</strong>wimming, <strong>B</strong>adminton.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="robotics" class="row">
+						<div class="col-md-3 col-sm-6 col-md-offset-1 col-sm-offset-4 pull-right">
+							<img src="images/extra/robot_black.png" width="80%">
+						</div>
+						<div class="col-md-3 col-sm-4 col-md-offset-4 col-sm-offset-6 data pull-left">
+							<div class="row">
+								<p>
+									<strong>R</strong>obotics
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="driving" class="row">
+						<div class="col-md-4 col-sm-8 col-md-offset-1 col-sm-offset-3">
+							<img src="images/extra/drive_black.png" width="80%">
+						</div>
+						<div class="col-md-6 col-sm-8 col-md-offset-1 col-sm-offset-2 data">
+							<div class="row">
+								<p>
+									<strong>D</strong>riving is a personal pleasure and it acts as a stress buster.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- CONTACT ME -->
+				<section class="buffer"></section>
+				<!-- <section id="contact">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<img src="images/contact/logo4.png" width="100%">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 data">
+							<center>
+								<p>
+									T-3/F-10/A-1, Eastern High Housing Complex, Block AG-1, M.A. Road, Newtown, Kolkata- 700156.
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 data">
+							<center>
+								<p>
+									<strong style="color:#337AB7;">Phone</strong>:&nbsp;+91 8582857903
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 data">
+							<center>
+								<p>
+									<strong style="color:#337AB7;">Email</strong>:&nbsp;prtkgoswami8@gmail.com
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
+							<center>
+							<div class="row">
+								<div class="col-md-2 col-sm-4">
+									<a href="https://www.facebook.com/prtkgoswami" target="_blank">
+										<img title="Facebook" src="images/social/facebook.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://in.linkedin.com/pub/pratik-goswami/94/123/37b" target="_blank">
+										<img title="LinkedIn" src="images/social/linkedin.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="ttps://plus.google.com/+PratikGoswami1994" target="_blank">
+										<img title="Google+" src="images/social/google+.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="skype:prtkgoswami1?call">
+										<img title="Skype" src="images/social/skype.png" width="100% ">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://github.com/prtkgoswami" target="_blank">
+										<img title="GitHub" src="images/social/github.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://www.hackerearth.com/users/pratik25/" target="_blank">
+										<img title="HackerEarth" src="images/social/hackerearth.png" width="100%">
+									</a>
+								</div>
+							</div>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-8 col-md-offset-4 col-sm-offset-2">
+							<center>
+								<a href="Pratik Goswami-CV.pdf" target="_blank"><div>Curriculam Vitae</div></a>
+							</center>
+						</div>
+					</div>
+				</section> -->
+				<section id="contact">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<center>
+								<p>Want to Get in Touch???</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3 contact_btn" onclick="toggle(3)">
+							Address
+						</div>
+					</div>
+					<div class="row obscure">
+						<div class="col-md-8 col-md-offset-2 data">
+							<center>
+								<p>
+									T-3/F-10/A-1, Eastern High Housing Complex, Block AG-1, M.A. Road, Newtown, Kolkata- 700156.
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3 contact_btn" onclick="toggle(5)">
+							Phone Number
+						</div>
+					</div>
+					<div class="row obscure">
+						<div class="col-md-6 col-md-offset-3 data">
+							<center>
+								<p>
+									<strong style="color:#337AB7;">Phone</strong>:&nbsp;+91 8582857903
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3 contact_btn" onclick="toggle(7)">
+							Email
+						</div>
+					</div>
+					<div class="row obscure">
+						<div class="col-md-6 col-md-offset-3 data">
+							<center>
+								<p>
+									<strong style="color:#337AB7;">Email</strong>:&nbsp;prtkgoswami8@gmail.com
+								</p>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3 contact_btn" onclick="toggle(9)">
+							Social Icons
+						</div>
+					</div>
+					<div class="row obscure">
+						<div class="container col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
+							<center>
+							<div class="row">
+								<div class="col-md-2 col-sm-4">
+									<a href="https://www.facebook.com/prtkgoswami" target="_blank">
+										<img title="Facebook" src="images/social/facebook.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://in.linkedin.com/pub/pratik-goswami/94/123/37b" target="_blank">
+										<img title="LinkedIn" src="images/social/linkedin.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="ttps://plus.google.com/+PratikGoswami1994" target="_blank">
+										<img title="Google+" src="images/social/google+.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="skype:prtkgoswami1?call">
+										<img title="Skype" src="images/social/skype.png" width="100% ">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://github.com/prtkgoswami" target="_blank">
+										<img title="GitHub" src="images/social/github.png" width="100%">
+									</a>
+								</div>
+								<div class="col-md-2 col-sm-4">
+									<a href="https://www.hackerearth.com/users/pratik25/" target="_blank">
+										<img title="HackerEarth" src="images/social/hackerearth.png" width="100%">
+									</a>
+								</div>
+							</div>
+							</center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-8 col-md-offset-4 col-sm-offset-2">
+							<center>
+								<a href="Pratik Goswami-CV.pdf" target="_blank"><div>Curriculam Vitae</div></a>
+							</center>
+						</div>
+					</div>
+					<script type="text/javascript">
+						function toggle(index){
+							if($('#contact .row:nth-child('+index+')').hasClass('obscure'))
+								$('#contact .row:nth-child('+index+')').removeClass('obscure');
+							else
+								$('#contact .row:nth-child('+index+')').addClass('obscure');
+						}
+					</script>
+				</section>
+			</div>
+
+			<!-- NAVBAR -->
+			<div id="navigation" class="col-lg-1 col-md-1 col-sm-2">
+				<nav>
+						<p>NAV</p>
+						<div>
+							<div title="Top">
+								<a class="scroll" href="#top">
+									<img src="images/nav/top_white.png" width="30%">
+								</a>
+							</div>
+							<div title="About Me">
+								<a class="scroll" href="#about">
+									<img src="images/nav/profile_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Skill Set">
+								<a class="scroll" href="#skill">
+									<img src="images/nav/skillset_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Experience">
+								<a class="scroll" href="#exp">
+									<img src="images/nav/exp_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Showcase">
+								<a class="scroll" href="#showcase">
+									<img src="images/nav/show_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Achievements">
+								<a class="scroll" href="#achievements">
+									<img src="images/nav/ach_white.png" width="30%">
+								</a>
+							</div>
+							<div title="Extra-Curriculars">
+								<a class="scroll" href="#extra">
+									<img src="images/nav/extra.png" width="30%">
+								</a>
+							</div>
+							<div title="Contact Me">
+								<a class="scroll" href="#contact">
+									<img src="images/nav/contact_white.png" width="30%">
+								</a>
+							</div>
+						</div>
+				</nav>
+			</div>
+		</div>
+
+		
+	</div>	
+
+	<!-- NAVIGATION SCRIPT -->
+	<script type="text/javascript" src="visible.js"></script>
+	<script type="text/javascript">
+		var hashTagActive = "";
+	    $(".scroll").click(function (event) {
+	        if(hashTagActive != this.hash) {
+	            event.preventDefault();
+
+	            var dest = 0;
+	            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+	                dest = $(document).height() - $(window).height();
+	            } else {
+	                dest = $(this.hash).offset().top;
+	            }
+
+	            $('html,body').animate({
+	                scrollTop: dest
+	            }, 2000, 'swing');
+	            hashTagActive = this.hash;
+
+	        }
+	    });
+	    $(window).scroll(function() { 
+	    	if($('#top').visible(true)){
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(1)').addClass('active');
+	    			$('nav div div:nth-child(2)').removeClass('active');
+	    		},500);
+	    	}
+	    	else if($('#about').visible(true)){
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(2)').addClass('active');
+	    			$('nav div div:nth-child(1)').removeClass('active');
+	    			$('nav div div:nth-child(3)').removeClass('active');
+	    		},500);
+	    	}
+	    	else if($('#skill').visible(true)){
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(3)').addClass('active');
+	    			$('nav div div:nth-child(2)').removeClass('active');
+	    			$('nav div div:nth-child(4)').removeClass('active');
+	    		},500);
+	    	}
+	    	else if($('#exp').visible(true)){
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(4)').addClass('active');
+	    			$('nav div div:nth-child(3)').removeClass('active');
+	    			$('nav div div:nth-child(5)').removeClass('active');
+	    		},500);
+	    	}
+	    	else if($('#showcase').visible(true)){
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(5)').addClass('active');
+	    			$('nav div div:nth-child(4)').removeClass('active');
+	    			$('nav div div:nth-child(6)').removeClass('active');
+	    		},500);
+	    	}
+	    	else if($('#achievements').visible(true)){
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(6)').addClass('active');
+	    			$('nav div div:nth-child(5)').removeClass('active');
+	    			$('nav div div:nth-child(7)').removeClass('active');
+	    		},500);
+	    	}
+	    	else if($('#extra').visible(true)){
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(7)').addClass('active');
+	    			$('nav div div:nth-child(6)').removeClass('active');
+	    			$('nav div div:nth-child(8)').removeClass('active');
+	    		},500);
+	    	}
+	    	else if($('#contact').visible(true)){
+	    		setTimeout(function(){
+	    			$('nav div div:nth-child(8)').addClass('active');
+	    			$('nav div div:nth-child(7)').removeClass('active');
+	    		},500);
+	  	  	}
+
+	    });
+	</script>
+</body>
+</html>

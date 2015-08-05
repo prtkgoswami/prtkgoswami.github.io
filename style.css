@@ -1,43 +1,39 @@
 body{
 	background:#4f4f4f;
 }
-#tictactoe,
-#pnd{
-	height:86vh;
-	border:1px solid black;
-	filter:blur(2px);
-}
-.block_inner{
+.block{
 	height:43vh;
 	border:1px solid black;
 	filter:blur(2px);
 }
-.block_inner:hover{
+.block:hover{
 	filter:none;
 }
-#tictactoe:hover,
-#pnd:hover{
-	filter:none;
-}
-#cv1{
-	background-image: url('images/cv.PNG');
-	background-size: cover;
-	background-repeat :none;
-}
-#cv2{
+#cv{
 	background-image: url('images/cv2.PNG');
 	background-size: cover;
 	background-repeat :none;
 }
 #tictactoe{
-	background-image: url('images/tictactoe.PNG');
+	background-image: url('images/tictactoe.png');
 	background-size: cover;
 	background-repeat :none;
 }
 #pnd{
-	background-image: url('images/puffndrag.PNG');
+	background-image: url('images/puffndrag.png');
 	background-size: cover;
 	background-repeat :none;
+}
+#pe{
+	background-image: url('images/PE.PNG');
+	background-size: cover;
+	background-repeat :none;
+}
+#dc{
+	/*background-image: url('images/dc.PNG');
+	background-size: cover;
+	background-repeat :none;*/
+	background: black;
 }
 
 .buffer{
