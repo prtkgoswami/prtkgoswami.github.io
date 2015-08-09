@@ -2,10 +2,33 @@
 <html>
 <head>
 	<title>BLOCKED!</title>
+	<meta charset="UTF-8">
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 	<h1>This Site is Blocked By The Govt.</h1>
+	<h2>Login to see the page</h2>
 	<h2>Sorry For Any Inconvenience Caused</h2>
 	<h5>P.S. We Actually Don't Care</h5>
+	<br/><br/><br/>
+	<div>
+		<div><label>UserName: </label><input id="uname" type="text"/></div>
+		<div><label>Password: </label><input id="passwd" type="password"/></div>
+		<button onclick="redirect()">Login</button>
+
+	</div>
+	<script type="text/javascript">
+		function redirect(){
+			console.log("works");
+			var u=document.getElementById("uname").value;
+			var p=document.getElementById("passwd").value;
+			var user="dipika";
+			var pass="chettri";
+			if (u==user && p==pass) {
+				window.location="card.html";
+				return false;
+			}
+		}
+	</script>
 </body>
 </html>
