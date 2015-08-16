@@ -50,6 +50,10 @@
 		box-shadow: 2px 2px 5px black;
 		transition:all 0.3s ease-in-out;
 	}
+	#modal_cont .row:nth-child(2),
+	#modal_cont .row:nth-child(3){
+		text-align: center;
+	}
 	@media screen and (max-width:992px){
 		#close_btn{
 			background:#337AB7;

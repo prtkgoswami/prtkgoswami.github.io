@@ -1,0 +1,12 @@
+body{
+	background-image: url('../images/block/construction.jpg');
+	background-size:cover;
+	background-repeat: no-repeat; 
+	background-position: fixed;
+}
+h1,h2,label{
+	color:white;
+}
+h1{
+	font-size: 96px;
+}

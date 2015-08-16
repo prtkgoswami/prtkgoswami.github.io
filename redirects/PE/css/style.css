@@ -32,7 +32,7 @@
 						NAV															
 ====================================================
 */
-	/*nav{
+	nav{
 		padding-right:2%;
 	}
 	.navbar-inverse{
@@ -45,67 +45,7 @@
 	}
 	.navbar-brand{
 		padding:5px 30px;
-	}*/
-	nav{
-		position: fixed;
-		margin:0 0;
-		height:9vh;
-		width:100%;
-		background: rgba(0,0,0,0.5);
-		z-index: 2;
-		padding:0 0;
-
 	}
-	nav>div:nth-child(2){
-		/*border:1px solid red; */
-		padding:0 0;
-	}
-	#nav_logo{
-		padding-top:0.3%;
-	}
-	ul{
-		margin: 0 0;
-		padding:0.5vh 26%;
-	}
-	li{
-		list-style: none;
-		display: inline-block;
-		margin:0 2%;
-	}
-	.nav_block{
-		/*border:1px solid white;*/
-		height:7vh;
-		width:7vh;
-	}
-	#n_home{
-		background-image: url('../images/nav/home.png');
-		background-repeat: no-repeat; 
-		background-size: contain;
-		cursor: pointer;
-	}
-	#n_about{
-		background-image: url('../images/nav/about.png');
-		background-repeat: no-repeat; 
-		background-size: contain;
-		cursor: pointer;
-	}
-	#n_showcase{
-		background-image: url('../images/nav/gallery.png');
-		background-repeat: no-repeat; 
-		background-size: contain;
-		cursor: pointer;
-	}
-	#n_contact{
-		background-image: url('../images/nav/contact.png');
-		background-repeat: no-repeat; 
-		background-size: contain;
-		cursor: pointer;
-	}
-
-	/*TEMP*/
-	.r{/*border:1px solid red;*/ height:7vh;padding:0 0;}
-	.b{/*border:1px solid blue;*/padding:1vh 0 0 0;}
-	.w{/*border:1px solid white;*/ height:7vh;padding: 0 0;}
 
 /*
 ====================================================

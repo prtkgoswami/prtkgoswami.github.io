@@ -15,12 +15,12 @@ body{
 	background-repeat :none;
 }
 #tictactoe{
-	background-image: url('images/tictactoe.PNG');
+	background-image: url('images/tictactoe.png');
 	background-size: cover;
 	background-repeat :none;
 }
 #pnd{
-	background-image: url('images/puffndrag.PNG');
+	background-image: url('images/puffndrag.png');
 	background-size: cover;
 	background-repeat :none;
 }
@@ -34,6 +34,11 @@ body{
 	background-size: cover;
 	background-repeat :none;*/
 	background: black;
+}
+#grc{
+	background-image: url('images/grc.png');
+	background-size: cover;
+	background-repeat :none;
 }
 
 .buffer{
