@@ -30,7 +30,7 @@
             		<li><a href="#tictactoe" class="scroll">Tic Tac Toe</a></li>
             		<li><a href="#pnd" class="scroll">Puffles & Dragon</a></li>
             		<li><a href="#pe" class="scroll">Pratik Enterprise</a></li>
-            		<li><a href="#dc" class="scroll">TOP SECRET</a></li>
+            		<!-- <li><a href="#dc" class="scroll">TOP SECRET</a></li> -->
             		<li><a href="#dc" class="scroll">Gieom Rich Calc</a></li>
             	</ul>
             </div>
@@ -41,14 +41,50 @@
 
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<a href="cv/index.html"><div id="cv" class="block col-md-4"></div></a>
-			<a href="tic tac toe/index.html"><div id="tictactoe" class="block col-md-4"></div></a>
-			<a href="dragon & pet/index.html"><div id="pnd" class="block col-md-4"></div></a>
+			<a href="cv/index.html"><div id="cv" class="block col-md-4">
+				<div class="overlay col-md-12">
+					<h2>Personal Website</h2>
+					<p>
+						A Resume Website catering to showcasing my abilities and skillset.
+					</p>
+				</div>
+			</div></a>
+			<a href="tic tac toe/index.html"><div id="tictactoe" class="block col-md-4">
+				<div class="overlay col-md-12">
+					<h2>Color Tic-Tac-Toe</h2>
+					<p>
+						An online game of Tic-Tac-Toe but without the symbols. Instead you play with Colors!
+					</p>
+				</div>
+			</div></a>
+			<a href="dragon & pet/index.html"><div id="pnd" class="block col-md-4">
+				<div class="overlay col-md-12">
+					<h2>Puffles & Dragons</h2>
+					<p>
+						An online arcade game.
+						An evil Dragon has taken your best friends, the Puffles. Your aim is to avoid the dragon and free your puffles.
+					</p>
+				</div>
+			</div></a>
 		</div>
 		<div class="row-fluid">
-			<a href="PE/index.html"><div id="pe" class="block col-md-4"></div></a>
-			<!-- <a href="#"><div id="dc" class="block col-md-4"></div></a> -->
-			<a href="Gieom Rich Calculator/index.html"><div id="grc" class="block col-md-4"></div></a>
+			<a href="#"><div id="pe" class="block col-md-4">
+				<div class="overlay col-md-12">
+					<h2>Sorry!</h2>
+					<p>
+						Under Construction
+					</p>
+				</div>
+			</div></a>
+			<!-- <a href="dcbdy/index.html"><div id="dc" class="block col-md-4"></div></a> -->
+			<a href="Gieom Rich Calculator/index.html"><div id="grc" class="block col-md-4">
+				<div class="overlay col-md-12">
+					<h2>Gieom Rich Calculator</h2>
+					<p>
+						An online calculator which can perform all basic arithmetic operations, store history and with a draggable calculator.
+					</p>
+				</div>
+			</div></a>
 		</div>
 	</div>
 
@@ -73,6 +109,17 @@
 	            hashTagActive = this.hash;
 	        }
 	    });
+
+		$(document).ready(function () {
+			$(".block").hover(function(){
+    			// var sel = $(this)+" .overlay";
+    		  	$('.overlay',$(this)).fadeIn(200);
+    		},function(){
+    			// var sel = $(this)+" .overlay";
+    		  	$('.overlay',$(this)).fadeOut(200);
+    		});
+		})
+
 
 	</script>
 </body>
