@@ -1,0 +1,300 @@
+html,body{
+  margin:0;
+  paddding:0;
+}
+
+/*General*/
+  .container{
+    padding:0;
+    margin:0;
+    width:100%;
+  }
+  .content-block{
+    min-height:100vh;
+    width:100%;
+    background: url("../images/pattern/seamless_paper_texture.png");
+    border-bottom: 1px solid black;
+  }
+  .heading{
+    margin:auto 30px;
+    padding-left:30px;
+    padding-top:30px;
+    padding-bottom:10px;
+    border-bottom:3px solid #f44336;
+  }
+  .heading p{
+    margin:0;
+    color:#2d2d2d;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 56px;
+  }
+  .heading p strong{color:  #f44336; font-size: 62px;}
+  .content section .title{
+    font-size: 32px;
+    font-family: "Raleway";
+    font-weight: 300;
+    color:  #2d2d2d;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:  #f44336;
+  }
+
+/*Header*/
+  header{
+    /*background:#f44336;/*#ff6347;*/
+    /*background:url("../images/back.jpg");*/
+    /*background-image:url("../images/ironman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    /*background-color: #f5f5f5;*/
+    /*background-attachment: fixed;*/
+    width:100%;
+    min-height:100vh;
+    border-bottom: 5px solid black;
+    background-image: url("../images/prof2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+
+  }
+  header p{
+    font-size: 90px;
+    margin:0;
+    font-family: "Lato";
+    font-weight: 300;
+    padding-top:200px;
+    padding-left:30px;
+    color:#f44336;/*#b71c1c;*//*#e53935;*/
+    text-decoration: underline;
+  }
+  header p strong{font-weight: 400;}
+  header p small{font-weight: 300; color: #2d2d2d;}
+
+/*Intro*/
+  #intro{
+  }
+  #intro .content{
+    width:85%;
+    margin:0 auto 0 auto;
+  }
+  #intro .content p{
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 26px;
+    color:#2d2d2d;
+  }
+  #intro .content p strong:first-child{
+    font-size:36px;
+  }
+  #intro .content p strong{
+    color:#f44336;
+  }
+
+/*Skill*/
+  #skill{
+  }
+  #skill .content section p:nth-child(2){
+    font-size: 26px;
+    font-family: "Lato";
+    font-weight: 400;
+    color:#2d2d2d;
+    text-align: center;
+  }
+  .outer{
+    width:15vw;
+    height:15vw;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+    display: inline-block;
+    margin:0 2.5vw;
+  }
+  .level{
+    position: absolute;
+    margin:0.5vw;
+    width:14vw;
+    height: 14vw;
+    background-color: #f44336;
+    border-radius: 50%;
+  }
+  .labels{
+    background-image: url("../images/pattern/seamless_paper_texture.png");
+    background-repeat: repeat;
+    position: absolute;
+    margin:1.5vw;
+    width:11vw;
+    height: 11vw;
+    border-radius: 50%;
+    border:1px solid #2d2d2d;
+  }
+  .labels p{
+    font-family: "Lato";
+    font-size: 22px;
+    font-weight: 400;
+    color:#f44336;
+    text-align: center;
+    margin-top:30%;
+  }
+  .labels p strong{font-size: 26px;color: #2d2d2d;}
+  #webd,#fw{
+    height: 15vw;
+    width:85vw;
+    margin: 0 auto;
+  }
+  #prog{
+    height: 15vw;
+    width:65vw;
+    margin: 0 auto;
+  }
+
+/*Gallery*/
+  #gallery{
+  }
+  .show_block{
+    width:40vw;
+    height:20vw;
+    margin:0 auto  0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:5px solid #2d2d2d;
+  }
+  #personal .show_block{background-image: url(../images/gallery/site.jpg);}
+  #kwiznet .show_block{background-image: url(../images/gallery/kn1.png);}
+  #calc .show_block{background-image: url(../images/gallery/calc.png);}
+  #colorz .show_block{background-image: url(../images/gallery/colorz.jpg);}
+  #repo .show_block{background-image: url(../images/gallery/repo.png);}
+  #app .block{
+    height:20vw;
+    width:87vw;
+    margin: 0 auto 50px auto;
+  }
+  .app_block{
+    height:100%;
+    width:12vw;
+    display: inline-block;
+    margin: 0 0.5vw 0 0.5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:3px solid #2d2d2d;
+  }
+  a:nth-child(1) .app_block{background-image: url(../images/gallery/wp1.png);}
+  a:nth-child(2) .app_block{background-image: url(../images/gallery/wp2.png);}
+  a:nth-child(3) .app_block{background-image: url(../images/gallery/wp3.png);}
+  a:nth-child(4) .app_block{background-image: url(../images/gallery/wp4.png);}
+  a:nth-child(5) .app_block{background-image: url(../images/gallery/wp5.png);}
+  a:nth-child(6) .app_block{background-image: url(../images/gallery/wp6.png);}
+  .details{
+    width:70vw;
+    margin:50px auto 50px auto;
+    font-family: "Raleway";
+    font-weight: 300;
+    color:#2d2d2d;
+    font-size: 24px;
+  }
+  #calc .details{
+    margin-bottom: 20px;
+  }
+  #calc ul{
+    font-family: "Raleway";
+    font-weight: 300;
+    color:#2d2d2d;
+    font-size: 24px;
+    width:50vw;
+    margin:0 auto 0 auto;
+  }
+
+/*Exp*/
+  #exp{
+  }
+  #tcs .show_block{
+    background-image: url(../images/exp/TCS.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:48.3vw;
+    /*height:25vw;*/
+    border:none;
+  }
+  #exp .details{
+    text-align: center;
+    font-size: 26px;
+  }
+  #exp .details strong{color:#f44336;}
+
+/*Contact*/
+  #contact{
+    background-image: url("../images/pattern/diagmonds.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+  }
+  #contact .heading p{
+    color:#f5f5f5;
+  }
+  #contact section p{
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 26px;
+    color:#f5f5f5;
+    width:100%;
+    text-align: center;
+    margin:15px auto;
+  }
+  #contact section p a{
+    color: #f5f5f5;
+    text-decoration: none;
+  }
+  #social_tab{
+    width:53%;
+    margin:0 auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    height:20vh;
+    box-shadow: 2px 5px 7px black;
+  }
+  .social_block{
+    height:15vh;
+    width:15vh;
+    display: inline-block;
+    margin:2.5vh 0.5vw 2.5vh 0.5vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .social_block:first-child{margin-left:2vw;}
+  #facebook{background-image: url("../images/contact/facebook_vec.png");}
+  #google{background-image: url("../images/contact/google+_vec.png");}
+  #linkedin{background-image: url("../images/contact/linkedin_vec.png");}
+  #hackerearth{background-image: url("../images/contact/hackerearth_vec.png");}
+  #github{background-image: url("../images/contact/github_vec.png");}
+  #facebook:hover{background-image: url("../images/contact/facebook.png");}
+  #google:hover{background-image: url("../images/contact/google+.png");}
+  #linkedin:hover{background-image: url("../images/contact/linkedin.png");}
+  #hackerearth:hover{background-image: url("../images/contact/hackerearth.png");}
+  #github:hover{background-image: url("../images/contact/github.png");}
+  section a{text-decoration: none;}
+  #cv_btn{
+    height:8vh;
+    width:30%;
+    margin:20px auto 0 auto;
+    border:3px solid #f44336;
+    text-align: center;
+    border-radius: 2%;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  #cv_btn p{
+    margin-top:5px !important;
+    font-family: "Raleway" !important;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    color:#f5f5f5;
+  }
+  #cv_btn:hover{
+    /*background-color: #f44336;*/
+    background-color: #0d0d0d;
+    /*text-shadow: 2px 3px 2px #f5f5f5;*/
+    border-color:transparent;
+    box-shadow: 2px 3px 2px black;
+  }
+  #cv_btn:hover p{
+    color:#f44336;
+    /*color:#2d2d2d;*/
+  }

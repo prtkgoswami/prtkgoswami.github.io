@@ -1,0 +1,78 @@
+@font-face {
+    font-family: LatoLight;
+    src: url("../font/lato/Lato-Light.ttf");
+}
+@font-face {
+    font-family: LatoLightI;
+    src: url("../font/lato/Lato-LightItalic.ttf");
+}
+@font-face {
+    font-family: LatoThinI;
+    src: url("../font/lato/Lato-ThinItalic.ttf");
+
+}body>div{
+    background-color: red;
+    background-image: url('../img/diagmonds.png');
+    background-repeat: repeat;
+    height:100vh;
+}
+h1{
+    color:white;
+    font-size:90px; 
+    font-family: "LatoLightI";
+}
+input[type="text"]{
+    outline:0;
+    background-color: transparent;
+    border:transparent;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px dotted #f5f5f5;
+    color:white;
+    font-size: 60px;
+    font-family: "LatoLight";
+    display: block;
+    height: 10%;
+    /*padding-bottom: 5%;*/
+    text-align: center;
+}
+input[type="text"]:focus {
+    outline: none;
+    border:transparent;
+    box-shadow: none;
+    border-bottom: 1px dotted white;
+}
+button{
+    outline:none;
+    border:transparent;
+    box-shadow: none;
+    padding-top:0.6%;
+    padding-bottom:0.6%;
+}
+#reset{
+    background-color: rgba(213,0,0,0.7);
+    color:white;
+    font-weight: bold;
+    font-size: 56px;
+    font-family: "LatoLightI";
+}
+
+.row{
+    margin-top: 20vh;
+}
+.row:nth-child(2){
+    margin-top: 15vh;
+}
+.row:nth-child(3){
+    margin-top: 5vh;
+}
+.row:nth-child(4){
+    margin-top: 10vh;
+}
+span.input-group-addon{
+    font-size: 60px;
+    font-family: "LatoLight";
+    color:white;
+    background-color: transparent;
+    border:transparent;
+}

@@ -1,499 +1,357 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pratik Goswami</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>PG</title>
 
-	<!-- jquery -->
-	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--JQUERY-->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--BOOTSRAP-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 
-	<!-- skrollr -->
-	<!--<script type="text/javascript" src="js/skrollr.js"></script>
-	<script type="text/javascript">
-		window.onload=function(){
-			// INITIATING SKROLLR
-			var s=skrollr.init();
-		};
-	</script>-->
+    <!-- SKELETON -->
+    <link rel="stylesheet" href="/css/skeleton.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/normalize.css" media="screen" charset="utf-8">
 
-	<!-- sticky -->
-	<!--<script src="js/jquery.sticky.js"></script>
-	<script>
-	  $(document).ready(function(){
-	    $("#navbar").sticky({topSpacing:0});
-	  });
-	</script>-->
+    <!--CUSTOM-->
+    <link rel="stylesheet" href="css/custom.css" media="screen" charset="utf-8">
 
-	<!-- custom -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+      <!--TOP-->
+      <header>
+          <p>
+            <strong>P</strong><small>RATIK</small> <strong>G</strong><small>OSWAMI</small>
+          </p>
+      </header>
 
-	<!-- fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:100italic,300italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div id="main" class="col-md-12 col-sm-12 container">
-		<!-- HOME -->
-		<div class="row">
-			<div id="home" class="col-md-12 col-sm-12 block">
-				<div class="row">
-					<div id="coverpic" class="col-md-12 col-sm-12"></div>
-				</div>
-				<div class="row">
-					<div id="profile_cont" class="col-md-4 col-sm-5">
-						<div id="profilepic" class="col-md-offset-2 col-sm-offset-5">
-							<img src="images/home/prof.png" width="100%">
-						</div>
-					</div>
-					<div id="name_cont" class="col-md-7 col-sm-12">
-						<p id="name"><strong>P</strong>RATIK <strong>G</strong>OSWAMI</p>
-					</div>
-				</div>
-				<div class="row">
-					<nav id="#navbar" class="">
-						<div class="col-md-12"></div>
-					</nav>
-					<script type="text/javascript">
-						var bottom= $('#navbar').position().top;
-						$(window).scroll(function(){
-							if ($(this).scrollTop()>bottom){
-								$('#navbar').addClass('fix');
-							}
-							else{
-								$('#navbar').removeClass('fix');
-							}
-						});
-					</script>
-				</div>
-			</div>
-		</div>
+      <!--INTRO-->
+      <div id="intro" class="content-block">
+        <div class="heading">
+          <p>
+            <strong>I</strong>ntroduction
+          </p>
+        </div>
+        <div class="content">
+          <p>
+            <strong>Hi!</strong> I am Pratik. Currently I am in my final year pursuing my B-Tech Degree in Computer Science & Engineering.<br/><br/>
+            I have a strong passion towards <strong>Web Designing</strong>, <strong>Python Programming</strong> & <strong>Designing</strong> in general. My design philosophy is <strong>Simple</strong> & yet <strong>Elegant</strong>. This is advantageous towards designing website as the loading time decreases as the design is simple.<br/><br/>
+            Also my goto Programming Language is <strong>Python</strong>. It is simpler than most languages and unlike most languages, Python is a language that lives the best of both worlds - <strong>Object Oriented</strong> and <strong>Procedural</strong>. Python makes Coding and Developing Fast and Easy.<br/><br/>
+            I hope you like my site and I am successful in showcasing my Abilities. 
+          </p>
+        </div>
+      </div>
 
-		<!-- ABOUT -->
-		<div class="row special">
-			<div id="about" class="col-md-12 col-sm-12 block">
-				<div class="title col-md-12 col-sm-12">
-					<h2>Let Me Introduce Myself ...</h2>
-				</div>
-				<div class="container col-md-11 col-sm-11 content">
-					<p>
-						<h2><strong>HI!</strong> I am Pratik and Welcome to my WebSite...</h2><br/>
-						At present I am a Student in My Final Year of Bachelors in Technology in the stream of Computer Science and Engineering.<br/>
-						To tell you a bit about myself - Dedication, Hard-Work, Creativity and Curiosity is what makes me. I love learning new things and applying them to my use.
-					</p>
-				</div>
-			</div>
-		</div>
+      <!--SKILLS-->
+      <div id="skill" class="content-block">
+        <div class="heading">
+          <p>
+            <strong>S</strong>kill <strong>S</strong>et
+          </p>
+        </div>
+        <div class="content">
+          <section>
+            <p class="title">
+              WEB DEVELOPMENT
+            </p>
+            <section id="webd">
+              <div id="html" class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>HTML</strong><br/>95%</p>
+                  </div>
+                </div>
+              </div>
+              <div id="css"  class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>CSS</strong><br/>80%</p>
+                  </div>
+                </div>
+              </div>
+              <div id="js" class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>JavaScript</strong><br/>65%</p>
+                  </div>
+                </div>
+              </div>
+              <div id="sql" class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>SQL</strong><br/>55%</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section>
+            <p class="title">
+              PROGRAMMING
+            </p>
+            <section id="prog">
+              <div id="py" class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>Python</strong><br/>85%</p>
+                  </div>
+                </div>
+              </div>
+              <div id="c"  class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>C</strong><br/>80%</p>
+                  </div>
+                </div>
+              </div>
+              <div id="java" class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>Java</strong><br/>45%</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section>
+            <p class="title">
+              FRAMEWORKS
+            </p>
+            <section id="fw">
+              <div id="skrollr" class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>SkrollrJS</strong><br/>80%</p>
+                  </div>
+                </div>
+              </div>
+              <div id="bootstrap"  class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>Bootstrap</strong><br/>90%</p>
+                  </div>
+                </div>
+              </div>
+              <div id="skeleton" class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>Skeleton</strong><br/>50%</p>
+                  </div>
+                </div>
+              </div>
+              <div id="flask" class="outer">
+                <div class="level">
+                  <div class="labels">
+                    <p><strong>Flask</strong><br/>40%</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section>
+            <p class="title">
+              OTHER SKILLS
+            </p>
+            <p>
+              Sublime Text 3, Github Atom, Photoshop, Git, TCS MasterCraft
+            </p>
+          </section>
+          <br/><br/><br/>
+        </div>
+      </div>
 
-		<!-- SKILLSET -->
-		<div class="row special">
-			<div id="skillset" class="col-md-12 col-sm-12 block">
-				<div class="title col-md-12 col-sm-12">
-					<h2>My Arsenal</h2>
-				</div>
-				<div class="container col-md-11 col-sm-11 content">
-					<div id="web">
-						<p><u>Web Languages:</u></p>
-						<div class="col-md-2 col-sm-3">HTML</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="html" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-3">CSS</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="css" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-3">JavaScript</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="js" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-3">JQuery</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="jq" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-						<!-- <div class="col-md-2 col-sm-3">PHP</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="php" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div> -->
-						<div class="col-md-2 col-sm-3">SQL</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="sql" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-					</div>
+      <!--GALLERY-->
+      <div id="gallery" class="content-block">
+        <div class="heading">
+          <p>
+            <strong>G</strong>allery
+          </p>
+        </div>
+        <div class="content">
+          <section id="personal">
+            <p class="title">
+                PERSONAL SITE - WEBSITE
+            </p>
+            <a href="#" target="_new">
+              <div class="show_block"></div>
+            </a>
+            <p  class="details">
+              A Personal Website dedicated to showcasing skills and designing capability.Uses HTML, CSS, JavaScript along with Skeleton Framework.
+            </p>
+          </section>
+          <section id="kwiznet">
+            <p class="title">
+                KWIZNET - WEBSITE
+            </p>
+            <a href="http://www.ftquiz.edg.co.in/" target="_new">
+              <div class="show_block"></div>
+            </a>
+            <p  class="details">
+              KwizNet is a web based quiz portal I developed for my college's technical fest. Participants can register and login to their accounts and play. The questions can be fetched from a database which the admin of the quiz had previously fed into the database. The event was a success. 
+            </p>
+          </section>
+          <section id="calc">
+            <p class="title">
+                GIEOM RICH CALCULATOR - WEBSITE
+            </p>
+            <a href="http://prtkgoswami.github.io/Gieom%20Rich%20Calculator/index.html" target="_new">
+              <div class="show_block"></div>
+            </a>
+            <p  class="details">
+              An Online Calculator made for the Gieom Hiring Challenge held on HackerEarth. The Calculator has several features,
+              <ul>
+                <li>Simple Arithmetic Operations</li>
+                <li>Stores History</li>
+                <li>The calculator itself is draggable</li>
+                <li>Uses Local Storage to record history</li>
+                <li>History can be turned on or turned off</li>
+              </ul>
+            </p>
+            <!-- <ul>
+              <li>Simple Arithmetic Operations</li>
+              <li>Stores History</li>
+              <li>The calculator itself is draggable</li>
+              <li>History can be turned on or turned off</li>
+            </ul> -->
+          </section>
+          <section id="colorz">
+            <p class="title">
+                COLORZ - WEBSITE
+            </p>
+            <a href="http://prtkgoswami.github.io/colorz/" target="_new">
+              <div class="show_block"></div>
+            </a>
+            <p  class="details">
+              Every amatuer web designer knows the pain of searching for a color in RGB format when they have it in the Hex format or vice versa. Thus Colorz is a one stop shop dedicated for exactly that purpose.
+            </p>
+          </section>
+          <section id="repo">
+            <p class="title">
+                GITHUB REPOSITORY - WEBSITE
+            </p>
+            <a href="http://prtkgoswami.github.io/" target="_new">
+              <div class="show_block"></div>
+            </a>
+            <p  class="details">
+              An online repository of my works some of which are not shown here.
+            </p>
+          </section>
+          <section id="app">
+            <p class="title">
+                QUICK ICU REF - WINDOWS APP
+            </p>
+            <div class="block">
+              <a href="images/gallery/wp1.png" target="_new"><div class="app_block"></div></a>
+              <a href="images/gallery/wp2.png" target="_new"><div class="app_block"></div></a>
+              <a href="images/gallery/wp3.png" target="_new"><div class="app_block"></div></a>
+              <a href="images/gallery/wp4.png" target="_new"><div class="app_block"></div></a>
+              <a href="images/gallery/wp5.png" target="_new"><div class="app_block"></div></a>
+              <a href="images/gallery/wp6.png" target="_new"><div class="app_block"></div></a>
+            </div>
+            <p  class="details">
+              Quick ICU Ref is a windows phone application I developed for the application process of the MSP program. It is an application for doctors to help them calculate the medicine dosage for their patients. It has a number of categories to select out of. 
+            </p>
+          </section>
 
-					<div id="prog">
-						<p><u>Programming Languages:</u></p>
-						<div class="col-md-2 col-sm-3">C</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="c" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-						<!-- div class="col-md-2 col-sm-3">C++</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="cplus" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div> -->
-						<div class="col-md-2 col-sm-3">Java</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="java" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-3">Python</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="py" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-					</div>
+        </div>
+      </div>
 
-					<div id="frame">
-						<p><u>Frameworks:</u></p>
-						<div class="col-md-2 col-sm-3">Bootstrap</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="bs" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-3">SkrollrJS</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="skjs" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div>
-						<!-- <div class="col-md-2 col-sm-3">AngularJS</div>
-						<div class="container outer col-md-10 col-sm-9 progress">
-							<div id="anjs" class="progress-bar progress-bar-striped active level">
-							</div>
-						</div> -->
-					</div>
+      <!-- EXPERINCE -->
+      <div id="exp" class="content-block">
+        <div class="heading">
+          <p>
+            <strong>E</strong>xperience
+          </p>
+        </div>
+        <div class="content">
+          <section id="tcs">
+            <p class="title">
+                SUMMER INTERNSHIP - TCS, KOLKATA
+            </p>
+            <div class="show_block"></div>
+            <p  class="details">
+              <strong>Position </strong> - Summer Intern<br/>
+              <strong>Company </strong> - Tata Consultancy Services, Kolkata<br/>
+              <strong>Project Title </strong> - Research Workflow Tool<br/>
+              <strong>Duration </strong> - 6 Weeks
+            </p>
+          </section>
+          
+        </div>
+      </div>
 
-					<p><u>Tools:</u> Sublime Text 3, Photoshop, Git, TCS MasterCraft</p>
-				</div>
-				<!-- <div class="progress">
-				  	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-				  	</div>
-				</div> -->
-			</div>
-		</div>
+      <!--CONTACT-->
+      <div id="contact" class="content-block">
+        <div class="heading">
+          <p>
+            <strong>C</strong>ontact <strong>M</strong>e
+          </p>
+        </div>
+        <div class="content">
+          <section>
+            <p>
+              T-3/F-10/A-1 Eastern High Housing Complex,
+              Block AG-1, M.A Road,<br/>
+              Newtown, Kolkata- 700156, India.<br/>
+            </p>
+          </section>
+          <section>
+            <p>
+              Phone: +91-8582857903
+            </p>
+          </section>
+          <section>
+            <p>
+              Email: prtkgoswami8@gmail.com
+            </p>
+          </section>
+          <section>
+            <p>
+              Website: <a href="prtkgoswami.github.io/cv">prtkgoswami.github.io/cv</a>
+            </p>
+          </section>
+           <section>
+            <p>
+              Skype: prtkgoswami1
+            </p>
+          </section>
+          <br/>
+          <section id="social_tab">
+            <a href="https://www.facebook.com/prtkgoswami" target="_new">
+              <div id="facebook" class="social_block"></div>
+            </a>
+            <a href="https://plus.google.com/u/0/+PratikGoswami1994" target="_new">
+              <div id="google" class="social_block"></div>
+            </a>
+            <a href="https://in.linkedin.com/in/pratik-goswami-37b12394" target="_new">
+              <div id="linkedin" class="social_block"></div>
+            </a>
+            <a href="https://www.hackerearth.com/users/pratik25/" target="_new">
+              <div id="hackerearth" class="social_block"></div>
+            </a>
+            <a href="https://github.com/prtkgoswami" target="_new">
+              <div id="github" class="social_block"></div>
+            </a>
+          </section>
+          <br/>
+          <section>
+            <a href="doc/pratik-cv.pdf" target="_new">
+              <div id="cv_btn">
+                <p>
+                  Curriculum Vitae
+                </p>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
 
-		<!-- SHOWCASE -->
-		<div class="row special">
-			<div id="showcase" class="col-md-12 col-sm-12 block">
-				<div class="title col-md-12 col-md-12">
-					<h2>Works of Art</h2>
-				</div>
-				<div class="col-md-11 content">
-					<p>
-						So besides this Site, here are a few other projects of mine:-
-					</p>
-					<div class="row container">
-						<div class="row"><h2><u>Quick ICU Ref (Windows Phone App)</u></h2></div>
-						<div class="row">
-							<div class="col-md-12 col-sm-12">
-								<p>
-									&nbsp;&nbsp;&nbsp;Quick ICU Ref is a windows phone application I developed for the application process of the MSP program.
-									It is an application for doctors to help them calculate the medicine dosage for their patients.
-									It has a number of categories to select out of.
-								</p>
-							</div>
-						</div>
-						<br/>
-						<div class="row">
-							<div id="app" class="col-md-12 col-sm-10">
-								<div class="col-md-2 col-sm-4">
-									<a href="images/showcase/wp1.png" target="_blank"><img src="images/showcase/wp1.png" width="100%"></a>
-								</div>
-								<div class="col-md-2 col-sm-4">
-									<a href="images/showcase/wp2.png" target="_blank"><img src="images/showcase/wp2.png" width="100%"></a>
-								</div>
-								<div class="col-md-2 col-sm-4">
-									<a href="images/showcase/wp3.png" target="_blank"><img src="images/showcase/wp3.png" width="100%"></a>
-								</div>
-								<div class="col-md-2 col-sm-4">
-									<a href="images/showcase/wp4.png" target="_blank"><img src="images/showcase/wp4.png" width="100%"></a>
-								</div>
-								<div class="col-md-2 col-sm-4">
-									<a href="images/showcase/wp5.png" target="_blank"><img src="images/showcase/wp5.png" width="100%"></a>
-								</div>
-								<div class="col-md-2 col-sm-4">
-									<a href="images/showcase/wp6.png" target="_blank"><img src="images/showcase/wp6.png" width="100%"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<br/><br/>
-					<div class="row container">
-						<div class="row"><h2><u>KwizNet (Website)</u></h2></div>
-						<div class="row">
-							<div class="col-md-12 col-sm-12">
-								<p>
-									&nbsp;&nbsp;&nbsp;KwizNet is a web based quiz portal I developed for my college's technical fest.
-									Participants can register and login to their accounts and play.
-									The questions can be fetched from a database which the admin of the quiz had previously fed into the database.
-									The event was a success.
-								</p>
-							</div>
-						</div>
-						<br/>
-						<div class="row">
-							<div class="col-md-12 col-sm-10 r">
-								<div class="col-md-6 col-sm-6 b">
-									<a href="images/showcase/kn1.png" target="_blank"><img src="images/showcase/kn1.png" width="100%"></a>
-								</div>
-								<div class="col-md-6 col-sm-6 b">
-									<a href="images/showcase/kn3.png" target="_blank"><img src="images/showcase/kn3.png" width="100%"></a>
-								</div>
-							</div>
-						</div>
-						<br/>
-					</div>
-					<br/><br/>
-					<div class="row container">
-						<div class="row"><h2><u>Gieom Rich Calculator (Online Calculator)</u></h2></div>
-						<div class="row">
-							<div class="col-md-12 col-sm-12">
-								<p>
-									&nbsp;&nbsp;&nbsp;An Online Calculator made for the Gieom Hiring Challenge held on HackerEarth.
-									The Calculator has several features:<br>
-									<ul>
-										<li>Simple Arithmetic Operations</li>
-										<li>Stores History</li>
-										<li>The calculator itself is draggable</li>
-										<li>History can be turned on or turned off</li>
-									</ul>
-								</p>
-							</div>
-						</div>
-						<br/>
-						<div class="row">
-							<div class="col-md-12 col-sm-10 r">
-								<div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3 b">
-									<a href="http://prtkgoswami.github.io/Gieom%20Rich%20Calculator/index.html" target="_blank"><img src="images/showcase/calc.png" width="100%"></a>
-								</div>
-							</div>
-						</div>
-						<br/>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- EXPERIENCE -->
-		<div class="row special">
-			<div id="exp" class="col-md-12 col-sm-12 block">
-				<div class="title col-md-12 col-md-12">
-					<h2>True Knowledge Lies in Experience</h2>
-				</div>
-				<div class="col-md-11 content">
-					<!-- <div class="row">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-								<img src="images/exp/wa.png" width="100%">
-							</div>
-						</div><br/>
-						<div class="row">
-							<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1 container">
-								<div class="row">
-									<center><p><strong><u>SUMMER TRAINING</u></strong></p></center>
-								</div>
-								<div class="row">
-									<p><strong>Institute:</strong> Webel-Acharya Academy of Competency Enhancement</p>
-								</div>
-								<div class="row">
-									<p><strong>Duration:</strong> 2 Days</p>
-								</div>
-								<div class="row">
-									<p><strong>Training:</strong> Web Development Programming on PHP & MySQL.</p>
-								</div>
-								<div class="row">
-									<p><strong>Description:</strong> Technical Support for the development of an online Research WorkFlow Tool.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<br/><br/> -->
-					<div class="row">
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-								<img src="images/exp/TCS.jpg" width="100%">
-							</div>
-						</div><br/>
-						<div class="row">
-							<div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1 container">
-								<div class="row">
-									<center><p><strong><u>SUMMER INTERNSHIP IN TCS</u></strong></p></center>
-								</div>
-								<div class="row">
-									<p><strong>Institute:</strong> Tata Consultancy Services, Kolkata.</p>
-								</div>
-								<div class="row">
-									<p><strong>Duration:</strong> 6 Weeks</p>
-								</div>
-								<div class="row">
-									<p><strong>Project:</strong> Research Workflow Tool</p>
-								</div>
-								<div class="row">
-									<p><strong>Description:</strong> Technical Support for the development of an online Research WorkFlow Tool.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- ACHIEVEMENTS -->
-		<div class="row special">
-			<div id="achieve" class="col-md-12 col-sm-12 block">
-				<div class="title col-md-12 col-md-12">
-					<h2>So What Have I Achieved You Ask ...</h2>
-				</div>
-				<div class="col-md-11 content">
-					<ul>
-						<li>Placed 3rd in the All India InCTF Competition.</li>
-						<li>Selected as a Microsoft Student Partner (MSP ID.: NEWMSP/2014/358)</li>
-						<li>Part of the Mozilla Student Ambassador Program.</li>
-						<li>Member of CuRBrain(Computer Club of Techno India, Salt Lake).</li>
-						<li>Held the post of my house Captain in School.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<!-- EXTRACURRICULAR -->
-		<!-- <div class="row special">
-			<div id="extra" class="col-md-12 col-sm-12 block">
-				<div class="title col-md-12 col-md-12">
-					<h2>All Work & No Play, Makes Jack A Dull Boy</h2>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- CONTACT -->
-		<div class="row">
-			<div id="contact" class="col-md-12 col-sm-12 block">
-				<div class="title col-md-12 col-sm-12">
-					<h2>Don't Be Shy ... Get in Touch</h2>
-				</div>
-				<div class="container col-md-11 col-sm-11 content">
-					<div class="row">
-						<p class="col-md-8 col-sm-10 col-sm-offset-1 col-md-offset-2">
-							T-3/F-10/A-1, Eastern High Housing Complex, Block AG-1, M.A. Road, Newtown, Kolkata- 700156.
-						</p>
-					</div>
-					<div class="row">
-						<p>
-							Phone: +91-8582857903
-						</p>
-					</div>
-					<div class="row">
-						<p>
-							Email: prtkgoswami8@gmail.com
-						</p>
-					</div>
-					<div class="row">
-						<p>
-							Website: http://prtkgoswami.github.io/cv
-						</p>
-					</div>
-					<div class="row">
-						<p>
-							Skype: prtkgoswami1
-						</p>
-					</div>
-					<div id="socialnetwork" class="row">
-						<div id="social" class="container col-md-8 col-sm-10 col-xs-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-2">
-							<div class="col-md-2 col-sm-2 col-xs-4">
-								<a href="https://www.facebook.com/prtkgoswami" target="_blank">
-									<img id="fb" title="Facebook" src="images/contact/facebook_vec.png" width="100%">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-2 col-xs-4">
-								<a href="https://in.linkedin.com/pub/pratik-goswami/94/123/37b" target="_blank">
-									<img id="li" title="LinkedIn" src="images/contact/linkedin_vec.png" width="100%">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-2 col-xs-4">
-								<a href="https://plus.google.com/+PratikGoswami1994" target="_blank">
-									<img id="gplus" title="Google+" src="images/contact/google+_vec.png" width="100%">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-2 col-xs-4">
-								<a href="https://github.com/prtkgoswami" target="_blank">
-									<img id="gh" title="GitHub" src="images/contact/github_vec.png" width="100%">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-2 col-xs-4">
-								<a href="https://www.hackerearth.com/users/pratik25/" target="_blank">
-									<img id="he" title="HackerEarth" src="images/contact/hackerearth_vec.png" width="100%">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-2 col-xs-4">
-								<a href="skype:prtkgoswami1?call" target="_blank">
-									<img id="skype" title="Skype" src="images/contact/skype_vec.png" width="100%">
-								</a>
-							</div>
-
-							<!-- HOVER SCRIPT -->
-							<script type="text/javascript">
-								$("#fb").mouseover(function(){
-								    $(this).attr("src","images/contact/facebook.png");
-								});
-								$("#fb").mouseleave(function(){
-								    $(this).attr("src","images/contact/facebook_vec.png");
-								});
-								$("#li").mouseover(function(){
-								    $(this).attr("src","images/contact/linkedin.png");
-								});
-								$("#li").mouseleave(function(){
-								    $(this).attr("src","images/contact/linkedin_vec.png");
-								});
-								$("#gplus").mouseover(function(){
-								    $(this).attr("src","images/contact/google+.png");
-								});
-								$("#gplus").mouseleave(function(){
-								    $(this).attr("src","images/contact/google+_vec.png");
-								});
-								$("#gh").mouseover(function(){
-								    $(this).attr("src","images/contact/github.png");
-								});
-								$("#gh").mouseleave(function(){
-								    $(this).attr("src","images/contact/github_vec.png");
-								});
-								$("#he").mouseover(function(){
-								    $(this).attr("src","images/contact/hackerearth.png");
-								});
-								$("#he").mouseleave(function(){
-								    $(this).attr("src","images/contact/hackerearth_vec.png");
-								});
-								$("#skype").mouseover(function(){
-								    $(this).attr("src","images/contact/skype.png");
-								});
-								$("#skype").mouseleave(function(){
-								    $(this).attr("src","images/contact/skype_vec.png");
-								});
-							</script>
-						</div>
-					</div>
-					<div id="cv" class="row">
-						<a href="DOCS/pratik-cv.pdf" target="_blank">
-							<div id="cv_btn" class="col-md-4 col-sm-8 col-xs-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-4">
-								Curriculam Vitae
-							</div>
-						</a>
-					</div>
-					<!-- <footer>
-
-					</footer> -->
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+    </div><!-- End of Container -->
+  </body>
 </html>

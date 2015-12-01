@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Colorz...</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <!-- JQUERY -->
+        <link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5.min.js">
+
+        <!-- PHONEGAP -->
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <!-- CUSTOM -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row"><center><h1>COLORZ...</h1></center></div>
+            <div class="row">
+                <div class="col-md-4 col-sm-8 col-xs-8 col-md-offset-4 col-sm-offset-2 col-xs-offset-2 input-group">
+                    <span class="input-group-addon" id="basic-addon1">#</span>
+                    <input id="hex" class="form-control" type="text" placeholder="hex" onkeyup="checkHex()"/> 
+                    <span class="input-group-addon" id="basic-addon1"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-8 col-xs-8 col-md-offset-4 col-sm-offset-2 col-xs-offset-2 input-group">
+                    <span class="input-group-addon" id="basic-addon1">(</span>
+                    <input id="rgb" class="form-control" type="text" placeholder="rgb" onkeyup="checkRGB()"/> 
+                    <span class="input-group-addon" id="basic-addon1">)</span>
+                </div>
+            </div>
+            <div class="row">
+                <div >
+                    <button id="reset" class="col-md-4 col-sm-8 col-xs-8 col-md-offset-4 col-sm-offset-2 col-xs-offset-2" onclick="reset()">RESET</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
