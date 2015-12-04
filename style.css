@@ -55,6 +55,11 @@ body{
 	background-size: cover;
 	background-repeat :none;
 }
+#piano{
+	background-image: url('images/piano.png');
+	background-size: cover;
+	background-repeat :none;
+}
 
 .buffer{
 	height:20vh;
