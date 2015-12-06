@@ -60,6 +60,11 @@ body{
 	background-size: cover;
 	background-repeat :none;
 }
+#deals{
+	background-image: url('images/dealshub.png');
+	background-size: cover;
+	background-repeat :none;
+}
 
 .buffer{
 	height:20vh;
