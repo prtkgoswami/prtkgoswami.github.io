@@ -2,7 +2,7 @@
 
 <h3>WEB REPOSITORY</h3>
 
-<h4>Repo Contents :</h4><br/>
+<h4>Repo Contents :</h4>
 	- Personal Website<br/>
 	- Nutanix DealsHub<br/>
 	- KwizNet<br/>
