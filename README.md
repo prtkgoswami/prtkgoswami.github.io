@@ -1,16 +1,14 @@
-# prtkgoswami.github.io
+# WEB REPOSITORY
 
-<h3>WEB REPOSITORY</h3>
+#### Repo Contents :
+	* Personal Website
+	* Nutanix DealsHub
+	* KwizNet
+	* Piano
+	* Gieom Rich Calculator
+	* Colorz
+	* Color Tic-Tac-Toe
+	* *Coming Soon*
 
-<h4>Repo Contents :</h4>
-	- Personal Website
-	- Nutanix DealsHub
-	- KwizNet
-	- Piano
-	- Gieom Rich Calculator
-	- Colorz
-	- Color Tic-Tac-Toe
-	- *Coming Soon*
-
-<h4>ScreenShot :</h4>
+#### ScreenShot :
 ![Alt text](/repo.jpg?raw=true "Screenshot")

@@ -10,7 +10,7 @@ An online Calculator developed for the Gieom Challenge on HackerEarth.
 * Storing the calculation can be toggled
 
 #### ScreenShot :
-![Alt text](/images/screenshot/calc.jpg?raw=true "Screenshot")
+![Screenshot](images/screenshot/calc.jpg?raw=true "Screenshot")
 
 #### Tech Used :
 * JQuery UI
