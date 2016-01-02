@@ -1,14 +1,13 @@
 # WEB REPOSITORY
 
 #### Repo Contents :
-	* Personal Website
-	* Nutanix DealsHub
-	* KwizNet
-	* Piano
-	* Gieom Rich Calculator
-	* Colorz
-	* Color Tic-Tac-Toe
-	* *Coming Soon*
+* Personal Website
+* Nutanix DealsHub
+* KwizNet
+* Piano
+* Gieom Rich Calculator
+* Colorz
+* Color Tic-Tac-Toe
 
 #### ScreenShot :
-![Alt text](/repo.jpg?raw=true "Screenshot")
+![Screenshot](/images/screenshot/repo.jpg)
