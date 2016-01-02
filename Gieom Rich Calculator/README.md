@@ -1,3 +1,19 @@
-# prtkgoswami.github.io
+# Gieom Rich Calculator
 
-This is my calc..
+#### Description :
+An online Calculator developed for the Gieom Challenge on HackerEarth.
+
+#### Features :
+* Simple Arithmetic Operations
+* Draggable Calculator
+* Session History stored for that session
+* Storing the calculation can be toggled
+
+#### ScreenShot :
+![Alt text](/images/screenshot/calc.jpg?raw=true "Screenshot")
+
+#### Tech Used :
+* JQuery UI
+* HTML
+* CSS
+* JavaScript
