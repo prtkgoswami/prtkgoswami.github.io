@@ -17,3 +17,5 @@ An online Calculator developed for the Gieom Challenge on HackerEarth.
 * HTML
 * CSS
 * JavaScript
+* Math JS
+* Twitter Bootstrap

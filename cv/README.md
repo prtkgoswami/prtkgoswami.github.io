@@ -1,3 +1,13 @@
-# prtkgoswami.github.io
+# Personal Website
 
-This is my WEB REPO....
+#### Description :
+A Personal Website to Showcase My Skills.
+
+#### Screenshot :
+![Screenshot](images/screenshot/site.jpg)
+
+#### Tech Used :
+* JavaScript
+* HTML
+* CSS
+* Skeleton Framework
