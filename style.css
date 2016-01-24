@@ -65,6 +65,11 @@ body{
 	background-size: cover;
 	background-repeat :none;
 }
+#bh{
+	background-image: url('images/bookhub.png');
+	background-size: cover;
+	background-repeat :none;
+}
 
 .buffer{
 	height:20vh;
