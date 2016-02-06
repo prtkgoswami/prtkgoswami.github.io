@@ -10,4 +10,4 @@
 * Color Tic-Tac-Toe
 
 #### ScreenShot :
-![Screenshot](/images/screenshot/repo.jpg)
+![Screenshot](/images/screenshot/repo.png)
