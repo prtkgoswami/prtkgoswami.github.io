@@ -1,0 +1,327 @@
+/* GENERAL */
+    html,body{
+        margin:0;
+        padding:0;
+        width:100%;
+        background-color: #3d3d3d;
+        background:url('../images/backgrounds/congruent_outline.png') repeat fixed;
+    }
+    body{
+        position: relative;
+    }
+    body>div{
+        margin:0;
+        padding:0 !important;
+    }
+    .block{
+        min-height:100vh;
+        background-color:#f5f5f5;
+        margin:0px auto;
+        background-attachment: fixed;
+        padding:70px 80px;
+    }
+    .block:first-child{
+        margin-top:0;
+    }
+    .buffer{
+        background-color: rgba(45,45,45,0.7);
+        color:#f5f5f5;
+        text-align: center;
+        padding:0;
+        margin:0px auto;
+    }
+    .buffer p{
+        font-family: "Raleway";
+        font-weight: 300;
+        font-style: italic;
+        font-size: 52px;
+        margin:40px auto;
+        color:#e53935;
+    }
+
+
+/* MAIN */
+    /* HEADER */
+        #header{
+            background-image: url("../images/backgrounds/prof.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: right;
+        }
+
+    /* INTRODUCTION */
+        #intro p{
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 200;
+        }
+        #intro p:first-child{
+            margin-top:10px;
+            font-size: 38px;
+            color: #e53935;
+        }
+        #intro p:nth-child(2){
+            font-size: 22px;
+        }
+        #intro p:nth-child(2) strong{
+            color: #e53935;
+        }
+
+    /* SKILL SET */
+        #skill{
+            padding-left:50px;
+            padding-right:50px;
+        }
+        .progress{
+            text-align: left;
+            height:30px;
+            /*background-color: #2d2d2d;*/
+            background:url('../images/backgrounds/congruent_outline.png') repeat fixed;
+        }
+        .progress-bar{
+            text-align: left;
+            padding-left:10px;
+            padding-top:5px;
+            background-color: #e53935;
+        }
+        .progress-title{
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 22px;
+            text-align: right;
+            color: #f5f5f5;
+        }
+        #tool p:nth-child(2){
+            text-align: center;
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 22px;
+        }
+
+    /* GALLERY */
+        #gallery{
+            padding-left:0;
+            padding-right:0;
+        }
+        .title1{
+            text-align: center;
+            font-family: 'Raleway';
+            font-weight: 300;
+            font-style: italic;
+            font-size: 38px;
+            text-decoration: underline;
+            text-decoration-color: #2d2d2d;
+            color: #e53935;
+        }
+        .title2{
+            text-align: center;
+            font-family: 'Raleway';
+            font-weight: 300;
+            font-style: italic;
+            font-size: 28px;
+        }
+        .title2 a{
+            color: #2d2d2d;
+        }
+        .show-tiles{
+            padding:0;
+        }
+        .show-tiles:hover .hover-text{
+            visibility: visible;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        .overlay{
+            height:100%;
+            width:100%;
+            position: absolute;
+            background: rgba(0,0,0,0.9);
+            margin-top:-50%;
+            visibility: hidden;
+        }
+        .show-tiles:hover .overlay{
+            visibility: visible;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #bh .overlay{
+            margin-top:-50.2%;
+        }
+        .hover-text{
+            font-size: 22px;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-style: italic;
+            color:#f5f5f5;
+            text-align: center;
+            margin-top:20%;
+        }
+        .app-tiles{
+            padding:0.5%;
+        }
+
+    /* EXPERIENCE */
+        #exp .title{
+            font-family: 'Raleway';
+            font-weight: 300;
+            font-size:38px;
+            color: #e53935;
+            text-align: center;
+        }
+        .show_block{
+            padding:0;
+        }
+        .details{
+            text-align: center;
+            font-size: 22px;
+            color: #2d2d2d;
+        }
+        .details strong{
+            color: #e53935;
+        }
+        #report{
+            border:2px solid #e53935;
+            padding:0;
+        }
+        #report .overlay{
+            margin-top:-142%;
+            visibility: hidden;;
+        }
+        #report:hover .overlay{visibility: visible;}
+
+    /* CONTACT */
+        #contact{
+            margin-bottom:0;
+            background-image: url('../images/backgrounds/diagmonds.png');
+            background-repeat: repeat;
+            padding-bottom:0;
+        }
+        #contact .h1{
+            color: #e53935;
+            text-align: center;
+            font-size: 48px;
+            font-family: 'Raleway';
+            font-weight: 300;
+            font-style: italic;
+        }
+        .text{
+            font-size: 22px;
+            font-family: 'Raleway';
+            font-weight: 300;
+            font-style: italic;
+            text-align: center;
+            color:#f5f5f5;
+        }
+        #resume_cont{
+            text-align: center;
+        }
+        #resume-btn{
+            border:3px solid #e53935;
+            color: #e53935;
+            font-size: 22px;
+            font-family: 'Lato';
+            font-weight: 400;
+            font-style: italic;
+            display: inline-block;
+            padding:10px 40px;
+            margin:20px auto;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #resume-btn:hover{
+            color: #1d1d1d;
+            background-color: #e53935;
+            font-size: 24px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        #social-tiles{
+            text-align: center;
+        }
+        #tile-cont{
+            border:4px solid #e53935;
+            display: block;
+            /*width:50%;*/
+        }
+        .tile{
+            height:100px;
+            width:100px;
+            display: inline-block;
+            margin:10px 5px 5px 5px;
+            background-size:contain;
+            background-repeat: no-repeat;
+        }
+        #footer{
+            color:#f5f5f5;
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+        }
+        #footer span{
+            font-size: 18px;
+        }
+        /* TILES */
+        #fb{background-image: url('../images/contact/facebook_vec.png');}
+        #ld{background-image: url('../images/contact/linkedin_vec.png');}
+        #gp{background-image: url('../images/contact/google+_vec.png');}
+        #gh{background-image: url('../images/contact/github_vec.png');}
+        #he{background-image: url('../images/contact/hackerearth_vec.png');}
+        #fb:hover{background-image: url('../images/contact/facebook.png');}
+        #ld:hover{background-image: url('../images/contact/linkedin.png');}
+        #gp:hover{background-image: url('../images/contact/google+.png');}
+        #gh:hover{background-image: url('../images/contact/github.png');}
+        #he:hover{background-image: url('../images/contact/hackerearth.png');}
+
+/* NAVBAR */
+    nav{
+        background-image: url('../images/backgrounds/diagmonds.png');
+        background-repeat: repeat;
+    }
+    .navbar-brand{
+        font-size: 42px;
+        color: #f5f5f5 !important;
+        font-family: 'Raleway';
+        font-style: italic;
+        font-weight: 300;
+    }
+    ul{
+        padding:0;
+        margin:0;
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        color: #f5f5f5;
+        font-size: 25px;
+        padding:0;
+    }
+    ul li span{
+        padding:0px 20px !important;
+        color: #f5f5f5 !important;
+    }
+    ul li:hover span{
+        color:#e53935 !important;
+        text-shadow: 0px 0px 40px #e53935;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    ul li:hover a{
+        background-color: #131313 !important;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    ul li:active a{
+        background-color: #131313 !important;
+    }
+    ul li.active span{
+        color:#e53935 !important;
+    }
+    ul li a{
+        text-align: center;
+    }
+
+    .icon-bar{
+        background-color: #e53935 !important;
+    }
+    .hidden_title{
+        font-size: 22px;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-style: italic;
+    }

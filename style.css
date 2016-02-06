@@ -21,7 +21,7 @@ body{
 	/*visibility:visible;*/
 }
 #cv{
-	background-image: url('images/site.jpg');
+	background-image: url('images/site.png');
 	background-size: cover;
 	background-repeat :none;
 }
