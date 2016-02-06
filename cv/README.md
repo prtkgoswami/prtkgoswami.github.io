@@ -10,4 +10,4 @@ A Personal Website to Showcase My Skills.
 * JavaScript
 * HTML
 * CSS
-* Skeleton Framework
+* Bootstrap Framework
