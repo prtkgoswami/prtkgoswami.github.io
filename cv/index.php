@@ -370,6 +370,11 @@
                     <p id="footer">
                         Made with <span class="glyphicon glyphicon-heart" style="color:#e53935;"></span>
                     </p>
+                    <div id="counter" class="">
+                        <!-- hitwebcounter Code START -->
+                        <center><img    src="http://hitwebcounter.com/counter/counter.php?page=6301324&style=0009&nbdigits=6&type=page&initCount=0" title="install tracking codes" Alt="install tracking codes" border="0"/>
+                        </center>
+                    </div>
                 </div>
 
                 <!-- NAVBAR -->
