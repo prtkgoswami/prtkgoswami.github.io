@@ -1,4 +1,4 @@
-# Personal Website
+# Online Resume
 
 #### Description :
 A Personal Website to Showcase My Skills.
