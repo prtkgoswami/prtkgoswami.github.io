@@ -24,12 +24,15 @@ body>div:first-child{
 }
 #coding>.buffer,#foodforfun>.buffer{
     background-color: #a1374c;
+    background: linear-gradient(#a1374c,#4b1a24);
 }
 #newron>.buffer,#gaming>.buffer{
     background-color: #e33b3b;
+    background: linear-gradient(#e33b3b,#661a1a);
 }
 #robotics>.buffer,#infocus>.buffer{
     background-color: #50bfad;
+    background: linear-gradient(#50bfad,#245950);
 }
 .title{
     text-transform: capitalize;;
@@ -130,19 +133,25 @@ nav ul li a:hover:before{
 }
 
 .parallax-block>div:nth-child(2){
-    height:80vh;
+    height:75vh;
 }
 .parallax-block{
     background-color: #d5d5d5;
+    /*background: linear-gradient(#fff,#d5d5d5,#a5a5a5,#5d5d5d);*/
+    overflow: hidden;
 }
 .slides{
     height:100%;
 }
 .bottom{
-    height:70%;
+    height:80%;
     width:100%;
     position: relative;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px #212121;
+    background: #fff;
+}
+.bottom p{
+    padding:10px;
 }
 .top{
     height:100%;
@@ -156,7 +165,7 @@ nav ul li a:hover:before{
 }
 .bottom:hover .top{
     margin-top:120%;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px #212121;
     transition: all 0.6s ease-in-out 0.6s;
 }
 .heading{
