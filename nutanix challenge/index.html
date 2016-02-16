@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DealsHub</title>
+	<meta charset="UTF-8">
+	<meta name="Author" content="Pratik Goswami">
+	<meta name="Website" content="http://prtkgoswami.github.io/cv/">
+	<meta name="Email" content="prtkgoswami8@gmail.com">
+
+	<!-- JQUERY -->
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400italic|Raleway:500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!-- CUSTOM -->
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var likes=0;
+			$("#likes").html(likes);
+			var frag=document.createDocumentFragment();
+			$.getJSON( "deals.json", function(json){
+				for(var i=0;i<json.deals.length;i++){
+					if(i%2==0){
+						var row=document.createElement('div');
+						row.className="row";
+					}
+					var deal=document.createElement('div');
+					if(i%2==0){
+						deal.className='deals container col-md-5';
+					}
+					else{
+						deal.className='deals container col-md-5 col-md-offset-2';
+					}
+					// Title
+					var dealTitle=document.createElement('h3');
+					dealTitle.className='deal_title';
+					dealTitle.textContent=json.deals[i].name;
+					deal.appendChild(dealTitle);
+					// Provider
+					var provider=document.createElement('p');
+					provider.className="provider";
+					provider.textContent+="Provider : "+json.deals[i].provider;
+					deal.appendChild(provider);
+					// Divider
+					var horLine=document.createElement('hr');
+					deal.appendChild(horLine);
+					// Other Details
+					var other=document.createElement("section");
+					other.className="other_details";
+					// Image
+					var img=document.createElement('div');
+					img.className="pic_cont";
+					var hlink=document.createElement('a');
+					hlink.href=json.deals[i].image;
+					hlink.target="_blank";
+					var image=document.createElement('img');
+					image.className="deal_pic";
+					image.src=json.deals[i].image;
+					hlink.appendChild(image);
+					img.appendChild(hlink);
+					other.appendChild(img);
+					// Content
+					var cont=document.createElement("div");
+					cont.className="content";
+					// Rating
+					var rating=document.createElement('div');
+					rating.className="rating";
+					rating.textContent="Rating : "+json.deals[i].rating;
+					cont.appendChild(rating);
+					// Link
+					var link=document.createElement('p');
+					link.className="link";
+					var hyperRef=document.createElement('a');
+					hyperRef.href=json.deals[i].link;
+					hyperRef.target="_blank";
+					hyperRef.textContent="Here";
+					link.innerHTML="Link : ";
+					link.appendChild(hyperRef);
+					cont.appendChild(link);
+					// Actual Price
+					var actualPrice=document.createElement('p');
+					actualPrice.className="actual_p";
+					actualPrice.textContent="Actual Price : Rs. "+ json.deals[i].actual_price;
+					cont.appendChild(actualPrice);
+					// Final Price
+					var discount=json.deals[i].discount;
+					discount=discount.substring(0,discount.length);
+					discount=parseInt(discount);
+					var price=parseInt(json.deals[i].actual_price);
+					var final_price=price-(discount/100*price)
+					var finalPrice=document.createElement('p');
+					finalPrice.className="final_p";
+					finalPrice.textContent="Final Price : Rs. "+Math.round(final_price);
+					cont.appendChild(finalPrice);
+					// Discount
+					var discnt=document.createElement('div');
+					discnt.className="discount_circle";
+					discnt.textContent=discount+"% Off";
+					cont.appendChild(discnt);
+					// Like Button
+					var like=document.createElement('button');
+					like.className="like_btn";
+					var glyph=document.createElement('span');
+					glyph.className="glyphicon glyphicon-thumbs-up";
+					like.appendChild(glyph);
+					var num=document.createElement('span');
+					num.className="like_num";
+					num.textContent="0";
+					like.appendChild(num);
+					cont.appendChild(like);
+					other.appendChild(cont);
+					deal.appendChild(other);
+					row.appendChild(deal);
+					if(i%2!=0){
+						document.getElementById('deals_list').appendChild(row);
+					}
+
+				}
+			});
+			$.getJSON( "hits.json", function(json){
+				$("#hits").append(json.api_hits);
+			});
+			$(document).on('click', ".like_btn", function() {
+			    console.log("click");
+			    likes+=1;
+			    $("#likes").html(likes);
+			    var t=$(this).children(".like_num");
+				$(t).html(function(i, val) {
+					return +val+1;
+				});
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<header>
+			<div class="col-md-8">
+				<img src="img/Nutanix-Logo.png" width="45%">
+				<h2><b>DealsHub</b> <small>- A Simplified Deal Hunting Experience!</small></h2>
+			</div>
+			<div class="col-md-4">
+				<div id="hits" >API Hits : </div>
+				<div id="counter">Likes : <span id="likes"></span></div>
+			</div>
+		</header>
+		<section id="deals_list" class="container">
+		</section>
+		<footer>
+			<p>Author: <a href="http://prtkgoswami.github.io/cv/" target="_blank">Pratik Goswami</a></p>
+		</footer>
+	</div>
+</body>
+</html>

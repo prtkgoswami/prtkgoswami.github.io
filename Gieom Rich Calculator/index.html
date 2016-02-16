@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gieom Rich Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- JQuery -->
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<!-- JQuery UI -->
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script type="text/javascript">
+		  $(function() {
+		  	$( "#calc" ).draggable();
+		  });
+	</script>
+
+	<!-- Touch Punch -->
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- Math JS -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.1.1/math.min.js"></script>
+
+	<!-- Custom -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/myScript.js"></script>
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100italic,300italic,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<header>
+			<div class="row">
+				<div class="col-md-7">
+					<h1>Gieom Rich Calculator</h1>
+					<h5>A Quest To Design Advance, Feature Rich Calculator!</h5>
+				</div>
+				<div id="hist_tog" class="col-md-5">
+					<label>History Toggle&nbsp;&nbsp;</label>
+					<div class="btn-group" data-toggle="buttons">
+						<label>
+						    <input id="hist_off" type="button" value="ON" id="Off" autocomplete="off" onclick="tog()">
+						</label>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-12 col-sm-12 block">
+					
+					<div id="calc" class="container col-md-3 col-sm-6 col-xs-12">
+						<div id="top" class="row">
+							<p><i class="fa fa-calculator"></i> Gieom Rich</p>
+						</div>
+						<div class="row">
+							<input id="disp" name="screen" class="col-md-12 col-sm-12 col-xs-12" type="text" placeholder="0">	
+						</div>
+						<div class="row">
+							<input type="button" value="C" class="col-md-6 col-sm-6 col-xs-6 button" onclick="clean()">
+							<input type="button" value="%" class="col-md-3 col-sm-3 col-xs-3 button" onclick="enterval('%')">
+							<input type="button" value="/" class="col-md-3 col-sm-3 col-xs-3 button" onclick="enterval('/')">
+						</div>
+						<div class="row">
+							<input type="button" value="7" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('7')">
+							<input type="button" value="8" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('8')">
+							<input type="button" value="9" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('9')">
+							<input type="button" value="x" class="col-md-3 col-sm-3 col-xs-3 button" onclick="enterval('*')">
+						</div>
+						<div class="row">
+							<input type="button" value="4" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('4')">
+							<input type="button" value="5" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('5')">
+							<input type="button" value="6" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('6')">
+							<input type="button" value="-" class="col-md-3 col-sm-3 col-xs-3 button" onclick="enterval('-')">
+						</div>
+						<div class="row">
+							<input type="button" value="1" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('1')">
+							<input type="button" value="2" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('2')">
+							<input type="button" value="3" class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enternum('3')">
+							<input type="button" value="+" class="col-md-3 col-sm-3 col-xs-3 button" onclick="enterval('+')">
+						</div>
+						<div class="row">
+							<input type="button" value="0" class="col-md-6 col-sm-6 col-xs-6 button number" onclick="enternum('0')">
+							<input type="button" value="." class="col-md-3 col-sm-3 col-xs-3 button number" onclick="enterval('.')">
+							<input type="button" value="=" class="col-md-3 col-sm-3 col-xs-3 button" onclick="eval()">
+						</div>
+					</div>
+					<div id="hist_panel" class="col-md-3 col-sm-4 col-xs-12">
+						<div class="row"><p>History</p></div>
+						<div class="row"><label>No. of Calc: <div id="countcalc"></div></label></div>
+						<div id="panel_body" class="row">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
