@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    //$(this).scrollTop(0);
+    $(this).scrollTop(0);
     $('#nmain').hide();
     var h=$(window).height();
     $('#top').css('height',h);
