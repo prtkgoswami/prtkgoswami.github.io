@@ -1,0 +1,193 @@
+/*
+-----------------------------------------------------
+                        General
+-----------------------------------------------------
+*/
+html,body{
+    margin:0;
+    padding:0;
+
+}
+body>div:first-child{
+    width:100%;
+}
+.block{
+    height:100vh;
+    /*border:1px solid white;*/
+}
+#top{
+    background:url('../img/back2.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /*height:700px;*/
+}
+#coding>.buffer,#foodforfun>.buffer{
+    background-color: #a1374c;
+}
+#newron>.buffer,#gaming>.buffer{
+    background-color: #e33b3b;
+}
+#robotics>.buffer,#infocus>.buffer{
+    background-color: #50bfad;
+}
+.title{
+    text-transform: capitalize;;
+    font-family: 'Pacifico';
+    /*font-weight: 300;*/
+    text-align: center;
+    color: #fff;
+    margin:25% 0;
+}
+
+.buffer{
+    height:auto !important;
+    padding: 0;
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .title{
+            font-size: 4em;
+    }
+    .details{
+        display: hidden;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .title{
+        font-size: 4em;
+    }
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .title{
+        font-size: 8em;
+    }
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .title{
+        font-size: 8em;
+    }
+}
+
+/*
+-----------------------------------------------------
+                        Navbar
+-----------------------------------------------------
+*/
+nav{
+    margin-bottom:0 !important;
+    padding-right: 10px;
+    background-color: transparent;
+    border: none !important;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    display:block;
+}
+nav button{
+    background-color: transparent !important;
+}
+nav button span{
+    background-color: #fff !important;
+}
+#bs-example-navbar-collapse-1{
+    border:none !important;
+}
+.navbar-brand{
+    padding:10% 25%;
+}
+nav ul li a{
+    color:#fff !important;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+nav ul li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav ul li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.hide{
+    display: none;
+}
+
+.parallax-block>div:nth-child(2){
+    height:80vh;
+}
+.parallax-block{
+    background-color: #d5d5d5;
+}
+.slides{
+    height:100%;
+}
+.bottom{
+    height:70%;
+    width:100%;
+    position: relative;
+    box-shadow: 5px 5px 10px grey;
+}
+.top{
+    height:100%;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 1;
+    transition: all 0.6s ease-in-out 0.6s;
+}
+.top,p{
+    position: absolute;
+}
+.bottom:hover .top{
+    margin-top:120%;
+    box-shadow: 5px 5px 10px grey;
+    transition: all 0.6s ease-in-out 0.6s;
+}
+.heading{
+}
+.heading h2{
+    font-size: 3.5em;
+    padding:10px;
+    text-align: center;
+    font-family: 'Pacifico';
+    text-shadow: 2px 2px 5px #4d4d4d;
+}
+/*#coding .heading h2,#foodforfun .heading h2{
+    color: #a1374c;
+}
+#newron .heading h2,#gaming .heading h2{
+    color: #e33b3b;
+}
+#robotics .heading h2,#infocus .heading h2{
+    color: #50bfad;
+}*/
+.cardholder{
+    display: block;
+    margin:0 auto;
+    height:100%;
+    margin-top:70px;
+}
+#robotics .cardholder>div:first-child,
+#foodforfun .cardholder>div:first-child{
+    margin-left:12.5%;
+}
+#infocus .cardholder>div:first-child,
+#newron .cardholder>div:first-child{
+    margin-left: 25%;
+}
