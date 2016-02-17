@@ -84,6 +84,11 @@
         box-shadow: 5px 5px 10px #121212;
         margin-top:65vh;
     }
+    .card h2{
+        font-family: 'Roboto';
+        font-weight: 300;
+        text-decoration: underline;
+    }
     .envelope{
         background-color: #fbc02d;
     }
