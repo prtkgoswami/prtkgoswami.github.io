@@ -24,6 +24,7 @@
     #foodforfun>.buffer{ background-image: url('../img/food.png'); }
     #infocus>.buffer{ background-image: url('../img/infocus.png'); }
     #newron>.buffer{ background-image: url('../img/newron.png'); }
+    #bridge>.buffer{ background-image: url('../img/newron.png'); }
     .parallax-block{ background-color: #d5d5d5; }
     .parallax-block>div:nth-child(2){ height:75vh; }
     .slides{ height:100%; }
@@ -31,7 +32,7 @@
         height:80%;
         width:100%;
         position: relative;
-        box-shadow: 5px 5px 10px #212121;
+        box-shadow: 5px 5px 10px #212121;;
         background: #fff;
         border-radius:10px;
     }
@@ -101,6 +102,9 @@
         #foodforfun .cardholder>div:nth-child(3){
             margin-left:25%;
         }
+        #bridge .cardholder>.card{
+            margin-left:25%;
+        }
     }
     /* tablets/desktops and up ----------- */
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -121,6 +125,9 @@
         #infocus .cardholder>div:first-child,
         #newron .cardholder>div:first-child{
             margin-left: 25%;
+        }
+        #bridge .cardholder>.card{
+            margin-left:37.5%;
         }
     }
     /* large desktops and up ----------- */
@@ -143,6 +150,9 @@
         #newron .cardholder>div:first-child{
             margin-left: 25%;
         }
+        #bridge .cardholder>.card{
+            margin-left:37.5%
+        }
     }
 
 
@@ -158,6 +168,18 @@
         background-position: center;
     }
 
+/*
+-----------------------------------------------------
+                        Bridge Designing
+-----------------------------------------------------
+*/
+    #bridge>div:nth-child(2){
+        height:65vh;
+    }
+    #bridge .bottom{
+        height:90%;
+    }
+
 
 /*
 -----------------------------------------------------
@@ -167,7 +189,8 @@
     nav{
         margin-bottom:0 !important;
         padding-right: 10px;
-        background-color: transparent;
+        /*background: linear-gradient(#222,#333,#444,#555);*/
+        /*background-color: transparent;*/
         border: none !important;
         font-family: 'Roboto';
         font-size: 18px;
@@ -184,7 +207,7 @@
         border:none !important;
     }
     .navbar-brand{
-        padding:10% 25%;
+        padding:10px 25px;
     }
     nav ul li a{
         color:#fff !important;
@@ -210,4 +233,68 @@
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
+    }
+
+/*
+-----------------------------------------------------
+                        Footer
+----------------------------------------------------
+*/
+    footer{
+        background:#333;
+        position: relative;
+    }
+    #social{ margin-left:32%; }
+    #social a{
+        font-size: 22px;
+        color:#fff;
+    }
+    #social i{ margin:0 5px; }
+    #social i:first-child{ margin-left:15px;}
+    .facebook:hover i{ color:#43609C; }
+    .instagram:hover i{ color:#9E7458; }
+    .youtube:hover i{ color:#E62117; }
+    #love{
+        color:#f5f5f5;
+        font-family: 'Lato';
+        font-weight: 400;
+        margin:5px;
+    }
+    #love a{ color:#f5f5f5; }
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991px) {
+        #social{ margin-left:16%; }
+        #love{ margin-left:20px; }
+    }
+    /* tablets/desktops and up ----------- */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        #social{ margin-left:30.5%; }
+        #love{ margin-left:10px; }
+    }
+    /* large desktops and up ----------- */
+    @media screen and (min-width: 1200px) {
+        #social{ margin-left:30.5%; }
+        #love{ margin-left:10px; }
+    }
+
+/*
+-----------------------------------------------------
+                    Schedule Button
+-----------------------------------------------------
+*/
+    #schedule_btn{
+        position: fixed;
+        bottom:50px;
+        right:25px;
+        padding:20px;
+        display: inline-block;
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px #212121;
+        background-color: #333;
+    }
+    #schedule_btn>i{
+        position: relative;
+        font-size: 32px;
+        color:#fff;
+        text-shadow: 2px 3px 3px #212121;
     }

@@ -1,28 +1,23 @@
 $(document).ready(function(){
-    $(this).scrollTop(0);
+    // $(this).scrollTop(0);
     $('#nmain').hide();
     var h=$(window).height();
     $('#top').css('height',h);
 });
 
 $(window).scroll(function(){
-    var coding= $('#coding').position().top;
-    //console.log(coding);
-    var robotics= $('#robotics').position().top;
-    var gaming= $('#gaming').position().top;
-    var foodforfun= $('#foodforfun').position().top;
-    var infocus= $('#infocus').position().top;
-    var newron= $('#newron').position().top;
+    var coding= $('#coding').position().top-50;
+    var robotics= $('#robotics').position().top-50;
+    var gaming= $('#gaming').position().top-50;
+    var foodforfun= $('#foodforfun').position().top-50;
+    var infocus= $('#infocus').position().top-50;
+    var newron= $('#newron').position().top-50;
     var height= $(document).scrollTop();
     if(height > coding){
         $('#nmain').slideDown("easing");
-        // if($('#nmain').hasClass('hide')){
-        //     $('#nmain').removeClass('hide');
-        // }
     }
     else{
         $('#nmain').slideUp("easing");
-        // $('#nmain').addClass('hide');
     }
 
     if(height > coding && height < robotics){
