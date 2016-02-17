@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Intra-Fest2</title>
+
+        <!-- JQuery -->
+        <script src="js/jquery-1.12.0.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css" crossorigin="anonymous">
+        <script src="bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <!-- Custom -->
+        <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <nav id="nmain" class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="img/logo2.png" height="36px" alt="" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#coding">Coding</a></li>
+                <li><a href="#robotics">Robotics</a></li>
+                <li><a href="#gaming">Gaming</a></li>
+                <li><a href="#foodforfun">Food For Fun</a></li>
+                <li><a href="#infocus">InFocus</a></li>
+                <li><a href="#newron">Newron</a></li>
+                <li><a href="#bridge">Bridge Designing</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container-fluid">
+            <div id="top" class="row parallax-block"></div>
+
+            <div id="coding" class="row parallax-block">
+                <div class="container-fluid buffer block"></div>
+                <div class="container block">
+                    <!-- <div class="heading container-fluid col-md-12">
+                        <h2>Coding</h2>
+                    </div> -->
+                    <br/>
+                    <div class="container-fluid event-menu">
+                        <div class="col-md-3 col-sm-3 col-xs-3" onclick="pullUp('#coderace')">
+                            Code Race
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3" onclick="pullUp('#bughunt')">
+                            Bug Hunt
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3" onclick="pullUp('#web404')">
+                            404: Not Found
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3" onclick="pullUp('#crypto')">
+                            Cryptoquest
+                        </div>
+                    </div><br/>
+                    <div class="container-fluid cardholder">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <div id="crypto" class="card">
+                                <center><h2>Cryptoquest</h2></center>
+                            </div>
+                            <div id="web404" class="card">
+                                <center><h2>404: Not Found</h2></center>
+                            </div>
+                            <div id="bughunt" class="card">
+                                <center><h2>Bug Hunt</h2></center>
+                            </div>
+                            <div id="coderace" class="card">
+                                <center><h2>Code Race</h2></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Coding Div -->
+
+
+            <footer class="row">
+                <span id="love">
+                    Made with <i class="fa fa-heart-o" style="color:#e53935;font-size:18px;font-weight:bold;"></i> by
+                    <a href="#">Geekonix</a>.
+                </span>
+
+                <span id="social">
+                    <a href="#" class="facebook"><i class="fa fa-facebook-official"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                </span>
+            </footer>
+
+        </div> <!-- End of Outer Container -->
+
+        <a href="#"><div id="schedule_btn" title="Schedule" class="btn">
+            <i class="fa fa-calendar"></i>
+        </div></a>
+
+        <script>
+            $(document).ready(function(){
+                var h=$(window).height();
+
+            });
+            function pullUp(id){
+                $('.card').each(function(){
+                    if($(this).hasClass('active')){
+                        console.log("yes");
+                        $(this).animate({'margin-top':"65vh"},500);
+                        $(this).removeClass("active");
+                    }
+                });
+                $(id).animate({'margin-top':"0px"},500);
+                $(id).addClass("active");
+            }
+        </script>
+    </body>
+</html>
