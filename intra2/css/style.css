@@ -25,7 +25,10 @@
     #infocus>.buffer{ background-image: url('../img/infocus.png'); }
     #newron>.buffer{ background-image: url('../img/newron.png'); }
     #bridge>.buffer{ background-image: url('../img/newron.png'); }
-    .parallax-block{ background-color: #d5d5d5; }
+    .parallax-block{
+        background-color: #d5d5d5;
+        overflow-y: hidden;
+    }
     .parallax-block>div:nth-child(2){ height:90vh; }
     .heading h2{
         font-size: 3.5em;
@@ -36,10 +39,14 @@
     }
     .event-menu>div{
         text-align: center;
-        font-family: 'Pacifico';
+        font-family: 'Raleway';
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px #121212;
         font-size: 24px;
         color:#333;
         text-decoration: none;
+        padding:10px 0;
     }
     .event-menu>div:before{
         content: "";
@@ -77,11 +84,19 @@
         box-shadow: 5px 5px 10px #121212;
         margin-top:65vh;
     }
+    .envelope{
+        background-color: #fbc02d;
+    }
+    #coderace,#atb,#cs,#xquizit,#shoot,#quiz,#bbuild{
+        margin-top:0;
+    }
 
 
     /* Extra small devices (phones, up to 480px) */
     @media screen and (max-width: 767px) {
         .title h2{ font-size: 4em; }
+        .event-menu>div{font-size:1.5em !important;}
+        .cardholder>div{ height:70vh; padding:5px 0; }
     }
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) and (max-width: 991px) {
@@ -89,30 +104,22 @@
         .parallax-block{
             overflow-x:hidden;
         }
+        .cardholder>div{ height:82vh; padding:5px 0; }
     }
     /* tablets/desktops and up ----------- */
     @media (min-width: 992px) and (max-width: 1199px) {
         .title h2{ font-size: 8em; }
         .card{ height:100%; }
-        .bottom:hover .top{
-            margin-top:120%;
-            box-shadow: 5px 5px 10px #212121;
-            transition: all 0.6s ease-in-out 0.6s;
-        }
         .parallax-block{
             overflow-y:hidden;
         }
+        /*.cardholder>div{ height:82vh; padding:5px 0; }*/
 
     }
     /* large desktops and up ----------- */
     @media screen and (min-width: 1200px) {
         .title h2{ font-size: 8em; }
         .card{ height:100%; }
-        .bottom:hover .top{
-            margin-top:140%;
-            box-shadow: 5px 5px 10px #212121;
-            transition: all 0.6s ease-in-out 0.6s;
-        }
         .parallax-block{
             overflow-y:hidden;
         }
@@ -225,6 +232,11 @@
         margin:5px;
     }
     #love a{ color:#f5f5f5; }
+    /* Extra small devices (phones, up to 480px) */
+    @media screen and (max-width: 767px) {
+        #social{ margin-left:6%; }
+        #love{ margin-left:10px; }
+    }
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) and (max-width: 991px) {
         #social{ margin-left:16%; }
