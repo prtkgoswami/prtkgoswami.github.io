@@ -1,0 +1,107 @@
+/* MAIN */
+	/* HEADER */
+		header{
+			padding:100px 0 100px 0;
+			text-align: center;
+			background-color:#eee;
+			background-image:url('../img/background/symphony.png');
+			background-repeat: repeat;
+		}
+		header>p{
+			font-family: 'Raleway';
+			font-weight: 300;
+			font-size: 28px;
+		}
+		header>p:first-child{
+			font-family: Parchment;
+			font-size: 300px;
+			margin-bottom: 0;
+			color:#333;
+		}
+		header>p:nth-child(2){
+			/*margin-top:-70px;*/
+			color:#5f5f5f;
+		}
+
+	/* UPDATES */
+		#updates{
+			padding:0px 0px 50px 0px;
+			background-color:#eee;
+			background-image:url('../img/background/symphony.png');
+			background-repeat: repeat;
+		}
+		#updates p{
+			font-family: 'Raleway';
+			font-weight: 300;
+			font-size: 22px;
+			text-align: center;
+			color:#f5f5f5;
+		}
+		#updates>div>div{
+			padding:80px 0;
+			border:1px solid #fff;
+			background-color:#444;
+		}
+		#updates>div>div:nth-child(1){
+			padding:80px 0;
+			border:1px solid #fff;
+			background-image:url('../img/background/diagmonds.png');
+			background-repeat: repeat;
+		}
+		#updates>div>div:nth-child(1)>p{ color:#e53935; }
+
+	/* CATEGORY */
+		#cat{
+			padding:0px 0px 50px 0px;
+			background-color:#eee;
+			background-image:url('../img/background/symphony.png');
+			background-repeat: repeat;
+		}
+		#cat p{
+			font-family: 'Raleway';
+			font-weight: 300;
+			font-size: 22px;
+			text-align: center;
+			color:#f5f5f5;
+		}
+		#cat>div>div{
+			padding:80px 0;
+			border:1px solid #fff;
+			background-color:#444;
+		}
+		#cat .title{
+			padding:80px 0;
+			border:1px solid #fff;
+			background-image:url('../img/background/diagmonds.png');
+			background-repeat: repeat;
+		}
+		#cat .title p{
+			text-transform: uppercase;
+			color:#e53935;
+		}
+		#accessory{ margin-top: 50px; }
+		#accessory .title,
+		#accessory div:nth-child(4){ padding:69px 0; }
+		#accessory .title>p,
+		#accessory div:nth-child(4)>p{ margin:0; }
+		.card{
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.card>p{
+			background: rgba(0,0,0,0.3);
+			background: -webkit-linear-gradient(left, rgba(255,255,255,0) , rgba(0,0,0,0.6) , rgba(255,255,255,0)); 
+			background: -o-linear-gradient(right, rgba(255,255,255,0) , rgba(0,0,0,0.6) , rgba(255,255,255,0)); 
+			background: -moz-linear-gradient(right, rgba(255,255,255,0) , rgba(0,0,0,0.6) , rgba(255,255,255,0)); 
+			background: linear-gradient(to right, rgba(255,255,255,0) , rgba(0,0,0,0.6) , rgba(255,255,255,0));
+		}
+		#cushion{ background-image: url('../img/product/cushions.jpg'); }
+		#throw{ background-image: url('../img/product/throws.jpeg'); }
+		#tablecloth{ background-image: url('../img/product/table_cloth.jpg'); }
+		#runner{ background-image: url('../img/product/runner.jpg'); }
+		#curtain{ background-image: url('../img/product/curtains.jpg'); }
+		#bag{ background-image: url('../img/product/bags.jpg'); }
+		#scarf{ background-image: url('../img/product/scarf.jpg'); }
+		#jewellery{ background-image: url('../img/product/jewellery.jpg'); }
+
