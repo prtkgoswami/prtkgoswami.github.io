@@ -401,7 +401,7 @@
       </div>
 
       <footer>
-        <p id="counter">Visitor Count :: <?php include('/counter/counter.php') ?></p>
+        <p id="counter" style="visibility: hidden;">Visitor Count :: </p>
       </footer>
     </div>
   </body>
