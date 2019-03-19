@@ -257,12 +257,12 @@ input:checked+.slider:before {
     padding: 5px;
 }
 
-#resume { background-image: url('../resources/imgs/resume.png'); }
-#piano { background-image: url('../resources/imgs/piano.png'); }
-#rich-calc { background-image: url('../resources/imgs/rich-calc.png'); }
-#colorz { background-image: url('../resources/imgs/colorz.png'); }
-#color-tictactoe { background-image: url('../resources/imgs/color-tictactoe.png'); }
-#neon-texts { background-image: url('../resources/imgs/neon-texts.png'); }
-#pixel { background-image: url('../resources/imgs/pixel.png'); }
-#beautify { background-image: url('../resources/imgs/beautify.png'); }
+#resume { background-image: url('../resources/imgs/resume.PNG'); }
+#piano { background-image: url('../resources/imgs/piano.PNG'); }
+#rich-calc { background-image: url('../resources/imgs/rich-calc.PNG'); }
+#colorz { background-image: url('../resources/imgs/colorz.PNG'); }
+#color-tictactoe { background-image: url('../resources/imgs/color-tictactoe.PNG'); }
+#neon-texts { background-image: url('../resources/imgs/neon-texts.PNG'); }
+#pixel { background-image: url('../resources/imgs/pixel.PNG'); }
+#beautify { background-image: url('../resources/imgs/beautify.PNG'); }
 #bit-smiley { background-image: url('../resources/imgs/8bit-smiley.PNG'); }
