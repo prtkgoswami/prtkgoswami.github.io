@@ -1,0 +1,20 @@
+body.light { background-color: #eee; }
+.light #main-wrapper { background-color: rgba(0, 128, 128, 0.1); }
+
+/* HEADER */
+.light header { background-color: #008080; }
+.light #menu-btn, .light #close-btn, .light #page-title { color: #fff; }
+.light #menu-btn:hover, .light #close-btn:hover { background-color: #006161; }
+
+/* MENU */
+.light #menu-wrapper { background-color: #008080; }
+/* .light .menu-item:hover p { text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.637); } */
+.light #menu-wrapper p { color: #fff; } 
+.light .social-icons { color: rgba(255, 255, 255, 0.8); }
+/* .light .social-icons:hover {  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.637); }  */
+.light #setting-wrapper label:nth-child(odd) { color: #fff; } 
+.light #footer p, .light #footer i { color: #fff; }
+
+/* MAIN CONTENT */ 
+.light .overlay { background-color: rgba(0, 128, 128, 0.8); }
+.light .overlay-title, .light .overlay-content { color: #fff; }

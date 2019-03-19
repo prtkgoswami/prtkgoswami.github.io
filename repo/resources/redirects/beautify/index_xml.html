@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beautify - XML</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Beauitfy/Format JSON or XML Content">
+    <meta name="keywords" content="Beautify, JSON, XML, Pratik, Goswami">
+    <meta name="author" content="Pratik Goswami">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- FONT MFIZZ -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600" rel="stylesheet">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="./css/style.css" media="screen" title="no title">
+    <script src="./js/script.js" charset="utf-8"></script>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		<header class="container-fluid ">
+			<center>
+                <a href="index.html"><strong>beautify</strong></a>
+                <sub id="flag">&lt; XML /&gt;</sub>      
+            </center>
+		</header>
+        <div id="main" class="container-fluid">
+            <div class="row">
+                <div id="val_result" class="col-12" style="padding: 0;"></div>
+            </div>
+            <div class="row">
+                <div class="col-1" hidden></div>
+                <div class="container-fluid col-4" style="padding: 0;">
+                    <p>Unformatted XML:</p>
+                    <textarea id='ugly'></textarea>
+                </div>
+                <div class="container-fluid col-2">
+                    <div><button type="button" id="CLR_BTN" class="btn btn-dark">Clear</button></div>
+                    <div><button type="button" id="VALIDATE_BTN" class="btn btn-dark">Validate</button></div>
+                    <div><button type="button" id="FORMAT_BTN" class="btn btn-dark">Beautify/Format</button></div>
+                    <div><button type="button" id="ABT_BTN" class="btn btn-dark">About</button></div>
+                    <div><button type="button" id="JSON_BTN" class="btn btn-dark">JSON</button></div>
+                    <p id="footer">
+                        Made with <i class="fa fa-heart-o" aria-hidden="true" style="color:#e53935;"></i>
+                    </p>
+                </div>
+                <div class="container-fluid col-4" style="padding: 0;">
+                    <p>Formatted XML:</p>
+                    <textarea id="beauty"></textarea>
+                </div>
+                <div class="col-1" hidden></div>
+            </div>
+        </div>
+		<!-- <footer class="fixed-bottom container-fluid">
+            <p>
+                Made with <i class="fa fa-heart-o" aria-hidden="true" style="color:#e53935;"></i>
+            </p>
+        </footer> -->
+	</div>
+
+</body>
+</html>
