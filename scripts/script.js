@@ -7,7 +7,10 @@ $(document).ready(function () {
     }, 3000);
     setTimeout(function(){
         $('#loading-icon').html('<p style="color:#43A047;"><i class="fas fa-check"></i></p>')
-        $('#preload').animate({ 'marginTop': "-100%" }, 1500);
+        $('#preload').animate({ 'marginLeft': "-100%" }, 1500);
+        setTimeout(function(){
+            $('#preload').css('display', 'none');
+        },2000)
     }, 6000);
 
     // General Sets
@@ -21,10 +24,10 @@ $(document).ready(function () {
 
         if (y >= intro_top) {
             $('nav').fadeIn();
-            console.log("Showing nav");
+            // console.log("Showing nav");
         } else {
             $('nav').fadeOut();
-            console.log("Hiding nav");
+            // console.log("Hiding nav");
         }
     });
 
