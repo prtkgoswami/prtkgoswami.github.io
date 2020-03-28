@@ -32,13 +32,14 @@ html, body {
     padding: 0 15px;
     position: fixed;
     z-index: 2;
-    background-color: #444;
+    /* background-color: rgba(68, 68, 68, 0.5); */
+    background-color: rgba(0,0,0,0.5);
     color: #fff;
 }
 #menu-btn p { font-size: 15px; }
 #menu-btn:hover {
-    /* background-color: #444;
-    border-color: #eee; */
+    background-color: #444;
+    /* border-color: #eee; */
     box-shadow: 0px 0px 20px #444;
 }
 #menu-btn:hover p { color: #eee; }
@@ -72,6 +73,7 @@ html, body {
     background-color: rgba(126, 87, 194, 1.0);
     margin-top: -200%;
     z-index: 3;
+    height: 100%;
 }
 #nav-overlay a { text-decoration: none; }
 #close-menu {
@@ -116,6 +118,11 @@ html, body {
 @media all and (min-width: 768px) {
     #close-menu { display: block; }
     #close-menu-min { display: none; }
+}
+@media screen and (orientation: landscape) {
+    .nav-link {
+        margin: 0 auto;
+    }
 }
 
 
@@ -269,7 +276,10 @@ header a { text-decoration: none; }
 }
 @media all and (min-width: 768px) {
     .exp-img-wrapper { display: block; }
-    .exp-text-wrapper { width: 70%; }
+    .exp-text-wrapper {
+        width: 70%;
+        padding-top: 20px;
+    }
     .exp-right { text-align: right; }
     .exp-left { text-align: left; }
 }
@@ -300,8 +310,13 @@ header a { text-decoration: none; }
     margin: 30px 0;
     color: #444;
 }
-.social-icon:hover { background-color: #444; }
-.social-icon:hover p { color: #ddd; }
+/* .social-icon:hover { background-color: #444; } */
+#facebook:hover { background-color: #1877f2; }
+#github:hover { background-color: #ad5c51; }
+#instagram:hover { background-color: #c32aa3; }
+#linkedin:hover { background-color: #007bb5; }
+#email:hover { background-color: #444; }
+.social-icon:hover p { color: #fff; }
 #contact .row:last-child p {
     text-align: center;
     color: #444;
@@ -310,9 +325,7 @@ header a { text-decoration: none; }
     text-decoration: underline;
     color: #444;
 }
-#email {
-    width: 100%;
-}
+#email { width: 100%; }
 @media all and (min-width: 768px) {
     .social-wrapper { width: 60%; }
     .social-icon { width: 20%; }
