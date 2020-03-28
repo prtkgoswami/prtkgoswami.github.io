@@ -113,15 +113,19 @@ html, body {
     font-weight: 300;
 }
 .nav-link:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.8);
 }
 @media all and (min-width: 768px) {
     #close-menu { display: block; }
     #close-menu-min { display: none; }
 }
-@media all and (max-height: 350px) {
+@media all and (max-height: 340px) {
     #nav-overlay .row { margin: 5px 0; }
     .nav-link { margin: 0 auto; }
+    .nav-link p {
+        font-size: 28px;
+        margin: 12px 0;
+    }
 }
 
 
