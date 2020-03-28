@@ -3,673 +3,399 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume - Pratik Goswami</title>
+    <meta name="author" content="Pratik Goswami">
+    <meta name="title" content="Pratik Goswami">
+    <meta name="description" content="Hi! I am Pratik Goswami, a Graduate Student based in Bothell 
+                                    and Welcome to my Personal Portfolio Website">
+    <meta name="og:title" content="Pratik Goswami">
+    <meta name="og:description" content="Hi! I am Pratik Goswami, a Graduate Student based in Bothell 
+                                    and Welcome to my Personal Portfolio Website">
+    <title>Pratik Goswami</title>
 
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
 
-    <!-- FONT-AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://kit.fontawesome.com/2c23bf1f54.js" crossorigin="anonymous"></script>
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
 
     <!-- CUSTOM -->
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./css/gridify.css">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <script src="./js/index_script.js"></script>
 </head>
 <body>
-    <div id="preload">
-        <div id="loader">
-            <p id="greeting">Hi!<br/>I am Pratik Goswami...</p>
-            <p id="welcome">&<br/>Welcome to My Page.</p>
-        </div>
-        <div id="loading-icon">
-            <!-- <p>Loading <span>.</span><span>.</span><span>.</span></p> -->
-            <p class="rotate"><i class="fas fa-sync-alt"></i></p>
+    <div id="nav-overlay">
+        <div class="container">
+            <div class="row">
+                <div id="close-menu"><p><i class="fas fa-times"></i></p></div>
+            </div>
+            <div class="row">
+                <a href="#skills"><div id="nav-skill" class="nav-link"><p>skills</p></div></a>
+            </div>
+            <div class="row">
+                <a href="#exp"><div id="nav-exp" class="nav-link"><p>experience</p></div></a>
+            </div>
+            <div class="row">
+                <a href="#contact"><div id="nav-contact" class="nav-link"><p>contact & credits</p></div></a>
+            </div>
+            <div class="row">
+                <div id="close-menu-min"><p><i class="fas fa-times"></i></p></div>
+            </div>
         </div>
     </div>
 
-    <div id="main-content-wrapper">
-        <nav class="">
-            <div class="" id="logo">
-                <img src="./resources/img/Logos/gapped_mkbhd_inspired_new.png" width="100%">
+    <!-- <div id="menu-btn"><p><i class="fas fa-bars"></i></p></div> -->
+
+    <div class="container">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div id="menu-btn"><p><i class="fas fa-bars"></i></p></div>
+                    <div id="brand"><p>pratik goswami</p></div>
+                    <div id="brand-min"><img src="./res/img/gapped_mkbhd_inspired_new.png" alt="Logo" width="100%"></div>
+                </div>
             </div>
-            <ul class="nav">
-                <!-- <a href="#intro"><li class="header-menu-items" id="header-menu-intro">Introduction</li></a> -->
-                <a href="#skill"><li class="header-menu-items" id="header-menu-skill">Skill Set</li></a>
-                <a href="#gallery"><li class="header-menu-items" id="header-menu-gallery">Gallery</li></a>
-                <a href="#contact"><li class="header-menu-items" id="header-menu-contact">Contact</li></a>
-            </ul>
         </nav>
 
-        <header class="web_frame ">
-            <div id="header-menu">
-                <!-- <p>- MENU -</p> -->
-                <div id="header-logo">
-                    <img src="./resources/img/Logos/zodiac_cropped.png" alt="Zodiac_logo" width="100%">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <div id="img-container">
+                            <img src="./res/img/avatar2.svg" alt="Avatar" width="100%">
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <a href="http://prtkgoswami.github.io/repo/" target="_blank"><div id="repo" class="link-btn"><p>repository</p></div></a>
+                        <a href="./res/doc/resume.pdf" target="_blank"><div id="resume" class="link-btn"><p>resume</p></div></a>
+                        <div id="intro">
+                            <p>Hi! I am a Graduate Student at UW based in Seattle. I love programming. </p>
+                        </div>
+                        <div id="continue">
+                            <p>Scroll to Know More About Me</p>
+                            <a href="#skills"><p id="down-arrow"><i class="fas fa-arrow-down"></i></p></a>
+                        </div>
+                    </div>
                 </div>
-                <ul class="nav">
-                    <!-- <a href="#intro"><li class="header-menu-items" id="header-menu-intro">Introduction</li></a><br/> -->
-                    <a href="#skill"><li class="header-menu-items" id="header-menu-skill">Skill Set</li></a><br/>
-                    <a href="#gallery"><li class="header-menu-items" id="header-menu-gallery">Gallery</li></a><br/>
-                    <a href="#contact"><li class="header-menu-items" id="header-menu-contact">Contact</li></a>
-                </ul>
-            </div>
-            <div id="header-content">
-                <!-- <h1 class="placeholder">welcome</h1> -->
-                <p id="page-title" class="">pratik goswami</p>
-                <p id="intro">
-                    My interest in Computers was born in the 9th Grade when I worked on a Java Project. During my undergraduate studies, I majored in Computer Science & Engineering. Besides my regular coursework, I dabbled in Competitive Coding, Windows Application Development and Web Development.<br/><br/>
-                    After graduating, I chose to work in IBM to get a know-how of the world of IT and Business. During my tenure in IBM, I learnt about Middleware technologies, Devops Technologies and Artificial Intelligence. After spending 2 years in IBM, I now belive that I am matured and capable enough to enter a new domain in my Life.<br/><br/>
-                    Currently I am a student at University of Washington - Bothell pursuing my Graduate Studies in Computer Science and Software Engineering.<br/><br/>
-                    When I am not on my Laptop, you'll find me watching movies, playing my guitar or driving whilst listening to some sweet tunes.<br/><br/>
-                    I love to meet new people and learn new things to expand my knowledge. I strongly believe in learning by application. If you like my work, I'd love to talk.
-                </p>
             </div>
         </header>
 
-        <div id="skill" class="web_frame">
-            <h1 class="watermark">skill set</h1>
-            <div id="skillset-wrapper">
-                <div id="row1" class="row">
-                    <div id="program-language" class="skill-wrapper">
-                        <p class="skillset-title">programming language</p>
-                        <div class="progress-wrapper">
-                            <div id="python" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Python</p>
+        <section id="skills">
+            <div class="container">
+                <div class="row page-title"><p>skills</p></div>
+                <div class="row">
+                    <div id="app-dev" class="col-6">
+                        <p class="skill-title">app development</p>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Android</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="java" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Java</p>
-                            </div>
-                            <div id="c" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">C</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Kotlin</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
                         </div>
                     </div>
-                    <div id="middleware" class="skill-wrapper">
-                        <p class="skillset-title">middleware</p>
-                        <div class="progress-wrapper">
-                                <div id="wmb" class="progress">
-                                    <div class="progress-parts advanced">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <div class="progress-parts intermediate active">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <div class="progress-parts beginner active">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <p class="skill-title">Websphere Message<br/>Broker</p>
-                                </div>
-                                <div id="wmq" class="progress">
-                                    <div class="progress-parts advanced">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <div class="progress-parts intermediate active">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <div class="progress-parts beginner active">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <p class="skill-title">Websphere Message<br/>Queue</p>
-                                </div>
-                                <div id="iib" class="progress">
-                                    <div class="progress-parts advanced">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <div class="progress-parts intermediate active">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <div class="progress-parts beginner active">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <p class="skill-title">IBM Integration<br/>Bus</p>
-                                </div>
-                                <div id="esql" class="progress">
-                                    <div class="progress-parts advanced">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <div class="progress-parts intermediate active">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <div class="progress-parts beginner active">
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                        <div class="progress-cube"></div>
-                                    </div>
-                                    <p class="skill-title">ESQL</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div id="row2" class="row">
-                    <div id="script-language" class="skill-wrapper">
-                        <p class="skillset-title">app development</p>
-                        <div class="progress-wrapper">
-                            <div id="android" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Android</p>
-                            </div>
-                            <div id="kotlin" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Kotlin</p>
+                    <div id="web-dev" class="col-6">
+                        <p class="skill-title">web development</p>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>HTML</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
                         </div>
-                    </div>
-                    <div id="web-development" class="skill-wrapper">
-                        <p class="skillset-title">web development</p>
-                        <div class="progress-wrapper">
-                            <div id="html" class="progress">
-                                <div class="progress-parts advanced active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">HTML</p>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>CSS</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="css" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">css</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Javascript</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="javascript" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Javascript</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>JQuery</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="jquery" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">jquery</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Django</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="django" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">django</p>
-                            </div>
-                            <div id="electron-js" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Electron JS</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Electron JS</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="row3" class="row">
-                    <div id="tools" class="skill-wrapper">
-                        <p class="skillset-title">tools</p>
-                        <div class="progress-wrapper">
-                            <div id="sublime-txt" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Sublime Text</p>
+                <div class="row">
+                    <div id="prog-lang" class="col-6">
+                        <p class="skill-title">programming language</p>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Python</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="vs-code" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">VS Codes</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Java</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="photoshop" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Photoshop</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>C++</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="jenkins" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Jenkins</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>C</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="soapui" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Soap UI</p>
+                        </div>
+                    </div>
+                    <div id="middleware" class="col-6">
+                        <p class="skill-title">middleware</p>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Websphere Message Broker</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="postman" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Postman</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Websphere Message Queue</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
-                            <div id="vim" class="progress">
-                                <div class="progress-parts advanced">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts intermediate">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <div class="progress-parts beginner active">
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                    <div class="progress-cube"></div>
-                                </div>
-                                <p class="skill-title">Vim</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>IBM Integration Bus</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>ESQL</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="row4" class="row">
-                    <div id="legends">
-                        <div class="legend-cell"><p>beginner</p></div>
-                        <div class="legend-cell"><p>intermediate</p></div>
-                        <div class="legend-cell"><p>advanced</p></div>
+                <div id="tools-row" class="row">
+                    <div id="tools" class="col-6">
+                        <p class="skill-title">tools</p>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Sublime Text</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>VS Code</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Photoshop</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Jenkins</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Soap UI</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                                <div class="rating-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Postman</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-title"><p>Vim</p></div>
+                            <div class="skill-item-rating">
+                                <div class="rating-bar"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="gallery" class="web_frame">
-            <h1 class="watermark">gallery</h1>
-            <div id="gallery-wrapper">
-                <div id="online-repo" class="gallery-item">
-                    <a href="./repo/" target="_blank"><div class="gallery-image">
-                        <div class="gallery-overlay"><p>OPEN</p></div>
-                        <img src="./resources/img/Gallery/repo.PNG" alt="" width="100%">
-                    </div></a>
-                    <div class="gallery-label">
-                        <p class="gallery-title">Online Repository</p>
-                        <p class="gallery-desc">Online Repository for all my Web Development Works.<br/><br/></p>
+        <!-- <section id="exp">
+            <div class="container">
+                <div class="row page-title"><p>work experience</p></div>
+                <div class="row">
+                    <div id="ti" class="col-4">
+                        <div class="exp-wrapper">
+                            <div class="exp-img">
+                                <img src="./res/img/exp-ti.png" alt="Techno India Logo" width="100%">
+                            </div>
+                            <p>Techno India, Saltlake, Kolkata</p>
+                            <p>Bachelors in Technology - Computer Science & Engineering</p>
+                            <p>2012</p>
+                            <p>2016</p>
+                        </div>
                     </div>
-                </div>
-                <div id="rich-calc" class="gallery-item">
-                    <a href="./repo/resources/redirects/rich_calc/" target="_blank"><div class="gallery-image">
-                        <div class="gallery-overlay"><p>OPEN</p></div>
-                        <img src="./resources/img/Gallery/rich-calc.PNG" alt="" width="100%">
-                    </div></a>
-                    <div class="gallery-label">
-                        <p class="gallery-title">Rich Calculator</p>
-                        <p class="gallery-desc">An online calculator which can perform all basic arithmetic operations, store history and with a draggable calculator.</p>
+                    <div id="ibm" class="col-4">
+                        <div class="exp-wrapper">
+                            <div class="exp-img">
+                                <img src="./res/img/exp-ibm.png" alt="IBM Logo" width="100%">
+                            </div>
+                            <p>IBM India Private Limited</p>
+                            <p>Associate System Engineer (Application Developer)</p>
+                            <p>2016</p>
+                            <p>2019</p>
+                        </div>
                     </div>
-                </div>
-                <div id="colorz" class="gallery-item">
-                    <a href="./repo/resources/redirects/colorz/" target="_blank"><div class="gallery-image">
-                        <div class="gallery-overlay"><p>OPEN</p></div>
-                        <img src="./resources/img/Gallery/colorz.PNG" alt="" width="100%">
-                    </div></a>
-                    <div class="gallery-label">
-                        <p class="gallery-title">Colorz</p>
-                        <p class="gallery-desc">An online converter which can perform conversions between Hex to RGB and vice versa.</p>
-                    </div>
-                </div>
-                <div id="pixel" class="gallery-item">
-                    <a href="./repo/resources/redirects/pixel/" target="_blank"><div class="gallery-image">
-                        <div class="gallery-overlay"><p>OPEN</p></div>
-                        <img src="./resources/img/Gallery/pixel.PNG" alt="" width="100%">
-                    </div></a>
-                    <div class="gallery-label">
-                        <p class="gallery-title">Pixel</p>
-                        <p class="gallery-desc">Web Application to draw 8-bit drawings.</p>
-                    </div>
-                </div>
-                <div id="beautify" class="gallery-item">
-                    <a href="#" target="_blank" disabled><div class="gallery-image">
-                        <div class="gallery-overlay"><p>COMING SOON</p></div>
-                        <img src="./resources/img/Gallery/beautify.PNG" alt="" width="100%">
-                    </div></a>
-                    <div class="gallery-label">
-                        <p class="gallery-title">Beautify</p>
-                        <p class="gallery-desc">Web Application to beautify JSON & XML data.</p>
-                    </div>
-                </div>
-                <div id="neon-txts" class="gallery-item">
-                    <a href="./repo/resources/redirects/neon_txts/" target="_blank"><div class="gallery-image">
-                        <div class="gallery-overlay"><p>OPEN</p></div>
-                        <img src="./resources/img/Gallery/neon-texts.PNG" alt="" width="100%">
-                    </div></a>
-                    <div class="gallery-label">
-                        <p class="gallery-title">Neon Texts</p>
-                        <p class="gallery-desc">Neon Text showcase using Vanilla CSS.</p>
+                    <div id="uw" class="col-4">
+                        <div class="exp-wrapper">
+                            <div class="exp-img">
+                                <img src="./res/img/exp-uw.png" alt="UW Logo" width="100%">
+                            </div>
+                            <p>University of Washington, Bothell</p>
+                            <p>Masters in Science - Computer Science & Software Engineering</p>
+                            <p>2019</p>
+                            <p>Present</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section> -->
 
-        <div id="contact" class="">
-            <!-- <h1 class="placeholder">contact</h1> -->
-            <p>Find me At</p>
-            <div id="contact-container">
-                <div class="icon-container" class="">
-                    <div class=icon-row>
-                        <a href="https://www.facebook.com/prtkgoswami" target="_blank">
-                            <div class="icon " id="facebook"><i class="fab fa-facebook-f"></i></div>
-                        </a>
-                        <a href="https://github.com/prtkgoswami" target="_blank">
-                            <div class="icon" id="github"><i class="fab fa-github-alt"></i></div>
-                        </a>
-                        <a href="https://www.instagram.com/prtkgoswami8/" target="_blank">
-                            <div class="icon " id="instagram"><i class="fab fa-instagram"></i></div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/prtkgoswami" target="_blank">
-                            <div class="icon" id="linkedin"><i class="fab fa-linkedin-in"></i></div>
-                        </a>
+        <section id="exp">
+            <div class="container">
+                <div class="row page-title"><p>work experience</p></div>
+                <div class="row">
+                    <div class="exp-item">
+                        <div class="exp-img-wrapper">
+                            <img class="exp-img" src="./res/img/exp-ti.png" alt="" width="100%">
+                        </div>
+                        <div class="exp-text-wrapper exp-right">
+                            <p><strong>Techno India, Saltlake, Kolkata</strong></p>
+                            <p>Bachelors in Technology - Computer Science & Engineering</p>
+                            <p>Started : 2012</p>
+                            <p>Ended : 2016</p>
+                        </div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-text-wrapper exp-left">
+                            <p><strong>IBM India Private Limited</strong></p>
+                            <p>Associate System Engineer (Application Developer)</p>
+                            <p>Started : 2016</p>
+                            <p>Ended : 2019</p>
+                        </div>
+                        <div class="exp-img-wrapper">
+                            <img class="exp-img" src="./res/img/exp-ibm.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-img-wrapper">
+                            <img class="exp-img" src="./res/img/exp-uw.png" alt="" width="100%">
+                        </div>
+                        <div class="exp-text-wrapper exp-right">
+                            <p><strong>University of Washington, Bothell</strong></p>
+                            <p>Masters in Science - Computer Science & Software Engineering</p>
+                            <p>Started : 2019</p>
+                            <p>Ended : Present</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <p>If you like my site, you can find a concise version of it below:</p>
-            <div class="icon-container">
-                <a href="./resources/docs/CV.pdf" target="_blank"><div class="icon " id="resume"><i class="far fa-file"></i></div></a>
-            </div>
-        </div>
+        </section>
 
-        <footer class="">Made with <i class="fas fa-heart"></i>. Powered by <a href="https://fontawesome.com" target="_blank"><i class="fab fa-font-awesome-flag" title="Font-Awesome"></i></a>.</footer>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <p>If you like my work, be sure to hit me up . . .</p>
+                </div>
+
+                <div class="row">
+                    <div id="social-wrapper">
+                        <div id="facebook" class="social-icon">
+                            <a href="https://www.facebook.com/prtkgoswami" target="_blank">
+                                <p><i class="fab fa-facebook-f"></i></p>
+                            </a>
+                        </div>
+                        <div id="github" class="social-icon">
+                            <a href="https://github.com/prtkgoswami" target="_blank">
+                                <p><i class="fab fa-github-alt"></i></p>
+                            </a>
+                        </div>
+                        <div id="instagram" class="social-icon">
+                            <a href="https://www.instagram.com/prtkgoswami8/" target="_blank">
+                                <p><i class="fab fa-instagram"></i></p>
+                            </a>
+                        </div>
+                        <div id="linkedin" class="social-icon">
+                            <a href="https://www.linkedin.com/in/prtkgoswami" target="_blank">
+                                <p><i class="fab fa-linkedin-in"></i></p>
+                            </a>
+                        </div>
+                        <div id="email" class="social-icon">
+                            <a href="mailto:prtkgoswami8@gmail.com?Subject=Hi! I came across your website." target="_blank">
+                                <p><i class="far fa-envelope"></i></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>Special Thanks to <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> for making the amazing icons you see on this website.</p>
+                </div>
+            </div>
+        </section>
+
     </div>
+
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i>.</p>
+    </footer>
 </body>
 </html>
