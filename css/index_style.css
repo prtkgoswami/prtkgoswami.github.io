@@ -119,10 +119,9 @@ html, body {
     #close-menu { display: block; }
     #close-menu-min { display: none; }
 }
-@media screen and (orientation: landscape) {
-    .nav-link {
-        margin: 0 auto;
-    }
+@media all and (max-height: 350px) {
+    #nav-overlay .row { margin: 5px 0; }
+    .nav-link { margin: 0 auto; }
 }
 
 
