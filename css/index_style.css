@@ -21,7 +21,12 @@ html, body {
         text-align: left;
     }
 }
-
+.purple {
+    background-color: blueviolet;
+}
+.red {
+    background-color: #F44336;
+}
 
 /* NAVIGATION */
 #menu-btn {
@@ -142,7 +147,7 @@ header a { text-decoration: none; }
     margin: 50px auto;
     border: 2px solid #444;
     padding: 10px;
-    width: 60%;
+    width: 70%;
     min-width: 206px;
     box-sizing: border-box;
 }
@@ -201,7 +206,6 @@ header a { text-decoration: none; }
     border-bottom: 1px solid #444;
     padding: 5px 10px;
     font-size: 18px;
-    font-weight: 100;
     text-transform: capitalize;
     color: #444;
     font-weight: 400;
@@ -239,15 +243,35 @@ header a { text-decoration: none; }
 .rating-bar:nth-child(1) { background-color: #66BB6A; }
 .rating-bar:nth-child(2) { background-color: #FFEE58; }
 .rating-bar:nth-child(3) { background-color: #EF5350; }
+.green-novice { background-color: #66BB6A; }
+.yellow-experienced { background-color: #FFEE58; }
+.red-expert { background-color: #EF5350; }
 @media all and (min-width: 768px) {
     #tools { margin: 0 25%; }
     .skill-item-title p { font-size: 16px; }
 }
+.legend-title {
+    padding: 0px 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(68, 68, 68, 0.6);
+    font-weight: 700;
+    text-align: center;
+}
+.legend-title p { margin: 5px auto; }
+#skill-legend .legend-items p {
+    text-align: center;
+    margin: 5px auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+}
 
 
 /* EXPERIENCE */
+#exp .page-title p { text-align: center; }
 .exp-item {
-    width: 60%;
+    width: 90%;
     margin: 10px auto;
     box-sizing: border-box;
     overflow: hidden;
