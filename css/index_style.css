@@ -267,6 +267,73 @@ header a { text-decoration: none; }
     color: rgba(0, 0, 0, 0.4);
 }
 
+/* FEATURED PROJECTS */
+#proj .page-title p { text-align: center; }
+#proj .row { text-align: center; }
+.proj-wrapper {
+    text-align: center;
+}
+.proj-img {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.proj-title,
+.proj-cat {
+    text-align: center;
+    font-weight: 700;
+}
+.proj-title {
+    color: #444;
+    text-transform: uppercase;
+    margin-bottom: 5px !important;
+}
+.proj-cat {
+    color: rgba(239, 83, 80, 0.8);
+    text-transform: uppercase;
+    margin-top: 0px !important;
+}
+.proj-desc { text-align: center; }
+.proj-link-btn {
+    padding: 15px 15px;
+    border: 2px solid #444;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.proj-link-btn p {
+    margin: 0px;
+    color: #444;
+}
+.proj-link-btn:hover {
+    background-color: #444;
+    border-color: #eee;
+}
+.proj-link-btn:hover p { color: #eee; }
+#space-rescue .proj-img { background-image: url('../repo/resources/imgs/space-rescue.PNG'); }
+#infiltration-vr .proj-img { background-image: url('../repo/resources/imgs/infiltration-vr.jpg'); }
+#pixel .proj-img { background-image: url('../repo/resources/imgs/pixel.PNG'); }
+#colorz .proj-img { background-image: url('../repo/resources/imgs/colorz.PNG'); }
+#rich-calc .proj-img { background-image: url('../repo/resources/imgs/rich-calc.PNG'); }
+
+#more-proj-btn {
+    margin-top: 200px;
+    padding: 15px 15px;
+    /* border: 2px solid #444; */
+    background-color: #EF5350;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#more-proj-btn p {
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+#more-proj-btn:hover {
+    background-color: #444;
+    /* border-color: #eee; */
+}
+#more-proj-btn:hover p { color: #eee; }
 
 /* EXPERIENCE */
 #exp .page-title p { text-align: center; }
