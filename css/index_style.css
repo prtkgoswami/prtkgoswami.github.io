@@ -107,7 +107,7 @@ html, body {
 }
 .nav-link {
     width: 60%;
-    margin: 20px auto;
+    margin: 0px auto;
     border: 3px solid transparent
 }
 .nav-link p {
@@ -314,6 +314,7 @@ header a { text-decoration: none; }
 #infiltration-vr .proj-img { background-image: url('../repo/resources/imgs/infiltration-vr.jpg'); }
 #pixel .proj-img { background-image: url('../repo/resources/imgs/pixel.PNG'); }
 #colorz .proj-img { background-image: url('../repo/resources/imgs/colorz.PNG'); }
+#react-dash .proj-img { background-image: url('../repo/resources/imgs/react-dashboard.PNG'); }
 #rich-calc .proj-img { background-image: url('../repo/resources/imgs/rich-calc.PNG'); }
 
 #more-proj-btn {
