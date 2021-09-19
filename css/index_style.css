@@ -5,6 +5,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
+    background-color: #f5f5f5;
 }
 .page-title p {
     font-size: 32px;
@@ -193,6 +194,7 @@ header a { text-decoration: none; }
     margin: 0;
     padding-top: 50px;
     color: #F44336;
+    /* color: #9575cd; */
 }
 @media all and (min-width: 768px) {
     #img-container { display: block; }
@@ -270,6 +272,8 @@ header a { text-decoration: none; }
 /* FEATURED PROJECTS */
 #proj .page-title p { text-align: center; }
 #proj .row { text-align: center; }
+.proj-tile-row {margin: 0;}
+.proj-tile {margin: 20px 0;}
 .proj-wrapper {
     text-align: center;
 }
@@ -336,6 +340,42 @@ header a { text-decoration: none; }
 }
 #more-proj-btn:hover p { color: #eee; }
 
+#mood-journal-banner {
+    border: 1px solid #222;
+    background-image: url('../res/img/Mood_Journal_Banner2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+#mood-journal-banner p {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#mood-journal-banner p:first-child {
+    font-size: 66px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#mood-journal-banner p:nth-child(2) {
+    font-size: 52px;
+    font-weight: 300;
+}
+@media all and (min-width: 768px) {
+    #mood-journal-banner p:first-child { font-size: 38px; }
+    #mood-journal-banner p:nth-child(2) { font-size: 28px; }
+}
+@media all and (min-width: 1024px) {
+
+}
+@media all and (max-width: 659px) {
+    #mood-journal-banner p:first-child { font-size: 38px; }
+    #mood-journal-banner p:nth-child(2) { font-size: 28px; }
+
+}
+
 /* EXPERIENCE */
 #exp .page-title p { text-align: center; }
 .exp-item {
@@ -397,7 +437,7 @@ header a { text-decoration: none; }
     width: 50%;
     box-sizing: border-box;
     float: left;
-    border: 3px solid #fff;
+    border: 3px solid transparent;
 }
 .social-icon p {
     font-size: 62px;

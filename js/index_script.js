@@ -1,7 +1,10 @@
 $(document).ready( function () {
     console.log("Ready");
 
-    animateArrow();
+    if (navigator.userAgent.indexOf("Firefox") != -1) {
+        console.log("Firefox Detected");
+        animateArrow();
+    }
 
     $('#menu-btn').click( function () {
         console.log("Menu CLicked");
@@ -19,7 +22,13 @@ $(document).ready( function () {
 
     $('#nav-overlay a').click(function () {
         closeMenu();
-    })
+    });
+
+    $('#nav-overlay a, #continue a').on('click', function(event) {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({scrollTop: $(hash).offset().top}, 900);
+    });
 });
 
 function animateArrow() {
