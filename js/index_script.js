@@ -8,7 +8,7 @@ $(document).ready( function () {
 
     $('#menu-btn').click( function () {
         console.log("Menu CLicked");
-        $('#nav-overlay').animate({marginTop: "0%"}, 800);
+        $('#nav-overlay').css({visibility: "visible", opacity: "0"}).animate({opacity: "1"}, 300);
     });
 
     $('#close-menu').click( function () {
@@ -40,5 +40,5 @@ function animateArrow() {
 }
 
 function closeMenu() {
-    $('#nav-overlay').animate({marginTop: "-200%"}, 800);
+    $('#nav-overlay').animate({opacity: "0"}, 300).css({visibility: "hidden", opacity: "1"});
 }

@@ -77,9 +77,11 @@ html, body {
     position: fixed;
     width: 100%;
     background-color: rgba(126, 87, 194, 1.0);
-    margin-top: -200%;
+    margin-top: 0;
     z-index: 3;
     height: 100%;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
 }
 #nav-overlay a { text-decoration: none; }
 #close-menu {
@@ -238,8 +240,8 @@ header a { text-decoration: none; }
     width: 33.33333333%;
     float: left;
     background-color: #444;
-    border-left: 5px solid #fff;
-    border-right: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
     box-sizing: border-box;
 }
 .rating-bar:nth-child(1) { background-color: #66BB6A; }
@@ -322,7 +324,7 @@ header a { text-decoration: none; }
 #rich-calc .proj-img { background-image: url('../repo/resources/imgs/rich-calc.PNG'); }
 
 #more-proj-btn {
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 15px 15px;
     /* border: 2px solid #444; */
     background-color: #EF5350;
@@ -371,6 +373,9 @@ header a { text-decoration: none; }
 
 }
 @media all and (max-width: 659px) {
+    #more-proj-btn {
+        margin-top: 50px;
+    }
     #mood-journal-banner p:first-child { font-size: 38px; }
     #mood-journal-banner p:nth-child(2) { font-size: 28px; }
 
@@ -486,3 +491,4 @@ footer p {
     margin: 0;
 }
 footer p i { color: rgba(126, 87, 194, 1.0); }
+
