@@ -41,6 +41,8 @@ html, body {
     /* background-color: rgba(68, 68, 68, 0.5); */
     background-color: rgba(0,0,0,0.5);
     color: #fff;
+    transition: background-color 0.5s ease,
+                box-shadow 0.5s ease;
 }
 #menu-btn p { font-size: 15px; }
 #menu-btn:hover {
@@ -102,6 +104,7 @@ html, body {
     color: rgba(255, 255, 255, 0.6);
     margin: 0 auto;
     text-align: center;
+    transition: color 0.2s ease-in-out;
 }
 #close-menu-min p { margin: 0; }
 #close-menu-min:hover {
@@ -153,6 +156,7 @@ header a { text-decoration: none; }
     width: 70%;
     min-width: 206px;
     box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out;
 }
 .link-btn p {
     font-size: 28px;
@@ -251,7 +255,7 @@ header a { text-decoration: none; }
 .yellow-experienced { background-color: #FFEE58; }
 .red-expert { background-color: #EF5350; }
 @media all and (min-width: 768px) {
-    #ide { margin: 0 25%; }
+    /* #tools { margin: 0 25%; } */
     .skill-item-title p { font-size: 16px; }
 }
 .legend-title {
@@ -306,6 +310,7 @@ header a { text-decoration: none; }
     border: 2px solid #444;
     display: inline-block;
     box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out;
 }
 .proj-link-btn p {
     margin: 0px;
@@ -321,7 +326,7 @@ header a { text-decoration: none; }
 #pixel .proj-img { background-image: url('../repo/resources/imgs/pixel.PNG'); }
 #colorz .proj-img { background-image: url('../repo/resources/imgs/colorz.PNG'); }
 #react-dash .proj-img { background-image: url('../repo/resources/imgs/react-dashboard.PNG'); }
-#rich-calc .proj-img { background-image: url('../repo/resources/imgs/rich-calc.PNG'); }
+#netflix-clone .proj-img { background-image: url('../repo/resources/imgs/netflix-clone.PNG'); }
 
 #more-proj-btn {
     margin-top: 150px;
@@ -330,6 +335,7 @@ header a { text-decoration: none; }
     background-color: #EF5350;
     display: inline-block;
     box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out;
 }
 #more-proj-btn p {
     margin: 0px;
@@ -443,6 +449,7 @@ header a { text-decoration: none; }
     box-sizing: border-box;
     float: left;
     border: 3px solid transparent;
+    transition: background-color 0.2s ease-in-out;
 }
 .social-icon p {
     font-size: 62px;
